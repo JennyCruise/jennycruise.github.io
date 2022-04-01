@@ -123,7 +123,7 @@ html.dark {
   --hty-secondary-text-color: #555;
   --post-block-bg-color: #fff;
   --smc-link-color: #0078e7;
-  --yun-bg-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg");
+  --yun-bg-image: url("https://cdn.jsdelivr.net/gh/JennyCruise/mycdn/bg_light.jpg");
   --banner-line-color: #000;
   --banner-char-color: #000;
 }
@@ -134,7 +134,7 @@ html.dark {
   --hty-secondary-text-color: #eee;
   --post-block-bg-color: #1b1f2e;
   --smc-link-color: #3ca1ff;
-  --yun-bg-image: url("https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg");
+  --yun-bg-image: url("https://cdn.jsdelivr.net/gh/JennyCruise/mycdn/bg_night.jpg");
   --banner-line-color: #fff;
   --banner-char-color: #fff;
   --banner-char-bg-color: rgba(0,0,0,0.5);
@@ -293,14 +293,14 @@ body::before {
   background-repeat: no-repeat;
   animation-name: bgFadeIn;
   animation-duration: 2s;
-  opacity: 1;
+  opacity: 0.67;
 }
 @-moz-keyframes bgFadeIn {
   from {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.67;
   }
 }
 @-webkit-keyframes bgFadeIn {
@@ -308,7 +308,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.67;
   }
 }
 @-o-keyframes bgFadeIn {
@@ -316,7 +316,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.67;
   }
 }
 @keyframes bgFadeIn {
@@ -324,7 +324,7 @@ body::before {
     opacity: 0;
   }
   to {
-    opacity: 1;
+    opacity: 0.67;
   }
 }
 :root {
@@ -2063,22 +2063,6 @@ body::before {
 }
 .v[data-class=v] p code {
   color: #000;
-}
-#say {
-  color: var(--hty-text-color);
-  display: block;
-  text-align: center;
-  font-family: 'Songti SC', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, Roboto, serif;
-  font-weight: bold;
-  padding: 0.5rem;
-  border-top: 1px solid var(--hty-secondary-text-color);
-  border-bottom: 1px solid var(--hty-secondary-text-color);
-}
-#say #say-content {
-  display: block;
-}
-#say #say-from {
-  display: block;
 }
 .heimu {
   background-color: var(--hty-text-color);
