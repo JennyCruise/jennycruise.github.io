@@ -8,25 +8,32 @@ document.addEventListener("pjax:success", initScrollReveal);
 </script><link rel="icon" type="image/png" href="/moon.ico"><link rel="mask-icon" href="/moon.ico" color="#4795bc"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
     window.Yun = {}
     window.CONFIG = {"hostname":"example.com","root":"/","title":["To","The","Moon"],"version":"1.8.11","mode":"auto","copycode":true,"page":{"isPost":false},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","fireworks":{"colors":null},"vendors":{"darken":"https://cdn.jsdelivr.net/npm/darken@1.5.0"}};
-  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="[TOC] hexo 常用命令hexo new [layout] &lt;title&gt; Hexo Markdown 简明语法手册内容目录在段落中填写 [TOC] 以显示全文内容的目录结构。 文章头格式front-matter 的基本格式实例如下： --- title: Hexo Markdown-it 简明语法手册 date: 2016-01-15 20:19:32 tags: [Markd">
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/hexo-theme-yun.js" type="module"></script><meta name="description" content="介绍hexo常用的命令以及markdown常用语法">
 <meta property="og:type" content="website">
 <meta property="og:title" content="markdown 语法">
 <meta property="og:url" content="http://example.com/markdown/index.html">
 <meta property="og:site_name" content="Finding Paradise">
-<meta property="og:description" content="[TOC] hexo 常用命令hexo new [layout] &lt;title&gt; Hexo Markdown 简明语法手册内容目录在段落中填写 [TOC] 以显示全文内容的目录结构。 文章头格式front-matter 的基本格式实例如下： --- title: Hexo Markdown-it 简明语法手册 date: 2016-01-15 20:19:32 tags: [Markd">
+<meta property="og:description" content="介绍hexo常用的命令以及markdown常用语法">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-02T13:38:26.000Z">
-<meta property="article:modified_time" content="2022-04-05T05:06:45.808Z">
+<meta property="article:modified_time" content="2022-04-05T08:43:52.938Z">
 <meta property="article:author" content="Jenny Cruise">
 <meta name="twitter:card" content="summary"><script>(function() {
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   const setting = localStorage.getItem('darken-mode') || 'auto'
   if (setting === 'dark' || (prefersDark && setting !== 'light'))
     document.documentElement.classList.toggle('dark', true)
-})()</script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><div class="sidebar-panel sidebar-panel-active" id="site-overview-wrap"><div class="site-info"><a class="site-author-avatar" href="/about/" title="Jenny Cruise"><img width="96" loading="lazy" src="/images/avatar.jpg" alt="Jenny Cruise"></a><div class="site-author-name"><a href="/about/">Jenny Cruise</a></div><span class="site-name">Finding Paradise</span><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">3</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><a class="site-state-item hty-icon-button" href="/markdown" title="markdown"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-unordered"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div></aside><main class="sidebar-translate" id="content"><div class="hty-card" id="page"><header class="post-header"><h1 class="post-title" itemprop="name headline">markdown 语法</h1></header><div class="text-center"><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2022-04-02 21:38:26" itemprop="dateCreated datePublished" datetime="2022-04-02T21:38:26+08:00">2022-04-02</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2022-04-05 13:06:45" itemprop="dateModified" datetime="2022-04-05T13:06:45+08:00">2022-04-05</time></div></div></div><article id="page"><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><p>[TOC]</p>
-<h1 id="hexo-常用命令"><a href="#hexo-常用命令" class="headerlink" title="hexo 常用命令"></a>hexo 常用命令</h1><pre class="language-none"><code class="language-none">hexo new [layout] &lt;title&gt;</code></pre>
-<h1 id="Hexo-Markdown-简明语法手册"><a href="#Hexo-Markdown-简明语法手册" class="headerlink" title="Hexo Markdown 简明语法手册"></a>Hexo Markdown 简明语法手册</h1><h2 id="内容目录"><a href="#内容目录" class="headerlink" title="内容目录"></a>内容目录</h2><p>在段落中填写 <code>[TOC] </code>以显示全文内容的目录结构。</p>
-<h2 id="文章头格式"><a href="#文章头格式" class="headerlink" title="文章头格式"></a>文章头格式</h2><p>front-matter 的基本格式实例如下：</p>
+})()</script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js" type="module"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js" type="module"></script><div class="sidebar-panel sidebar-panel-active" id="site-overview-wrap"><div class="site-info"><a class="site-author-avatar" href="/about/" title="Jenny Cruise"><img width="96" loading="lazy" src="/images/avatar.jpg" alt="Jenny Cruise"></a><div class="site-author-name"><a href="/about/">Jenny Cruise</a></div><span class="site-name">Finding Paradise</span><sub class="site-subtitle"></sub><div class="site-desciption"></div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="首页"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="归档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">3</span></a></div><div class="site-state-item"><a href="/categories/" title="分类"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><div class="site-state-item"><a href="/tags/" title="标签"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">0</span></a></div><a class="site-state-item hty-icon-button" href="/markdown" title="markdown"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-unordered"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><br><a class="links-item hty-icon-button" id="toggle-mode-btn" href="javascript:;" title="Mode" style="color: #f1cb64"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-contrast-2-line"></use></svg></a></div></aside><main class="sidebar-translate" id="content"><div class="hty-card" id="page"><header class="post-header"><h1 class="post-title" itemprop="name headline">markdown 语法</h1></header><div class="text-center"><div class="post-meta"><div class="post-time"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="创建时间：2022-04-02 21:38:26" itemprop="dateCreated datePublished" datetime="2022-04-02T21:38:26+08:00">2022-04-02</time><span class="post-meta-divider">-</span><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-2-line"></use></svg></span> <time title="修改时间：2022-04-05 16:43:52" itemprop="dateModified" datetime="2022-04-05T16:43:52+08:00">2022-04-05</time></div></div></div><article id="page"><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body"><p>介绍hexo常用的命令以及markdown常用语法</p>
+<span id="more"></span>
+
+<!-- toc -->
+
+
+
+<!-- tocstop -->
+
+<pre><code class="以显示全文内容的目录结构。">## 文章头格式
+front-matter 的基本格式实例如下：
 <pre class="language-none"><code class="language-none">---
 title: Hexo Markdown-it 简明语法手册
 date: 2016-01-15 20:19:32
@@ -35,150 +42,198 @@ categories: 学习
 toc: true
 mathjax: true
 ---</code></pre>
-<h2 id="斜体和粗体"><a href="#斜体和粗体" class="headerlink" title="斜体和粗体"></a>斜体和粗体</h2><p>使用<code>*</code>和<code>**</code>表示斜体和粗体，格式如下：</p>
+## 斜体和粗体
+使用``` * ```和``` ** ```表示斜体和粗体，格式如下：
 <pre class="language-none"><code class="language-none">*斜体*，**粗体**</code></pre>
-<p>效果如下：<em>斜体</em>，<strong>粗体</strong></p>
-<h2 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h2><p>使用 <code>===</code>表示一级标题，使用<code>---</code>表示二级标题，格式如下：</p>
+效果如下：*斜体*，**粗体**
+## 分级标题
+使用 ``` === ```表示一级标题，使用``` --- ```表示二级标题，格式如下：
 <pre class="language-none"><code class="language-none">这是一个一级标题
 &#x3D;&#x3D;&#x3D;
 这是一个二级标题
 ---
 ### 这是一个三级标题</code></pre>
-<p>或者：使用<code>#</code>号（建议<code>#</code>后面跟一个空格）</p>
+或者：使用``` # ```号（建议```#```后面跟一个空格）
 <pre class="language-none"><code class="language-none"># H1
 ## H2
 ### H3
 #### H4
 ##### H5
 ###### H6</code></pre>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>在单独的一行使用<code>***</code>或者<code>___</code>表示分割线</p>
+## 分割线
+在单独的一行使用``` *** ```或者``` ___ ```表示分割线
 <pre class="language-none"><code class="language-none">part1
 ___ (三个下划线)
 part2</code></pre>
-<p>效果如下：</p>
-<p>part1</p>
-<hr>
-<p>part2</p>
-<h2 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h2><p>使用<code>~~</code>表示删除线<br>（<code>~~</code>要紧跟文字不能空格）</p>
+效果如下：
+
+part1
+___
+part2
+
+## 删除线
+使用``` ~~ ```表示删除线
+（``` ~~ ```要紧跟文字不能空格）
 <pre class="language-none"><code class="language-none">~~我被划了吗？~~</code></pre>
-<p><del>我被划了吗？</del></p>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p>插入文字超链接的格式如下 ：</p>
+~~我被划了吗？~~
+
+## 超链接
+插入文字超链接的格式如下 ：
 <pre class="language-none"><code class="language-none">[链接文字](链接地址 &quot;链接标题&quot;)</code></pre>
-<p>插入图片超链接的格式如下：</p>
+插入图片超链接的格式如下：
+
 <pre class="language-none"><code class="language-none">![图片说明](图片链接 &quot;图片标题&quot;)</code></pre>
-<p>插入音频，使用插件hexo-tag-aplayer，语法如下：</p>
+插入音频，使用插件hexo-tag-aplayer，语法如下：
 <pre class="language-none"><code class="language-none">&#123;% aplayer title author url [picture_url, narrow, autoplay, width:xx%, lrc:xxx] %&#125;</code></pre>
-<p>详情参见：hexo-tag-aplayer 中文使用文档</p>
-<p>引用视频则直接插入iframe代码：</p>
+详情参见：hexo-tag-aplayer 中文使用文档
+
+引用视频则直接插入iframe代码：
 <pre class="language-none"><code class="language-none">&lt;script src&#x3D;&quot;&#x2F;js&#x2F;youtube-autoresizer.js&quot;&gt;&lt;&#x2F;script&gt;
 &lt;iframe width&#x3D;&quot;640&quot; height&#x3D;&quot;360&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;HfElOZSEqn4&quot; frameborder&#x3D;&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;</code></pre>
-<h2 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h2><p>用<code>\</code>表示注释，<code>\</code>后面的文字解析为纯文本格式。<br>渲染效果：</p>
+## 注释
+用``` \ ```表示注释，``` \ ```后面的文字解析为纯文本格式。
+渲染效果：
 <pre class="language-none"><code class="language-none">\## 看我没有变成二级标题吧</code></pre>
-<p>## 看我没有变成二级标题吧</p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>使用<code>&gt;</code>表示文字引用：<br>(必须要在每行的开头)</p>
+\## 看我没有变成二级标题吧
+
+## 引用
+使用``` &gt; ```表示文字引用：
+(必须要在每行的开头)
 <pre class="language-none"><code class="language-none">&gt; 野火烧不尽，
 春风吹又生
 
 遇到换行结束</code></pre>
-<p>eg：</p>
-<blockquote>
-<p>野火烧不尽，<br>春风吹又生</p>
-</blockquote>
-<p>遇到换行结束 </p>
-<h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><p>使用<code> [^1]</code> &amp; <code>[^1]:</code>的脚注对来表示：</p>
+eg：
+&gt; 野火烧不尽，
+春风吹又生
+
+遇到换行结束 
+## 脚注
+
+使用``` [^1]``` &amp; ``` [^1]: ```的脚注对来表示：
 <pre class="language-none"><code class="language-none">第一个脚注[^1]第二个[^2]，第三个[^备注]
 [^1]:来自“脚注”部分的第一个注释
 [^2]:第二个
 [^备注]:备注可以自动排序
 (会自动排在文章尾部)</code></pre>
-<p>效果展示：<br>第一个脚注[^1]第二个[^2]，第三个[^备注]<br>[^1]:来自“脚注”部分的第一个注释<br>[^2]:第二个<br>[^备注]:第三个备注可以自动排序<br>(会自动排在文章尾部)</p>
-<h2 id="列表与表格"><a href="#列表与表格" class="headerlink" title="列表与表格"></a>列表与表格</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>使用<code>*</code> (实心方格点) , <code>+</code> (实心圆点), <code>-</code> (空心圆点) 来显示无序列表<br>(后面加空格)</p>
+效果展示：
+第一个脚注[^1]第二个[^2]，第三个[^备注]
+[^1]:来自“脚注”部分的第一个注释
+[^2]:第二个 
+[^备注]:第三个备注可以自动排序 
+(会自动排在文章尾部)
+## 列表与表格
+### 无序列表
+使用``` * ``` (实心方格点) , ``` + ``` (实心圆点), ``` - ``` (空心圆点) 来显示无序列表
+(后面加空格)
 <pre class="language-none"><code class="language-none">+ 无序列表项 一
 	- 子无序列表 一
 	- 子无序列表 二
 		* 子无序列表 三
 + 无序列表项 二
 + 无序列表项 三</code></pre>
-<p>效果展示：</p>
-<ul>
-<li>无序列表项 一<ul>
-<li>子无序列表 一</li>
-<li>子无序列表 二<ul>
-<li>子无序列表 三</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>无序列表项 二</li>
-<li>无序列表项 三<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3>使用数字和点表示有序列表：<br>(同样的，要加空格)<pre class="language-none"><code class="language-none">1. 有序列表项 一
+效果展示：
++ 无序列表项 一
+    - 子无序列表 一
+    - 子无序列表 二
+        * 子无序列表 三
++ 无序列表项 二
++ 无序列表项 三
+### 有序列表
+使用数字和点表示有序列表：
+(同样的，要加空格)
+<pre class="language-none"><code class="language-none">1. 有序列表项 一
 	1. 子有序列表项 一
 	2. 子有序列表项 二
 	4. 故意标错，会自动排序
 2. 有序列表项 二
-3. 有序列表项 三</code></pre></li>
-</ul>
-<ol>
-<li>有序列表项 一<ol>
-<li>子有序列表项 一</li>
-<li>子有序列表项 二</li>
-<li>故意标错，会自动排序</li>
-</ol>
-</li>
-<li>有序列表项 二</li>
-<li>有序列表项 三<h2 id="绘制表格"><a href="#绘制表格" class="headerlink" title="绘制表格"></a>绘制表格</h2>绘制表格格式如下：<pre class="language-|" data-language="|"><div class="caption"><span>``` 控制分列，</span></div><code class="language-|">&#96;&#96;&#96; - &#96;&#96;&#96; 控制分行，
-&#96;&#96;&#96; : &#96;&#96;&#96; 控制对齐方式。</code></pre>
-<table>
-<thead>
-<tr>
-<th align="left">这是标题</th>
-<th align="right">第二列</th>
-<th align="center">第三列</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">↑左对齐</td>
-<td align="right">右对齐↑</td>
-<td align="center">↑居中↑</td>
-</tr>
-<tr>
-<td align="left">Phone</td>
-<td align="right">12 USD</td>
-<td align="center">12</td>
-</tr>
-<tr>
-<td align="left">Pipe</td>
-<td align="right">1 USD</td>
-<td align="center">234</td>
-</tr>
-</tbody></table>
-&#96;&#96;&#96;<br>效果展示：<table>
-<thead>
-<tr>
-<th align="left">这是标题</th>
-<th align="right">自动加粗</th>
-<th align="center">标题下指定对齐方式</th>
-<th>不指定对齐方式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">↑左对齐</td>
-<td align="right">右对齐↑</td>
-<td align="center">↑居中↑</td>
-<td>默认左对齐</td>
-</tr>
-<tr>
-<td align="left">123456789</td>
-<td align="right">←空格不占位置</td>
-<td align="center">987654321</td>
-<td>1</td>
-</tr>
-<tr>
-<td align="left">123456789</td>
-<td align="right">←没有空格</td>
-<td align="center">987654321</td>
-<td>0</td>
-</tr>
-</tbody></table>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><h3 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h3></li>
-</ol>
+3. 有序列表项 三</code></pre>
+1. 有序列表项 一
+    1. 子有序列表项 一
+    2. 子有序列表项 二
+    4. 故意标错，会自动排序
+2. 有序列表项 二
+3. 有序列表项 三
+## 绘制表格
+绘制表格格式如下：
+<pre class="language-|" data-language="|"><div class="caption"><span>``` 控制分列，</span></div><code class="language-|">&#96;&#96;&#96; - &#96;&#96;&#96; 控制分行，
+&#96;&#96;&#96; : &#96;&#96;&#96; 控制对齐方式。
+    
+示例：</code></pre>
+| 这是标题 | 自动加粗 | 标题下指定对齐方式 | 不指定对齐方式 |
+| :------- | --------: | :---: |---|
+| ↑左对齐 | 右对齐↑  | ↑居中↑     |默认左对齐|
+| 123456789    | ←空格不占位置   | 987654321 | 1 |
+| 123456789| ←没有空格     | 987654321 | 0 |
+ <pre class="language-none"><code class="language-none">效果展示：
+| 这是标题 | 自动加粗 | 标题下指定对齐方式 | 不指定对齐方式 |
+| :------- | --------: | :---: |---|
+| ↑左对齐 | 右对齐↑  | ↑居中↑     |默认左对齐|
+| 123456789    | ←空格不占位置   | 987654321 | 1 |
+| 123456789| ←没有空格     | 987654321 | 0 |
+
+## 代码块
+### 行内代码
+使用&#96;&#96;&#96; &#96; &#96;&#96;&#96;符号</code></pre>
+可以用 `一个`，
+可以用 ``两个``，
+也可以用 ```三个```，
+总之就是要 ````成对````。
+<pre class="language-none"><code class="language-none">可以用 &#96;一个&#96;，
+可以用 &#96;&#96;两个&#96;&#96;，
+也可以用 &#96;&#96;&#96;三个&#96;&#96;&#96;，
+总之就是要 &#96;&#96;&#96;&#96;成对&#96;&#96;&#96;&#96;。
+### 多行代码
+方法很多
+1. 四个空格缩进（上一行为空行）</code></pre>
+
+    #include&lt;stdion.h&gt;
+    int main
+    &#123;
+        cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;
+        return 0;
+    &#125;
+<pre class="language-none"><code class="language-none">效果：（先有回车才行）
+
+	#include&lt;stdion.h&gt;
+	int main
+	&#123;
+		cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;
+		return 0;
+	&#125;
+2. 使用：&#96;&#96;&#96; &#96; &#96;&#96;&#96;符号
+至少要三个连续的 &#96;&#96;&#96; &#96; &#96;&#96;&#96;，数目要配对
+&#96;&#96;&#96;&#96;</code></pre>
+#include&lt;stdion.h&gt;
+int main
+&#123;
+    cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;
+    return 0;
+&#125;
+<pre class="language-none"><code class="language-none">&#96;&#96;&#96;&#96;</code></pre>
+#include&lt;stdion.h&gt;
+int main
+&#123;
+    cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;
+    return 0;
+&#125;
+<pre class="language-none"><code class="language-none">### 加强的代码块
+&#96;&#96;&#96;&#96;
+&#96;&#96;&#96;cpp
+#include&lt;stdion.h&gt;
+int main
+&#123;
+	cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;
+	return 0;
+&#125;</code></pre>
+</code></pre>
+<p>效果：</p>
+<pre class="language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdion.h></span></span>
+<span class="token keyword">int</span> main
+<span class="token punctuation">&#123;</span>
+	cout<span class="token operator">&lt;&lt;</span><span class="token string">"hello world!"</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code></pre>
+
+
 </div></section></article></div><div class="hty-card" id="comment"></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2022 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> Jenny Cruise</span></div></footer><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#4795bc" stroke-width="2" stroke-linecap="round"></circle></svg></a></div></body></html>
