@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Finding Paradise
 subtitle: ''
-description: ''
+description: 'To The Moon'
 keywords:
-author: John Doe
-language: en
+author: Jenny Cruise
+language: zh-Hans #zh-CN
 timezone: ''
 
 # URL
@@ -43,18 +43,31 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+# highlight:
+#  enable: true
+#  line_number: true
+#  auto_detect: false
+  #tab_replace: ''
+  #wrap: true
+  #hljs: false
+#prismjs:
+ # enable: false
+  #preprocess: true
+  #line_number: true
+  #tab_replace: ''
+
+# 关闭 highlight
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
   enable: false
+
+# 启用 prism
+prismjs:
+  enable: true
   preprocess: true
   line_number: true
+  line_threshold: 0
   tab_replace: ''
+
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -98,11 +111,28 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme: yun
+# theme: yun
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   repo: https://github.com/JennyCruise/jennycruise.github.io.git
-  branch: master
+  branch: main
+
+# 
+
+
+server:
+  compress: true
+
+plugins:
+  - hexo-reference
+
+# 搜索
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

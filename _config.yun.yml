@@ -1,4 +1,130 @@
+# 头像
 avatar:
   url: /images/avatar.jpg # 你的头像图片地址
   rounded: true
   opacity: 1
+
+# 标语
+banner:
+  enable: true
+  title: 
+    - To
+    - The
+    - Moon
+  border: true
+  cloud:
+    enable: true
+    color: "white"
+  go_down:
+    enable: true
+    icon: icon-arrow-down-s-line
+
+# 主题色
+colors:
+  primary: "#4795bc"
+  # primary: "#6200ee"
+  bg: "#f5f5f5"
+  selection_bg: "#ab7a92"
+  tag_start_color: "#999999"
+  tag_end_color: "#0078E7"
+  dark:
+    block: "#1b1f2e"
+    # block: "#17202A"
+
+
+# 背景
+bg_image:
+  enable: true
+  # url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg
+  url: https://cdn.jsdelivr.net/gh/JennyCruise/mycdn/bg_light.jpg
+  dark: https://cdn.jsdelivr.net/gh/JennyCruise/mycdn/bg_night.jpg
+  # blur: 30px # 设置背景模糊程度
+  opacity: 0.67
+
+# 菜单
+# main menu navigation
+menu:
+  home:
+    path: /
+    icon: icon-home-4-line
+  list:
+    - type: archives
+      path: /archives/
+      icon: icon-archive-line
+    - type: categories
+      path: /categories/
+      icon: icon-folder-2-line
+    - type: tags
+      path: /tags/
+      icon: icon-price-tag-3-line
+  custom:
+    title: markdown
+    path: /markdown
+    icon: icon-list-unordered
+
+# 页面
+pages:
+  - name: 我的小伙伴
+    url: /links/
+    icon: icon-genderless-line
+    color: dodgerblue
+
+# 打赏
+reward:
+  enable: false
+
+# 页脚
+footer:
+  since: 2022
+  # 图标
+  icon:
+    name: icon-cloud-line
+    animated: true
+    color: "#0078E7"
+    url:  
+    title:  
+  # 驱动
+  powered:
+    enable: false
+  # 备案
+  beian:
+    enable: false
+    # icp: 苏ICP备xxxxxxxx号
+
+#Say
+say:
+  enable: false
+
+#代码高亮
+codeblock:
+  copy_btn: true
+# 主题
+prismjs:
+    # light: okaidia
+    light: okaidia
+    dark: tomorrow
+
+# 词云
+wordcloud:
+  enable: true
+
+# 结尾
+archive:
+  last_word: Nothing More
+
+# 图标
+favicon: /moon.ico
+
+# 目录
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: nothing
+  collapse: false
+
+# 字数统计
+wordcount:
+  enable: true
+  count: true
+  time: true
