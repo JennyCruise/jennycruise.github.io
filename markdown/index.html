@@ -137,6 +137,10 @@
 
 <meta name="generator" content="Hexo 6.1.0"></head>
 
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+<script type="text/javascript" src="/js/src/clipboard-use.js"></script>
+
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
@@ -303,76 +307,46 @@
         
           <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>介绍hexo常用的命令以及markdown常用语法</p>
 <span id="more"></span>
-<h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><pre class="line-numbers language-python" data-language="python"><code class="language-python">hexo new <span class="token string">"postName"</span>		<span class="token comment">#新建文章</span>
-hexo new page <span class="token string">"pageName"</span><span class="token comment">#新建页面</span>
-hexo generate 			<span class="token comment">#生成静态页面至public目录</span>
-hexo server 			<span class="token comment">#开启预览访问端口</span>
-hexo deploy 			<span class="token comment">#部署到GitHub</span>
-hexo <span class="token builtin">help</span>  				<span class="token comment">#查看帮助</span>
-hexo version  			<span class="token comment">#查看Hexo的版本</span>
-hexo clean 				<span class="token comment">#清理public的内容</span>
-组合命令：
-hexo s <span class="token operator">-</span>g			 	<span class="token comment">#生成并本地预览</span>
-hexo d <span class="token operator">-</span>g		 		<span class="token comment">#生成并上传</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span>		<span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span><span class="comment">#新建页面</span></span><br><span class="line">hexo generate 			<span class="comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server 			<span class="comment">#开启预览访问端口</span></span><br><span class="line">hexo deploy 			<span class="comment">#部署到GitHub</span></span><br><span class="line">hexo <span class="built_in">help</span>  				<span class="comment">#查看帮助</span></span><br><span class="line">hexo version  			<span class="comment">#查看Hexo的版本</span></span><br><span class="line">hexo clean 				<span class="comment">#清理public的内容</span></span><br><span class="line">组合命令：</span><br><span class="line">hexo s -g			 	<span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g		 		<span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
 <h2 id="Hexo-Markdown简明语法"><a href="#Hexo-Markdown简明语法" class="headerlink" title="Hexo Markdown简明语法"></a>Hexo Markdown简明语法</h2><h3 id="内容目录"><a href="#内容目录" class="headerlink" title="内容目录"></a>内容目录</h3><p>使用的yun主题自带目录生成(正确使用markdown语法)<br>新建的文章默认生成目录<br>新建的页面可以在首部添加: <code>toc: true</code></p>
 <h3 id="斜体和粗体"><a href="#斜体和粗体" class="headerlink" title="斜体和粗体"></a>斜体和粗体</h3><p>使用<code>*</code>和<code>**</code>表示斜体和粗体，格式如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">*斜体*，**粗体**<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">*斜体*</span>，<span class="strong">**粗体**</span></span><br></pre></td></tr></table></figure>
 <p>效果如下：<em>斜体</em>，<strong>粗体</strong></p>
 <h3 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h3><p>使用 <code>===</code>表示一级标题，使用<code>---</code>表示二级标题，格式如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">这是一个一级标题
-&#x3D;&#x3D;&#x3D;
-这是一个二级标题
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">这是一个一级标题</span></span><br><span class="line"><span class="section">===</span></span><br><span class="line"><span class="section">这是一个二级标题</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
 <p>或者：使用<code>#</code>号（建议<code>#</code>后面跟一个空格）</p>
-<pre class="line-numbers language-none"><code class="language-none"># H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># H1</span><br><span class="line">## H2</span><br><span class="line">### H3</span><br><span class="line">#### H4</span><br><span class="line">##### H5</span><br><span class="line">###### H6</span><br></pre></td></tr></table></figure>
 <h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>在单独的一行使用<code>***</code>或者<code>___</code>表示分割线</p>
-<pre class="line-numbers language-none"><code class="language-none">part1
-___ (三个下划线)
-part2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">part1</span><br><span class="line"><span class="emphasis">___</span> (三个下划线)</span><br><span class="line">part2</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <p>part1</p>
 <hr>
 <p>part2</p>
 <h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p>使用<code>~~</code>表示删除线<br>（<code>~~</code>要紧跟文字不能空格）</p>
-<pre class="line-numbers language-none"><code class="language-none">~~我被划了吗？~~<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~我被划了吗？~~</span><br></pre></td></tr></table></figure>
 <p><del>我被划了吗？</del></p>
 <h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><h4 id="文字"><a href="#文字" class="headerlink" title="文字"></a>文字</h4><p>插入文字超链接的格式如下 ：</p>
-<pre class="line-numbers language-none"><code class="language-none">[链接文字](链接地址 &quot;链接标题&quot;)
-eg:
-hexo搭建时自动生成的[第一篇文章](https:&#x2F;&#x2F;jennycruise.github.io&#x2F;2022&#x2F;04&#x2F;01&#x2F;hello-world&#x2F; &quot;helloworld&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[链接文字](链接地址 <span class="string">&quot;链接标题&quot;</span>)</span><br><span class="line">eg:</span><br><span class="line">hexo搭建时自动生成的[第一篇文章](https:<span class="regexp">//</span>jennycruise.github.io<span class="regexp">/2022/</span><span class="number">04</span><span class="regexp">/01/</span>hello-world/ <span class="string">&quot;helloworld&quot;</span>)</span><br></pre></td></tr></table></figure>
 <p>hexo搭建时自动生成的<a target="_blank" rel="noopener" href="https://jennycruise.github.io/2022/04/01/hello-world/" title="helloworld">第一篇文章</a></p>
 <h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>插入图片超链接的格式如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">![图片说明](图片链接 &quot;图片标题&quot;)
-eg:
-![亮色模式背景](https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;JennyCruise&#x2F;mycdn&#x2F;bg_light.jpg &quot;bg_light&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>eg:<br><img src="https://cdn.jsdelivr.net/gh/JennyCruise/mycdn/bg_light.jpg" alt="亮色模式背景" title="bg_light"></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![图片说明](图片链接 <span class="string">&quot;图片标题&quot;</span>)</span><br><span class="line">eg:</span><br><span class="line">![亮色模式背景](https:<span class="regexp">//</span>cdn.jsdelivr.net<span class="regexp">/gh/</span>JennyCruise<span class="regexp">/mycdn/</span>bg_light.jpg <span class="string">&quot;bg_light&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>eg:<br><img src="/images/avatar.jpg" data-original="https://cdn.jsdelivr.net/gh/JennyCruise/mycdn/bg_light.jpg" alt="亮色模式背景" title="bg_light"></p>
 <h4 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h4><p>插入音频，使用插件hexo-tag-aplayer，语法如下：</p>
-<pre class="line-numbers language-none"><code class="language-none">&#123;% aplayer title author url [picture_url, narrow, autoplay, width:xx%, lrc:xxx] %&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">aplayer</span> title author url [picture_url, narrow, autoplay, width:xx%, lrc:xxx] %&#125;</span></span><br></pre></td></tr></table></figure>
 <p>详情参见：hexo-tag-aplayer <a target="_blank" rel="noopener" href="https://github.com/MoePlayer/hexo-tag-aplayer/blob/master/docs/README-zh_cn.md">中文使用文档</a></p>
 <h4 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h4><p>引用视频则直接插入iframe代码：</p>
-<pre class="line-numbers language-none"><code class="language-none">&lt;script src&#x3D;&quot;&#x2F;js&#x2F;youtube-autoresizer.js&quot;&gt;&lt;&#x2F;script&gt;
-&lt;iframe width&#x3D;&quot;640&quot; height&#x3D;&quot;360&quot; src&#x3D;&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;HfElOZSEqn4&quot; frameborder&#x3D;&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src<span class="operator">=</span><span class="string">&quot;/js/youtube-autoresizer.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;iframe width<span class="operator">=</span><span class="string">&quot;640&quot;</span> height<span class="operator">=</span><span class="string">&quot;360&quot;</span> src<span class="operator">=</span><span class="string">&quot;https://www.youtube.com/embed/HfElOZSEqn4&quot;</span> frameborder<span class="operator">=</span><span class="string">&quot;0&quot;</span> allowfullscreen&gt;&lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>用<code>\</code>表示注释，<code>\</code>后面的文字解析为纯文本格式。<br>渲染效果：</p>
-<pre class="line-numbers language-none"><code class="language-none">\## 看我没有变成二级标题吧<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\## 看我没有变成二级标题吧</span><br></pre></td></tr></table></figure>
 <p>## 看我没有变成二级标题吧</p>
 <h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><h4 id="普通引用"><a href="#普通引用" class="headerlink" title="普通引用"></a>普通引用</h4><p>使用<code>&gt;</code>表示文字引用：<br>(必须要在每行的开头)</p>
-<pre class="line-numbers language-none"><code class="language-none">&gt; 野火烧不尽，
-春风吹又生
-
-遇到换行结束<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">野火烧不尽，</span></span><br><span class="line">春风吹又生</span><br><span class="line"></span><br><span class="line">遇到换行结束</span><br></pre></td></tr></table></figure>
 <p>eg：</p>
 <blockquote>
 <p>野火烧不尽，<br>春风吹又生</p>
 </blockquote>
 <p>遇到换行结束 </p>
-<h4 id="嵌套引用"><a href="#嵌套引用" class="headerlink" title="嵌套引用"></a>嵌套引用</h4><pre class="line-numbers language-none"><code class="language-none">&gt; 最外层引用
-&gt; &gt; 第二层引用
-&gt; &gt; &gt; 可以嵌套很多层<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h4 id="嵌套引用"><a href="#嵌套引用" class="headerlink" title="嵌套引用"></a>嵌套引用</h4><figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">最外层引用</span></span><br><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">&gt; 第二层引用</span></span><br><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">&gt; &gt; 可以嵌套很多层</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>最外层引用</p>
 <blockquote>
@@ -382,10 +356,7 @@ eg:
 </blockquote>
 </blockquote>
 </blockquote>
-<h4 id="引用嵌套列表"><a href="#引用嵌套列表" class="headerlink" title="引用嵌套列表"></a>引用嵌套列表</h4><pre class="line-numbers language-none"><code class="language-none">&gt; - 这是引用里嵌套的一个列表
-&gt; - 还可以有子列表
-&gt; 	- 子列表
-&gt; 	- 子列表<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="引用嵌套列表"><a href="#引用嵌套列表" class="headerlink" title="引用嵌套列表"></a>引用嵌套列表</h4><figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">- 这是引用里嵌套的一个列表</span></span><br><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">- 还可以有子列表</span></span><br><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">	- 子列表</span></span><br><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">	- 子列表</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <ul>
 <li>这是引用里嵌套的一个列表</li>
@@ -396,26 +367,16 @@ eg:
 </li>
 </ul>
 </blockquote>
-<h4 id="引用嵌套代码"><a href="#引用嵌套代码" class="headerlink" title="引用嵌套代码"></a>引用嵌套代码</h4><pre class="line-numbers language-none"><code class="language-none">&gt;     同样的，在前面加四个空格形成代码块
-
-
-&gt; &#96;&#96;&#96;
-&gt; 或者使用三个反引号形成代码块
-&gt; &#96;&#96;&#96;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="引用嵌套代码"><a href="#引用嵌套代码" class="headerlink" title="引用嵌套代码"></a>引用嵌套代码</h4><figure class="highlight node-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript">    同样的，在前面加四个空格形成代码块</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript"><span class="string">``</span><span class="string">`</span></span></span><br><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript"><span class="string">或者使用三个反引号形成代码块</span></span></span><br><span class="line"><span class="meta prompt_">&gt;</span> <span class="language-javascript"><span class="string">`</span><span class="string">``</span></span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <pre><code>同样的，在前面加四个空格形成代码块
 </code></pre>
 </blockquote>
 <blockquote>
-<pre class="line-numbers language-none"><code class="language-none">或者使用三个反引号形成代码块<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">或者使用三个反引号形成代码块</span><br></pre></td></tr></table></figure>
 </blockquote>
 <h3 id="列表与表格"><a href="#列表与表格" class="headerlink" title="列表与表格"></a>列表与表格</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>使用<code>*</code>, <code>+</code>, <code>-</code> 来显示无序列表<br>(后面加空格)</p>
-<pre class="line-numbers language-none"><code class="language-none">+ 无序列表项 一
-	- 子无序列表 一
-	- 子无序列表 二
-		* 子无序列表 三
-+ 无序列表项 二
-+ 无序列表项 三<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">+</span> 无序列表项 一</span><br><span class="line"><span class="bullet">	-</span> 子无序列表 一</span><br><span class="line"><span class="bullet">	-</span> 子无序列表 二</span><br><span class="line"><span class="bullet">		*</span> 子无序列表 三</span><br><span class="line"><span class="bullet">+</span> 无序列表项 二</span><br><span class="line"><span class="bullet">+</span> 无序列表项 三</span><br></pre></td></tr></table></figure>
 <p>效果展示：</p>
 <ul>
 <li>无序列表项 一<ul>
@@ -427,12 +388,7 @@ eg:
 </ul>
 </li>
 <li>无序列表项 二</li>
-<li>无序列表项 三<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4>使用数字和点表示有序列表：<br>(同样的，要加空格)<pre class="line-numbers language-none"><code class="language-none">1. 有序列表项 一
-	1. 子有序列表项 一
-	2. 子有序列表项 二
-	4. 故意标错，会自动排序
-2. 有序列表项 二
-3. 有序列表项 三<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li>无序列表项 三<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4>使用数字和点表示有序列表：<br>(同样的，要加空格)<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项 一</span><br><span class="line"><span class="bullet">	1.</span> 子有序列表项 一</span><br><span class="line"><span class="bullet">	2.</span> 子有序列表项 二</span><br><span class="line"><span class="bullet">	4.</span> 故意标错，会自动排序</span><br><span class="line"><span class="bullet">2.</span> 有序列表项 二</span><br><span class="line"><span class="bullet">3.</span> 有序列表项 三</span><br></pre></td></tr></table></figure></li>
 </ul>
 <ol>
 <li>有序列表项 一<ol>
@@ -445,11 +401,7 @@ eg:
 <li>有序列表项 三<h3 id="绘制表格"><a href="#绘制表格" class="headerlink" title="绘制表格"></a>绘制表格</h3>绘制表格格式如下：<br><code>|</code> 控制分列，<br><code>-</code> 控制分行，<br><code>:</code> 控制对齐方式。</li>
 </ol>
 <p>示例：</p>
-<pre class="line-numbers language-none"><code class="language-none">| 这是标题 | 自动加粗 | 标题下指定对齐方式 | 不指定对齐方式 |
-| :------- | --------: | :---: |---|
-| ↑左对齐 | 右对齐↑  | ↑居中↑     |默认左对齐|
-| 123456789    | ←空格不占位置   | 987654321 | 1 |
-| 123456789| ←没有空格     | 987654321 | 0 |<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">|<span class="string"> 这是标题 </span>|<span class="string"> 自动加粗 </span>|<span class="string"> 标题下指定对齐方式 </span>|<span class="string"> 不指定对齐方式 </span>|</span><br><span class="line">|<span class="string"> :------- </span>|<span class="string"> --------: </span>|<span class="string"> :---: </span>|<span class="string">---</span>|</span><br><span class="line">|<span class="string"> ↑左对齐 </span>|<span class="string"> 右对齐↑  </span>|<span class="string"> ↑居中↑     </span>|<span class="string">默认左对齐</span>|</span><br><span class="line">|<span class="string"> 123456789    </span>|<span class="string"> ←空格不占位置   </span>|<span class="string"> 987654321 </span>|<span class="string"> 1 </span>|</span><br><span class="line">|<span class="string"> 123456789</span>|<span class="string"> ←没有空格     </span>|<span class="string"> 987654321 </span>|<span class="string"> 0 </span>|</span><br></pre></td></tr></table></figure>
 <p>效果展示：</p>
 <table>
 <thead>
@@ -480,40 +432,13 @@ eg:
 </tr>
 </tbody></table>
 <h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><h4 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h4><p>使用<code>`</code>符号</p>
-<pre class="line-numbers language-none"><code class="language-none">可以用 &#96;一个&#96;，
-可以用 &#96;&#96;两个&#96;&#96;，
-也可以用 &#96;&#96;&#96;三个&#96;&#96;&#96;，
-总之就是要 &#96;&#96;&#96;&#96;成对&#96;&#96;&#96;&#96;。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">可以用 `一个`，</span><br><span class="line">可以用 ``两个``，</span><br><span class="line">也可以用 ```三个```，</span><br><span class="line">总之就是要 ````成对````。</span><br></pre></td></tr></table></figure>
 <p>可以用 <code>一个</code>，<br>可以用 <code>两个</code>，<br>也可以用 <code>三个</code>，<br>总之就是要 <code>成对</code>。</p>
-<h4 id="多行代码"><a href="#多行代码" class="headerlink" title="多行代码"></a>多行代码</h4><p>使用：<code>`</code>符号<br>至少要三个连续的 <code>`</code>，数目要配对<br> <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;
-#include&lt;stdion.h&gt;
-int main
-&#123;
-	cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;
-	return 0;
-&#125;
-&#96;&#96;&#96;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></p>
-<pre class="line-numbers language-none"><code class="language-none">#include&lt;stdion.h&gt;
-int main
-&#123;
-	cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;
-	return 0;
-&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h4 id="加强的代码块"><a href="#加强的代码块" class="headerlink" title="加强的代码块"></a>加强的代码块</h4><pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;cpp
-#include&lt;stdion.h&gt;
-int main
-&#123;
-	cout&lt;&lt;&quot;hello world!&quot;&lt;&lt;endl;
-	return 0;
-&#125;
-&#96;&#96;&#96;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="多行代码"><a href="#多行代码" class="headerlink" title="多行代码"></a>多行代码</h4><p>使用：<code>`</code>符号<br>至少要三个连续的 <code>`</code>，数目要配对<br> <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdion.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> main</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;hello world!&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">```</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdion.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> main</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;hello world!&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="加强的代码块"><a href="#加强的代码块" class="headerlink" title="加强的代码块"></a>加强的代码块</h4><figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">```cpp</span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdion.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> main</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;hello world!&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
 <p>效果：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span><span class="token string">&lt;stdion.h></span></span>
-<span class="token keyword">int</span> main
-<span class="token punctuation">&#123;</span>
-	cout<span class="token operator">&lt;&lt;</span><span class="token string">"hello world!"</span><span class="token operator">&lt;&lt;</span>endl<span class="token punctuation">;</span>
-	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;stdion.h&gt;</span></span></span><br><span class="line"><span class="type">int</span> main</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;hello world!&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><em><strong>end</strong></em></p>
 
@@ -597,7 +522,7 @@ int main
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -608,7 +533,7 @@ int main
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -619,7 +544,7 @@ int main
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -1211,5 +1136,11 @@ int main
 
   
 
-</body>
+<script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
 </html>
