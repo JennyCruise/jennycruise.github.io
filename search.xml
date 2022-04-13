@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/04/01/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Wellcome To Hexo</p>
+<span id="more"></span>
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>letter for your 21st</title>
     <url>/2022/04/07/letter-for-your-21st/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="55fc1fb76cf5d3ff39605b92ff51ee4ef78891813e369404dbac5280521e06e8">b23d15b9c62a7a3d80dca50489572af20b1231328abcbcb4dd850d949de3dd26a53282614c3049186e53b3d0709ee1055d73b537da208963c51fdd739ed734ba5e4dddcaa98a50f2b6db238551209c246cc328c418ab180ec3443e45f1fec0a76d45f75951bc3e95cb8fe3b26529ef1ac685a0c8911887101fe97ef569b85a4f89ef8fda30a93063b14082f22b045810734c42575580bd5a956b582c9732e738a91023469054058f7972d9e986eec7f7a0f1edccc948843869474db187b29ceb67dff2d4c3cfc5a684d8638a5c6a1eba884b0a56bcf5cbe9253e2e541bbf1eda0b43da584cc33c0ff57d795ef3c58d3e66904e241e2cad3e61c2756be99807c4810cd4fa10fefc7361c9d51f712ad9a7752334bdcedeebd44acefc80fb8226f100d7accd56dc952bd4915ac8bfa24d327da8a3cff7d97f93a0359722e1074497b9b554eed4036f0e7cf3196f7402bbb70b15c66f8aebedfb76f21ee282ba4d62b9a751129bcc199d075040efcc0623936112cce3a37d5362d3cc7d2cc49be791ee09aeed66410b68c82fcb87df82d5f524bc48cd1b3aeaee565d156d8dabb620eecf642a9d1ca045bf2f3ed952b3ccff423418905651e013fa70612bbee23b5a7a526f5dfd69cbc67fa367ae39ec69ecfc5231342c7b4afd3b9e29ac0d4707aeacd61748903e956b4c682a6c6cea01cd60697dd8a0da882a8872f62d1b17e79fb33923330da3764b37da7cbcd8f87116fc7a33043de50a53e19fb9d5d98b6254341b7d89328ec6886d685ce05769a57e68ff74ed8aa61161cea9ad4f6c977cbc72354685120560c8912dc18d76c837f0969c7e1a831e55c8883bfab3e3432d7fe818cd5fd7a9f81e6db81f79613a8c734e87ddf8592367ebc570fb89b40ef79d961170898f6afaeb574d749e25dda817019b54147b8adfa860833b96f29ba1b789f34bf28c8533493691e1a861ccb7b70cf562ada5a85bb2f4115e3f3fa27722ed23bb421633a64b1a3d278512ca367e9997b1024ff9621fdc1639c932faa0f6b155957074185cb1022dfa40804f39181f3e3b6942f75440ff19f72ce19df5a6844f8f2182329afe50608b10b114617454404aa90fbfa3655b66691bb8989cbe5392512533277cd29bcc96216fc5e58a071b5b517775347fb1e389fa3e04a4ceb937e76582a29bd6fbec039ccc3156fb9bbf43d93302f5348c22ea00cd1e20f7081c576930e22fc0170ebd297b061fab7b2c65197df45cd0e2fac096ba9b26435dbbc440fea6c3e2a5fa1aff12f9dfa827f23bfcc6aac43ef565abd06b169ac2b4e8af8861ffb79a1b19fe45fe2cfb1114545c73dd6c80e9eb03764541dfa091f3505d186eaca4b0d2badb175e8ced7f5635ef85d9ceea69aa2a8f93504c434036fdfd39d63f3dc1ea32cdd799e2e89addc6e5a35a46f28153b44ac445a2a0608848a89aa69bdb9cfcc58493481a4acec056337cf26541c70a294e5d892b0504497f98704a71059ec438ea807242b2e83617ede6ba577488d582eb57063bbee958d1efbd1ea4e28eb86e0ed5ff535b90c717fcf1148878a6a2bea05c1e651e7fbd7e45fa507e15c8e549fff70ad4c15267be7639e47d0be79dba929f5b4dd780179210922a722c8e5ec1304985500d189382826bca16509c10ae004f993586d2578f9e26d5cbd92501ca402e72a88356c6344ec713e059ae261f3e4c2d6c4bcc65b7a6d8964cd754198cbc1a202d2c65aa861e1290cbaef5693ab2f422133a938fde32788638c34a7678016672e34924780cb2da5ede3d266ce5acdbe529347530b186f72ff59d11ecafb01da4c37c21cfe9e216ad1b2da906baf5f88d9644a30fa58d42f869ca77b26e1fb91d3795f10c0598322f9ccf7093d183634c0ade13137333c117e61a5829deab563f39751043a5e04fc6f1bf1c3e2af39ad6191ebb57f84565a2036832ee91fe9d38b65ddccc0ff212e28eaf27e5861c364bc87214e306f380b65b754ff4bff5bddd7f7310e00b22d1cf6a0a88d8b2c05370ce7de1201bef7e4de54eb231cf0356b685fbe90048f11aa4b0f2924260dba1ba79ef57d92dd448c904487d01d01750f5acff63de65fa4623089a80acb2d9b2c2f83f8b6061e9edc5f08481913211c2cd31568a3a1ac08123d90e8a49953edef702550f61915d14740b40463676983a00e894151c4f59c1824a22366abbba5c59f83f7a778b86f1a772ceac5024f2d5d1eb08d72a89c06965fd64562bf550d1e3bbfed326c7c592489ca58ee4b733ca1e632c079e0ac924ae0d3e7a220510bf80d5c3eca62344ede59e927319f4f2eecce26df1e26416b2566e49fa107713d54d65907d44778f3e910699a140d3c1242fce86cfb600d37c1711d37b6486308408729a996e930350259fbb0f5cff68c6089b3e6af73bb1aaabdf4657eb4ba22b33c2e9249065971fdf86d345a39cda4934b9c9c11fc8c8534f2dad9b135a469ce75bffb9c4db4ed0d20aa734c7228b096461b93d4e9e27dfa72d68972ee48ab7d7d5ea64fead31b3c5553d9501c68415d0d723b92dd3272d7bb0bc49cefd41f9b846f6b9ac73fceaaaa6a5cb4899ae4c980cc4242a4386a1c5517bf8aa5b04446b443882ce1630edfc7dac9658974cb1fad1faedd18ad2b56337109f7ad9466c7df4c6346a9a1e81250230e5d8b2ef26860f9f1b3300d8c2ad69834b0bc3b83d72d981249de2eed0498210640793039af3d716baae5418fc599bdfaf8928190974062238176c3992ef6fee2511d0e13761817cf1839d026b15ef17cef883557069b0aede6e1044396634428e798aab2ce8b6e9494d80e6f64b46b87e2332ac2ee0fabace0db03c0a25241a05651df5cbca4fef2852af75f029024c5eb950f2c57dc6f38318fc6ca6a672f585858710c374a682aa643318ff3a78aed9f9f2eca69848dbfd60f929da220c1912fff9b1898be8043da72e8b90854d8dd75afc5bc48b1e4eaa9db8292410f252a31434a9b91c51f40610481380988dfb1dc0f9808d44b1ecebffb86b9644bf3fdfeb88a050035c50314389c4f052c6ce86b22bcffa725f7b210e922a2f8a9f19ce3f51e1e4924a6a542be81da293b85f73a238c4e292ec2dba5a30fb92d116ed34636ca5e52ffe2a9e83428ce8ecd12bbc49b35a6adbc41e283c99166db08321c31df2df4ee4b7109c58c4250f104a9664e9f95c322a4eae25e80cc56d8d417d079d4707264a3251ce86365370e5e379f76bee246f0f51246ecfec8ab78f1cbe0db6467735599d89f5f636119c5fcad028fcd561fdc40ca98a51492e97de913da82b841d5c813af0d888cb714a1306577d2999d9ae64f54a933b7d0aff5fa68d277997bd6e0792655a0b10e189f6c07bff3828cb1c39519ec802e5bca820297ebc697a2c73309776467bcc8402d5369f554d9f2e0e9af5c7c93ab581fca61c9455a88baaffa6cd7b2ffa3a96ddd0381fc9d396189e050bb43004fc4e9af8ba5b4a25f38b0b3aad256865b4c2ab981490a7274f89baf046f6ba01ead9869677960f9a6268b4ec6f8540ad04595affbc4498aa5da71db4ae12d6963fdb8b0e2f873ee4ed029d12611056666e653d2731e7946c0852ce149e616812f9ee0f50ad59624cd464fcd175900a9e6e3afea766491dfe4fce188abe5a178c120c7a9d3d32d637a606bbc4047faefbcb0e0554b16aad4ad2156909e82a1e5e04fc2836ebd1ef48189de2cb45775a0aa2971a10b234a8b813ea9f6fd9a712a3b19dac152edbe0dc9dde2cf1dbc77703099c6d173172d1d8993b8dc0956ba44a2016b428b840a3f8c914f330651ff070573b7873a87b6d0ca84acf200949367ba13b1c2b3beb283a195499608431cf090ae3f1b27ca2d1e5b37925053a85518b1d03b441387ebfb80620c42175892e286ec56906615586142a8f27126dfe5d16769000e22f07c6196670b7edc5eefe7302fc5e2ea89342b6c0290e64a2ce88ab08f2c463e3e0c8d4297db5b08c82ec396dacf1cb1827af2d79d3636305f2aaf3d31de14545b06fae37343a9f9d6618147f35fa4f5add0ab9b764895e2b334eb4d5fea103c4c1180d415b7c906edd1a4e27cf2b4893f799bccd2fd8d4f5867a7fc6e4dd5a67e793f763d6ea58f19d23ad7eb711ce98384fd3cfb7faaa0a85da19d6b1129a3a7b40a424ed4ba82a834eb1e1f1eaa74778cc1747cf7ae27cab0f47f734e327415af5d15e8b0802b5e08811402c4f76cb8385801c06485eb436ec5d849e9bf05b72767d24b5fb55d85e04bff93a213d7c2e2e0d5b690275d5a403e2881923db62d27b61b5ced892153d334640c73fb77e4a2b5bc17d90bfb8bc180116302221873a006c83b02de32d4dcf7d1504ae14438f0db593dd19c914c7ce31052ba5fe1327518aa00b5541859eeed047c17feb8879222e937f8056209c5bede9299e63e9f26f988087a362ee8372b957dbbbd22ec3261ae21312875ff3b3fdc661f8cf8a129f94b745b7715257ad1abb3ecfea74ba8c530d9f0d0b412138181f657decb1d7b60547ba5ac614194bc2bc68835df0463046ef7b92651f9de138cef4dc10bf3f4eb3db06ec2e6ed8f7b8dcbabceb00bfaafbabde2729d4b474a682ced664ee67c78af36622bb71eeaf18148f699789b6d487ec8d5b1934831231571e8f7f200eb1848af937326e33d437638d27158f0e4f6765f90b042576d5fd02601878dedc878d8314a2a29a751498fa4e788f74dcd22724a6d8bb9e0df36ac9a29e642c7f8f2533a9b0fd14b66c9d3863c893ce7ee0399bf59e877e2c10e280cc0291d847ffd8759eecb7d10862c94dfcd8ed99ea1b285273149a279775d6114278ff86957d2861af1e4d7825eae057a1f85e4bf5c6b77f1f3ee7b202625589a657b402a9b1a8bda64ce512101580106a2478ff7c367672b574d142dd3faca14fa19a9ea5915a91a265e661cc7ba5181dc295bc0a76db59aac368fa96e163bdde7835a4f5bafeddfd21563471b30be97b12f3dfc34234d2b01ce289c5c6af1803d0f19be4083e691ff9429d3d3d2deac38f388104e3404b947093a5c59e019d9aa038e1473430c583d983dc0628</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="1579026d775f686fd3fbc992cfdb2ce8048da5c4bfa0f3cda567bf92eff14a1e">b23d15b9c62a7a3d80dca50489572af20b1231328abcbcb4dd850d949de3dd26a53282614c3049186e53b3d0709ee105f71f8da1ac706520bed83752539d2841acb6b68dbe2fa642a091522f485f8a0b9e6d787096a105ffa577405152930d69aa1f47a42e805a56838e0b224b55262e1ce1427e4a13b248786e75cafd082352cb1c90a72c4c6784d467ca9e98b27352d187083a9b95c71b70904f92144d6416d09c0927d9f0636fa99d044031401560d1fa1847ab4d2a2bad6f41c53cb0e50b22beedb90f420783ac46ac3c4fe1ca46ac6bbaa1699a7f531f14bc8194df47ec57cbb449e5562a756bd513070b4108cf1f75b11cd5546bb05b74fa4a12db8b661b3adbb2a0d70517a783cb6f3867dc68f2a18266bfead1589c66e7f6396d390a998911eebe0997d0b3cdcab47dc1fd9f8e41ba5e9ca953d59d4c816d95a65373f70d7be213a3b60c35230335e618aaaee46aff1dcb0b3cbccb0fac98fdb36457c6f3168d59129b4919baf931b00ea43c091359e6f31f7449b31057030db1ed04c409bfc23b5e9baf864f7fcf74063ce505b1309acde07dfb2cd5eca28260bddf3ea8e0ca55870bb13e7f0c8e324b9f6ca4fe5923348ecaaed5ef055abee6feea8dd492d0247afff5b50a520e251c1c355bb33f62e44f7125da276a01494e7b4ceb68bcdf8e04e1fb1e95067a1df39a41a8dc9ba74f8e925d33b3efdf39b565b9a4db9d64cd48aaf1232360bf0c71c8a6d98768e2ed9f8a16ffe3644e2a3eeb1e09cb820089979d35373aa97f98915dc79d3093a0797d90e4dee808706f102c9e3be91fa2f135a9e3cf66ad27f11b5ea4e255b9ccfe592bafd0208e0f9c8e7a1a76f74d88d2afa24b90d98111b9c26d19b57f86a25b8a2d49c15f8ace26094e840a9b443c7c3503a8824938585c57f5f9389896a802cf317770d2d92fa9110f10fe2e752ddc953547436614a629cbe5fa35c20a748776d0d42a443a78661e1c0057c5e2b4213a20293455c89b8419eafeec19cff701d62c8f9ee6c9508cde47bd663bace1e8bc8e3c79b697d8ad759198ab781bdc02fcef69fc06bdc1ab87af5274245cc7d6469c471c8a5f63d97b88bd7edee6c1dbc96128f9f0d39abf5dbe25f1072eff78dcffe15048dd1058f59b2603464badf0ae1004841ce7239e347900ee279b5de544edb4511716ead094c652c5505a0b05ae256050a70341712774bd81562e526523519f24ae0ea818283f951545470618d5fa2fe715ba9c39cc8cdf18be8167c945687a3d331517c11415490aeeb8abaf08d3efbf178d6fdeb52e315d22c26c50707c7e06dd19bd88c99f9c5e6d906adb6f1914d924ecbce3065cdcb109e78139f98e354524992ef743021096a7b8a87f71d2e08f7e36708aeeae145314dd44047cc215f751bedff7c1b75efeee0080923cfb04f6a8cd9910697ca5ea9d3ff5ffd067791e495b33e08752023cff48cce7a0379632351e82f81daf39df7b18d9488a61efaf973fbd382a3a26bda29d8ddef79eaf2a2a27cc395f75ed624367c6989333fd5e71052f7a653af7129424aac26150cc0abf5ed2c854f7f37f4e7058224cb6a76a3946872028338eca3805fa1cf5418e4d414cc45c06aa19b88a7536dd33331e354dc2589aa40fdabec36f73ccab20ee02df9ecf3b7bafc566fe1e944251d53a24143550480b37467533701e33f7d8e49b8b609da5c9d1b86bc3a16257f87a820340e985ebcdf9a58e794bcf725737047efb23ba4fc4774e20cb20692020b20a5d782197b1340611cf102ba3fde141ff2ccc5a59db6efccaf32ad9ac85feae4ee8cbaa7d0016132b84a62bf071f128002339e91321fcd8f3d4dadd3b1ca5cf90ba38ddef9f77fae90a8eb93a0e6e3732ce44b8578746c662a5342aa253f967491ece00caa3dadc377fd5055aaa1ab1b4134d2b083b2f8f9bcf9b6c8310c19558e561871b543ead901c98b32d5679a647b829d68c05f89d75681170a8c0cf9206b517bf82f9e17c77e35b2df38f6195f544bf06234a8ce8118ea676771addd1d8e30e65fcf1f3577dec6771840bc4beba1f7dbb69858a040ec6f7b6e005315dbe4bd2004139de5028ab5b4c895d7dcbe9d51aeff5b7bffa41428253bb78e2fb945782ebe00f5a3015438b7fdb56a4ba8fa4251ef995079dc2cb370808c8102d5e984721c3b60588a9618fda850c76c8bebb28c1bfcf8e8d5ea3a470225279157b237a89b84391dc2e6ed9ee79b26e325eedbdf4f600b7f838e2d705da9a8aec629d35c062fa209f37c787aa555e8d848e20fbac65254f79f4d350a64253c70af4257e86a2f9f9b34816e37063929d4748f10192820f9c874630dcd98ba1600505c610857e0e3d1573b8f3de4f827524979ef15c4368fbd792512cef4d16f723e7651fc43beb0de4c2d2722cc5ee854357e4209bc3378f3a8c656f01d46d36d8d25d4a4ccc4ef5937691728ae88bb879aa4f069a43a9dcfc4ae5c63180114f0a29d9d1f84e3f1de5e6d6d375d5d000bdf4f330c790623f9eec45d6234cfe3d550cb64b4233f65d88aa31196fa5f5829178265bda6d926450022b4b8886c0eaa55bb27425739d4dae42a8c065695b6241ba4cc46a510e7b658c7b71fefcfe102a181bfb951037d6b4fbcd07aed16b7298fded7b131344367e37cfd68ea42268fbe1d9ef9b73fae5f37a2730c28d11fe3964d5559e59f0e509493759ebf4d94adb0c100393a02d9ac0486fef9289bc033be6dabcf2cb6a0ff498ce71ba95d1d8977d7d9926b79834146f0b6ccef589340d905feef8335a24e38795d192882a24b73c2f13819964b88370698199ea2cf51c41fcbfdb449cae75e90864a5387f702ccf8291d4eb7a00121b53e50447abcc1e11ef22af9397df15db059182b710d5bd2023b23fd5b84e29e7729990d3c2ceb7c6b7884caff94e2824983e207da2a4e460c3e9be4e5856ff073cdefe7ae9dd53db7744e731344273c5b20fbe0d97d2d1c24cc01920373cadc09d2a9cca2828f41f669568c60982cca491bc11097e4a4e478b477bba65d337be9e1ecc15e0a28326bf67ab8bc27c7b14eede35e798a2e78299dac4083d48593ebabb10621cdcdca0e33903872e9541209bad8ca7efc487f5cdfb5b12750809120478bd493cc9d176ef7c1558cd4f2ab4c0ee7935bed6e84b1a08ff82178e080bb2cc47fec175f0ab14bef451c1ee1888a17a97e4773a575d09bfcd3e440462a6ad4f06e7cab605468f5548fcd98c52d0d665a2e07d62bebb70bb97ea0fd16acf9bae4b2a5efc4e888ed677b6380c7fd83ffa01ef46293b743d3381ae1b0ca15506264d0a65274a9671ca685bfe07303108133b7497e8adae2d2cf0f7d681c97cb39dde18358d8c0cbe9f9ad086e8c559e5527c31625ede68048efab87430cd83ff29858a7e1bd2508d21e10366e64ae1288a30c9ecfb32f2fc2ad890f52e6348e120304e8990c71355170e0fe85180f9c1fb9d74f6a0f89cc73f2cd83792cfd3806d21e5fb51340d95f62579e93390d76c55214b0b29cc3ca8e09f10882729283cdc8e5094c516c63155b5f14dccdfe9b914185a2d13a5cc543c3b41cb5cba3d9fb33d7a8d960d4d499d0744ba90e22606619f533ac916074637472dd7dedfb9ffec94181a3c67239c7db92be68d60f332c173145dd0899c1ab39d006d13744fc03e076775651aa5389ce88ef367ef772f0d99cb78de75fad5b048d23467fcd646b94203dd346dd364948d672bd1c8c5098cc59445d9569c406daed57f1931785669549cf251afd509036a55e4a91d01d8f620df4fa85d28421e915dca9d35c8adf7b720c248fe42b6961c1f1c361e9a6dbc929d539fda9b70c95d91b0a74d8f0f4c92e08e1db186aa271cb7a409a85f8de137850bf7342ab2b0802cc5ac87c77a03386b5e4a6d6b1f9d82495ee892efd247e7fe5c9d0ef86e7d9952535173c757ada3e1a41137f24af2dcb1611b1bab29b239bb8a9674cabb7b58054996c46f38f201a779dd8dd64caa926e5fae455f52d62e8d59698f7065ee0d389564c73dc8ca63b7a22fe5a12a2639085aedfdbe62ae9e8c07cd502b0b7f3337411691403585206f4f6427c67cb2d5f1356d874c0c4e4cb1e1a2bbe22715fbb5fb43be2f9d2a482419baad25bbbfef44cb4cb95536900827c09e77ea5695173dfa0d3803e6579a9a6574d2c95c6b31147ac6c569d0e90e4af398ec8a470f95ff99ef8fd74231f89fdbcb0d46af49374854adb24e430276e395be0a615268938dd182080e73ab2acad6b0f73a6edcfa4c31ec4f6700cac2d9faf2d4dc842ce9efacfa24026d6784de26857dfdf605113889f6a00679e6cac4a47192e536ad035bd5f5285a95eef64071795ae9d815d88f2c4f39036dd3f53466ecdacd3ea7110d8ea76efeb1b30c031e46056a23788a2deee33d04dd33a24d56af1527f985163dae7e734608c97e5028081f097e25747489c00ef67807fa652a198fdf4cac4b6e592cef299008fe60c7a446d2ccd316d4378d97f3549305a1f5258c552f0eaecfcfc41c721fdb4bb5a3bd86fd9d7577cba04f69860f637a0a1cf1090d5042811405d98f5ead02032926d1621c0a559733c0cdf123bd0b3d15e80524a6b28a96664450b71dbca2040c4d840ae317f298821f439fd66a8b03164dbf30deafa9d1c397f8552188e5ab3a61f71a035b1938d5fc6e50655d4aa54c4ef9f0504ac5a413f972f1c3f8697497d0383ea75cbebfa271b1440c4b20989489aead020f3b1f7a33300c3bbdfe735a16bbf5adfe9bb24d0418c78a225e715a9c8ea97103c9847d898f69c0d952da84d7de2c48ddd14b8accc783e543ae0f754a0846d685a146cb5c4f6febfb53015360391d1c0405be9dff91e9b9eaa01c8a9be56e45d31883fb0eba728fdfa32a1e765317451c5a3f1c3f4d4e00f3775c1a5894c75a8df0335d60941b61d1346dc51877071ce0a739ae582ac4941f5617712291b6b666158c70a56f557e7716219075993e73a97acf84bb6c50de672782f3c3684d1620646715db228e93e967ce7e19547e740e86eaa7d07046cfbc11913a5089127940236c1b02f03cd656acf6e061981272d3d7733b233d97e7d218b924592543e3d4367dadadb84ce9d302b5da63ae13dee26a4bc252fd0b4bad33923d4bf1c72c5c103211c4c7d991e61e4a75b2ba4b89c59846324aef1c3c1caa4e12f9cbaed59b2a47a726f58930f318bf9e90126821046850cf6af9d8d8ae0decba75748712648ad9fdb84b472a473ca80d950a9bb14238731632c47805d345c4ef9d21540c5557b793846ff1a55927d11aee899c83476e9d77be5043a545e04a136d18ead5630dce61dd8c7cee6519a5bf20171a23ef800ea3e53131c5c2083842a4a9c86c2d465b6b6808bc8a59c4cbc4e7e5173384aaf015ffb06f842b27f2604b86410c257261092e2c7b0c31ab6c5b49c3f66b3d451d7ef6f704cb9107fd3eaa233b171daeb2f9f3e60ac801473e54b72eb643d9730ca244f0e32755cdeeb30c790eba8ab7a8a18b2c86e4bccd87993b304b8e600834baac3185569011e11023bd8284b12ab0f01684d6ec03cfcad0127e4fe5c614f4d49fe5b40050a6cda995e69bb0e652d92fdc28af8b74aac203297e3ab94c03044cbe8863e450bcc08d4fe4db830b1d3b281ae06f4736d97a0a64b5b54e7531baba8d42f693b6efa8754ce1da4de82b147c3c3bcf8125f684b775fffc0d1df9d7bac146e8772806acf076dd3207233c97bc951170de72a4d059c27c81f7715ebf74f104b59768f7ea08164478ea4779c5de77d0ce732a444f81f6d89ddbb6d959b1cbf13098a46258625182c016006eeed1dd710e1692a61a96fd1cb20341bbc2e5a270c6b2b59ac64fa455ace5d31361cf57154cfe5c21d90f178182e07fc086e14c215d73f0fde6e4d1c4b4cd874b6684c375a359e6a383996a26389ec6235dff5ff8f7cf6e7ca83eef8bacee5d5ef90a133f3d7c296b3206385a81f35ce4b5c65480913e16975f40bb4cf760214830e9a247514155256f9cd43d34b288a5ecca16b7d34400b8e4ac303cfe4f7155bd8ec13e61b504dea3c6f74e1e161908b1829b58ee2148d1900c4838570f29dae57fcd0550a5606edd772ab1ebe6e2536325f243e0b1979dd1d7c8dd710a0def2d09c65fb521207210e86d226960cc8ec8392850230156b369288b543c2b3f9b1c888c6e019653b75db4389b7a19d6a40c914a2033dd2bb6b346412a40eaaf076ffadc3ef90a9d8a69c26e53259d3aed2bad48668e2a6b5862f1e7a740cb0ac9d26e08d5db73e8a26ff7f84c2df6ac9e1802badc559d0e1fe03d086f17664c15688b909f58f75edff0d31623aed32b503a5fcf4aa4f0b7249157bc6ac85a72105e5d390e8b2362331666c6c4df07bf2f1ea37cf10f9219117ebfbaa1388e37823a01eb704acdf1f4bb12ee64cbede2f53a2a7971660551dc0289780251e228544cdf391159d1d8893cc53adb38ba29860c7d73fb9c65c0989a26fd31c67329db0a67662dae6b179c536c00cddd0399d4708669fa01c49a0293d4e688465120fbce9ae118420997c4955aa4107e9c0be9f509df8e3ba20b398c6eff4d03f2d8d24e4d68478f210121a53533879676dbb75bbee32577696a4cd5ba956f989f0691f585ec311f5931c9fc9e0f1867104b1b5569102f9138af87dfc1b98ddce02d6aaba6dfdd53de</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -24,41 +44,9 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/04/01/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Wellcome To Hexo</p>
-<span id="more"></span>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>操作系统概述</title>
-    <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
-      <categories>
-        <category>操作系统</category>
-        <category>操作系统引论</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>简明手册</title>
     <url>/2022/04/01/markdown/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>介绍hexo常用的命令以及markdown常用语法</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>介绍hexo常用的命令以及markdown常用语法</p>
 <span id="more"></span>
 <h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span>		<span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span><span class="comment">#新建页面</span></span><br><span class="line">hexo generate 			<span class="comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server 			<span class="comment">#开启预览访问端口</span></span><br><span class="line">hexo deploy 			<span class="comment">#部署到GitHub</span></span><br><span class="line">hexo <span class="built_in">help</span>  				<span class="comment">#查看帮助</span></span><br><span class="line">hexo version  			<span class="comment">#查看Hexo的版本</span></span><br><span class="line">hexo clean 				<span class="comment">#清理public的内容</span></span><br><span class="line">组合命令：</span><br><span class="line">hexo s -g			 	<span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g		 		<span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
 <h2 id="Hexo-Markdown简明语法"><a href="#Hexo-Markdown简明语法" class="headerlink" title="Hexo Markdown简明语法"></a>Hexo Markdown简明语法</h2><h3 id="内容目录"><a href="#内容目录" class="headerlink" title="内容目录"></a>内容目录</h3><p>使用的yun主题自带目录生成(正确使用markdown语法)<br>新建的文章默认生成目录<br>新建的页面可以在首部添加: <code>toc: true</code></p>
@@ -200,90 +188,26 @@
         <category>HEXO</category>
       </categories>
       <tags>
-        <tag>HEXO, markdown</tag>
+        <tag>HEXO</tag>
+        <tag>markdown</tag>
       </tags>
   </entry>
   <entry>
-    <title>正确吵架</title>
-    <url>/2022/04/10/%E6%AD%A3%E7%A1%AE%E5%90%B5%E6%9E%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>一次冷静科学的分析</p>
-<span id="more"></span>
-<p><strong>先看看一篇<a href="https://zhuanlan.zhihu.com/p/131021128">文章</a>吧</strong><br>大致总结：</p>
-<hr>
-<h2 id="以目的为导向"><a href="#以目的为导向" class="headerlink" title="以目的为导向"></a>以目的为导向</h2><ul>
-<li><p>不做情绪的奴隶</p>
-</li>
-<li><p>不争一口气，一切看利益</p>
-</li>
-<li><p>先低头其实也是一种智慧</p>
-<hr>
-<h2 id="不能伤感情"><a href="#不能伤感情" class="headerlink" title="不能伤感情"></a>不能伤感情</h2><h3 id="吵架吵明白，不留隔夜仇"><a href="#吵架吵明白，不留隔夜仇" class="headerlink" title="吵架吵明白，不留隔夜仇"></a>吵架吵明白，不留隔夜仇</h3><p>只要你是一个人，你就会生气和难过。就算你脱口而出一些刻薄的话也不要紧，因为吵架并不是破坏一段关系的直接原因，真正的问题在于你们能否<strong>承担责任</strong>，去<strong>修补这段关系</strong>。</p>
-</li>
-<li><p>约定好吵架的时间和地点</p>
-</li>
-<li><p>复盘吵架</p>
-</li>
-<li><p>不要回避</p>
-<h3 id="就事论事，吵架不升级"><a href="#就事论事，吵架不升级" class="headerlink" title="就事论事，吵架不升级"></a>就事论事，吵架不升级</h3><p>吵架联系在一起，更多是因为两个人在一起相处的时候，一旦遇到争执很难克制情绪的升级，更难以避免吵架针对事物的肆意拔高。</p>
-</li>
-<li><p>不要用绝对化的字眼</p>
-</li>
-<li><p>听清楚和说清楚</p>
-</li>
-<li><p>不要泛化，就事论事</p>
-</li>
-<li><p>直接表达感受和情绪</p>
-<h3 id="不戳人心窝"><a href="#不戳人心窝" class="headerlink" title="不戳人心窝"></a>不戳人心窝</h3><p>我们是亲密关系又不是仇人，可以吵。往往在亲密关系中，人反而容易自私，各自自私最终只会造成双方痛苦。才容易在争锋相对的时候找对方最软肋的地方，狠戳心窝。这样很不好，因为语言是看不见的刀子，却可以杀人于无形中。不能因为自己的一时之快，留下感情的阴影。</p>
-</li>
-<li><p>不用轻蔑的语气、表情和词句</p>
-</li>
-<li><p>对事不对人</p>
-</li>
-<li><p>及时补救</p>
-<hr>
-<h2 id="了解为什么"><a href="#了解为什么" class="headerlink" title="了解为什么"></a>了解为什么</h2><h3 id="吵架背后的原因"><a href="#吵架背后的原因" class="headerlink" title="吵架背后的原因"></a>吵架背后的原因</h3></li>
-<li><p>吵架可以用来了解自己<br>这时候你可以问自己：为什么我那么生气？为什么这件事让我那么恼火？这件事让我想起了什么东西？我过去是否有过相似的感受？当你开始这么思考的时候，你可能会发现你在儿时也曾经历过相似的事情。也许眼前让你生气的是对方做的一些小事，但真正的烦恼与痛苦来自我们的过去，只有我们看清这一点，我们才能真正地了解自己。</p>
-</li>
-<li><p>吵架反应最真实的你我<br>让对方在争吵或者一段关系里知道自己的真实情绪很重要，因为这是你让对方了解你的唯一方式，也是你们了解彼此、理解彼此的唯一途径。你能够说清什么事情让你不舒服时，你才能在一段关系中做真正的自己。</p>
-<h3 id="相互理解，共情"><a href="#相互理解，共情" class="headerlink" title="相互理解，共情"></a>相互理解，共情</h3></li>
-<li><p>共情，就是平常说的将心比心，设身处地体验他人处境，从而感受和理解他人的情感，而且还在理解对方后，给予相应的积极反馈，也就是说让对方真正体会到你理解他。</p>
-</li>
-<li><p>很多时候，如果一开始就能共情，根本就不会把话题引到矛盾对立面。</p>
-<h3 id="滑动门时刻"><a href="#滑动门时刻" class="headerlink" title="滑动门时刻"></a>滑动门时刻</h3><p><a href="https://www.jianshu.com/p/f68c4290a2ae">概念</a></p>
-</li>
-<li><p>争吵的目的是有所收获，而不是表达反对</p>
-</li>
-<li><p>每个人争吵背后更深层的内心渴望(原生家庭)</p>
-<hr>
-<h2 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h2><p>读后感吧算是，先总结一下我自己能够匹配到的一些不当做法，主要就是这两点吧：</p>
-</li>
-<li><p>很难就事论事<br>之前很容易上纲上线，直接把吵架升级两个level。现在(应该)稍微好一些了，但是还是会联想到之前的事情，加重情绪。</p>
-</li>
-<li><p>很少共情<br>很多时候不能共情你当时的感受，就比如寒假那个盲盒惊喜的事情，我其实应该把事情的重点放在你很用心地去准备这个惊喜，而且也是自己轴，把好好地一件事情弄得不愉快。</p>
-</li>
-<li><p>吵架背后地原因<br>想了想有一部分原生家庭的原因吧，父母吵架也都是争论对错，似乎吵架是为了让对方服从自己，但是从来没有人低头，平时交流也是<em>否定式</em>的。(或许也能解释一些我很警惕被否定这件事，可能算是里面说的一种补偿现象？不懂，毕竟也不是学心理的)我自己也应该慢慢去摆脱这些对我造成的影响。</p>
-</li>
-</ul>
-<p>再总结一下我认为的，我们目前在吵架时存在的问题吧，也算是双方都存在的问题：</p>
-<ul>
-<li>吵架隔夜</li>
-<li>气话伤人</li>
-</ul>
-<p>或许可以讨论一下。</p>
-<p>补充一个B站<a href="https://www.bilibili.com/video/BV1su411i7VM?spm_id_from=333.337.search-card.all.click">链接</a></p>
-]]></content>
+    <title>操作系统概述</title>
+    <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
       <categories>
-        <category>写给STico</category>
-        <category>2022</category>
+        <category>操作系统</category>
+        <category>操作系统引论</category>
       </categories>
       <tags>
-        <tag>personal</tag>
+        <tag>操作系统</tag>
       </tags>
   </entry>
   <entry>
     <title>数据库系统概述</title>
     <url>/2022/04/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1-1数据库系统概论，概念较多</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1-1数据库系统概论，概念较多</p>
 <span id="more"></span>
 
 <h2 id="数据库的四个基本概念"><a href="#数据库的四个基本概念" class="headerlink" title="数据库的四个基本概念"></a>数据库的四个基本概念</h2><h3 id="数据-Data"><a href="#数据-Data" class="headerlink" title="数据(Data)"></a>数据(Data)</h3><ul>
@@ -412,9 +336,86 @@
       </tags>
   </entry>
   <entry>
+    <title>正确吵架</title>
+    <url>/2022/04/10/%E6%AD%A3%E7%A1%AE%E5%90%B5%E6%9E%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>一次冷静科学的分析</p>
+<span id="more"></span>
+<p><strong>先看看一篇<a href="https://zhuanlan.zhihu.com/p/131021128">文章</a>吧</strong><br>大致总结：</p>
+<hr>
+<h2 id="以目的为导向"><a href="#以目的为导向" class="headerlink" title="以目的为导向"></a>以目的为导向</h2><ul>
+<li><p>不做情绪的奴隶</p>
+</li>
+<li><p>不争一口气，一切看利益</p>
+</li>
+<li><p>先低头其实也是一种智慧</p>
+<hr>
+<h2 id="不能伤感情"><a href="#不能伤感情" class="headerlink" title="不能伤感情"></a>不能伤感情</h2><h3 id="吵架吵明白，不留隔夜仇"><a href="#吵架吵明白，不留隔夜仇" class="headerlink" title="吵架吵明白，不留隔夜仇"></a>吵架吵明白，不留隔夜仇</h3><p>只要你是一个人，你就会生气和难过。就算你脱口而出一些刻薄的话也不要紧，因为吵架并不是破坏一段关系的直接原因，真正的问题在于你们能否<strong>承担责任</strong>，去<strong>修补这段关系</strong>。</p>
+</li>
+<li><p>约定好吵架的时间和地点</p>
+</li>
+<li><p>复盘吵架</p>
+</li>
+<li><p>不要回避</p>
+<h3 id="就事论事，吵架不升级"><a href="#就事论事，吵架不升级" class="headerlink" title="就事论事，吵架不升级"></a>就事论事，吵架不升级</h3><p>吵架联系在一起，更多是因为两个人在一起相处的时候，一旦遇到争执很难克制情绪的升级，更难以避免吵架针对事物的肆意拔高。</p>
+</li>
+<li><p>不要用绝对化的字眼</p>
+</li>
+<li><p>听清楚和说清楚</p>
+</li>
+<li><p>不要泛化，就事论事</p>
+</li>
+<li><p>直接表达感受和情绪</p>
+<h3 id="不戳人心窝"><a href="#不戳人心窝" class="headerlink" title="不戳人心窝"></a>不戳人心窝</h3><p>我们是亲密关系又不是仇人，可以吵。往往在亲密关系中，人反而容易自私，各自自私最终只会造成双方痛苦。才容易在争锋相对的时候找对方最软肋的地方，狠戳心窝。这样很不好，因为语言是看不见的刀子，却可以杀人于无形中。不能因为自己的一时之快，留下感情的阴影。</p>
+</li>
+<li><p>不用轻蔑的语气、表情和词句</p>
+</li>
+<li><p>对事不对人</p>
+</li>
+<li><p>及时补救</p>
+<hr>
+<h2 id="了解为什么"><a href="#了解为什么" class="headerlink" title="了解为什么"></a>了解为什么</h2><h3 id="吵架背后的原因"><a href="#吵架背后的原因" class="headerlink" title="吵架背后的原因"></a>吵架背后的原因</h3></li>
+<li><p>吵架可以用来了解自己<br>这时候你可以问自己：为什么我那么生气？为什么这件事让我那么恼火？这件事让我想起了什么东西？我过去是否有过相似的感受？当你开始这么思考的时候，你可能会发现你在儿时也曾经历过相似的事情。也许眼前让你生气的是对方做的一些小事，但真正的烦恼与痛苦来自我们的过去，只有我们看清这一点，我们才能真正地了解自己。</p>
+</li>
+<li><p>吵架反应最真实的你我<br>让对方在争吵或者一段关系里知道自己的真实情绪很重要，因为这是你让对方了解你的唯一方式，也是你们了解彼此、理解彼此的唯一途径。你能够说清什么事情让你不舒服时，你才能在一段关系中做真正的自己。</p>
+<h3 id="相互理解，共情"><a href="#相互理解，共情" class="headerlink" title="相互理解，共情"></a>相互理解，共情</h3></li>
+<li><p>共情，就是平常说的将心比心，设身处地体验他人处境，从而感受和理解他人的情感，而且还在理解对方后，给予相应的积极反馈，也就是说让对方真正体会到你理解他。</p>
+</li>
+<li><p>很多时候，如果一开始就能共情，根本就不会把话题引到矛盾对立面。</p>
+<h3 id="滑动门时刻"><a href="#滑动门时刻" class="headerlink" title="滑动门时刻"></a>滑动门时刻</h3><p><a href="https://www.jianshu.com/p/f68c4290a2ae">概念</a></p>
+</li>
+<li><p>争吵的目的是有所收获，而不是表达反对</p>
+</li>
+<li><p>每个人争吵背后更深层的内心渴望(原生家庭)</p>
+<hr>
+<h2 id="反思"><a href="#反思" class="headerlink" title="反思"></a>反思</h2><p>读后感吧算是，先总结一下我自己能够匹配到的一些不当做法，主要就是这两点吧：</p>
+</li>
+<li><p>很难就事论事<br>之前很容易上纲上线，直接把吵架升级两个level。现在(应该)稍微好一些了，但是还是会联想到之前的事情，加重情绪。</p>
+</li>
+<li><p>很少共情<br>很多时候不能共情你当时的感受，就比如寒假那个盲盒惊喜的事情，我其实应该把事情的重点放在你很用心地去准备这个惊喜，而且也是自己轴，把好好地一件事情弄得不愉快。</p>
+</li>
+<li><p>吵架背后地原因<br>想了想有一部分原生家庭的原因吧，父母吵架也都是争论对错，似乎吵架是为了让对方服从自己，但是从来没有人低头，平时交流也是<em>否定式</em>的。(或许也能解释一些我很警惕被否定这件事，可能算是里面说的一种补偿现象？不懂，毕竟也不是学心理的)我自己也应该慢慢去摆脱这些对我造成的影响。</p>
+</li>
+</ul>
+<p>再总结一下我认为的，我们目前在吵架时存在的问题吧，也算是双方都存在的问题：</p>
+<ul>
+<li>吵架隔夜</li>
+<li>气话伤人</li>
+</ul>
+<p>或许可以讨论一下。</p>
+<p>补充一个B站<a href="https://www.bilibili.com/video/BV1su411i7VM?spm_id_from=333.337.search-card.all.click">链接</a></p>
+]]></content>
+      <categories>
+        <category>写给STico</category>
+        <category>2022</category>
+      </categories>
+      <tags>
+        <tag>personal</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>进程概述</title>
     <url>/2022/04/12/%E8%BF%9B%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
       <categories>
         <category>操作系统</category>
         <category>进程的描述与控制</category>
