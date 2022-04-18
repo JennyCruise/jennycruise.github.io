@@ -332,6 +332,73 @@
       </tags>
   </entry>
   <entry>
+    <title>数据模型</title>
+    <url>/2022/04/18/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>数据模型是对现实世界数据特征的抽象。（通俗地讲数据模型就是现实世界的模拟）<br>数据模型是数据库系统的核心和基础<br>数据模型应满足三方面要求：<br>能比较真实地模拟现实世界 ; 容易为人所理解 ; 便于在计算机上实现. </p>
+<span id="more"></span>
+
+<h2 id="两类数据模型"><a href="#两类数据模型" class="headerlink" title="两类数据模型"></a>两类数据模型</h2><h3 id="概念模型-信息模型"><a href="#概念模型-信息模型" class="headerlink" title="概念模型(信息模型)"></a>概念模型(信息模型)</h3><p>按照用户的观点来对数据和信息建模，用于数据库设计。</p>
+<h3 id="逻辑模型和物理模型"><a href="#逻辑模型和物理模型" class="headerlink" title="逻辑模型和物理模型"></a>逻辑模型和物理模型</h3><ul>
+<li><p>逻辑模型主要包括：</p>
+<p>网状模型、层次模型、关系模型、面向对象模型、对象关系数据模型、半结构化数据模型等</p>
+<p>按照计算机系统的观点对数据建模，用于DBMS实现</p>
+</li>
+<li><p>物理模型</p>
+<p>是对数据最底层的抽象，描述数据在系统内部的表示方式和存取方法，在磁盘或磁带上的存储方式和存取方法。</p>
+</li>
+</ul>
+<img src="两类模型.png" style="zoom: 50%;" />
+
+<h2 id="概念模型"><a href="#概念模型" class="headerlink" title="概念模型"></a>概念模型</h2><p><strong>用途</strong>：用于信息世界的建模；现实世界到机器世界的一个中间层次；数据库设计的工具；数据库设计人员和用户之间进行交流的语言。</p>
+<p><strong>基本要求</strong>：<br>    较强的语义表达能力；<br>    简单、清晰、易于用户理解。</p>
+<p><em>信息世界中的基本概念：</em></p>
+<ul>
+<li><p>实体(entity)</p>
+<p>客观存在并可相互区别的事物称为实体。（具体的人、事、物or抽象的概念）</p>
+</li>
+<li><p>属性(attribute)</p>
+<p>实体所具有的某一特性。（一个实体可以由多个属性刻画）</p>
+</li>
+<li><p>码(key)</p>
+<p>唯一标识实体的属性集称为码。</p>
+</li>
+<li><p>实体型(entity type)</p>
+<p>用实体名及其属性名集合 来抽象和刻画同类实体称为实体型。</p>
+</li>
+<li><p>实体集(entity set)</p>
+<p>同一类型实体的集合。</p>
+</li>
+<li><p>联系(relationship)</p>
+<p>现实世界中事物内部以及事物之间的联系在信息世界中反映为实体（型）内部的联系和实体（型）之间的联系；</p>
+<p><strong>实体内部的联系</strong>通常是指组成实体的各属性之间的联系</p>
+<p><strong>实体之间的联系</strong>通常是指不同实体集之间的联系</p>
+<p>实体之间的联系有<em>一对一、一对多、多对多</em> 等多种类型</p>
+</li>
+</ul>
+<p>概念模型的一种表示方法：<strong>实体-联系方法</strong> ( Entity-Relationship Approach )</p>
+<p>用E-R图来描述现实世界的概念模型（E-R方法也称为E-R模型）</p>
+<h2 id="数据模型的组成"><a href="#数据模型的组成" class="headerlink" title="数据模型的组成"></a>数据模型的组成</h2><h2 id="常用的数据模型"><a href="#常用的数据模型" class="headerlink" title="常用的数据模型"></a>常用的数据模型</h2><h2 id="层次模型"><a href="#层次模型" class="headerlink" title="层次模型"></a>层次模型</h2><h2 id="网状模型"><a href="#网状模型" class="headerlink" title="网状模型"></a>网状模型</h2><h2 id="关系模型"><a href="#关系模型" class="headerlink" title="关系模型"></a>关系模型</h2>]]></content>
+      <categories>
+        <category>数据库原理</category>
+        <category>绪论</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>进程概述</title>
+    <url>/2022/04/12/%E8%BF%9B%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+      <categories>
+        <category>操作系统</category>
+        <category>进程的描述与控制</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>正确吵架</title>
     <url>/2022/04/10/%E6%AD%A3%E7%A1%AE%E5%90%B5%E6%9E%B6/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -352,23 +419,6 @@
       </categories>
       <tags>
         <tag>personal</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据模型</title>
-    <url>/2022/04/18/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
-  </entry>
-  <entry>
-    <title>进程概述</title>
-    <url>/2022/04/12/%E8%BF%9B%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
-      <categories>
-        <category>操作系统</category>
-        <category>进程的描述与控制</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
       </tags>
   </entry>
 </search>
