@@ -1,8 +1,11 @@
 ---
 title: 简明手册
 date: 2022-04-01 18:57:51
-tags: HEXO, markdown
-categories: HEXO
+tags:
+- HEXO
+- markdown
+categories: 
+- HEXO
 ---
 介绍hexo常用的命令以及markdown常用语法
 
@@ -21,11 +24,54 @@ hexo clean 				#清理public的内容
 hexo s -g			 	#生成并本地预览
 hexo d -g		 		#生成并上传
 ```
+
+## 备份与自动部署
+
+`hexo d`和`hexo d` 只是将生成的静态文件部署到了云端。
+
+为了备份，将网站的源代码文件也推送到GitHub仓库备份。
+
+`你的名字.github.io` 部署后，GitHub Pages 将默认使用你的 main 分支作为静态文件部署。所以我们最好新建一个 hexo 分支（命名无所谓）用来存储 Hexo 地源代码，master 分支则用来存储部署后的静态文件。
+```py
+git checkout -b hexo
+```
+这时便成功建立了一个 hexo 分支。（此后的工作都将在 hexo 分支下进行）
+```python
+git remote add origin https://github.com/你的用户名/你的名字.github.io
+```
+接下来准备提交，这几句命令将是你以后每次备份所需要输入。
+
+```python
+# 添加到缓存区
+git add -A
+git commit -m "这次做了什么更改，简单描述下即可"
+# 推送至远程仓库
+git push
+# 第一次提交，你可能需设置一下默认提交分支
+# git push --set-upstream origin hexo
+```
+
+每次推送都要输入这三条命令，你可能觉得有些麻烦。
+那么你可以编写 bash 脚本。
+
+譬如，在根目录下新建 `update.sh`。
+
+```python
+# 如果没有消息后缀，默认提交信息为 `:pencil: update content`
+info=$1
+if ["$info" = ""];
+then info=":pencil: update content"
+fi
+git add -A
+git commit -m "$info"
+git push origin hexo
+```
+
+此后更新的话，只需要在终端执行 `sh update.sh` 即可。
+
+
+
 ## Hexo Markdown简明语法
-### 内容目录
-使用的yun主题自带目录生成(正确使用markdown语法)
-新建的文章默认生成目录
-新建的页面可以在首部添加: ` toc: true `
 
 ### 斜体和粗体
 使用``` * ```和``` ** ```表示斜体和粗体，格式如下：
@@ -209,7 +255,7 @@ eg：
 | ↑左对齐 | 右对齐↑  | ↑居中↑     |默认左对齐|
 | 123456789    | ←空格不占位置   | 987654321 | 1 |
 | 123456789| ←没有空格     | 987654321 | 0 |
- ```
+```
 效果展示：
 | 这是标题 | 自动加粗 | 标题下指定对齐方式 | 不指定对齐方式 |
 | :------- | --------: | :---: |---|

@@ -40,7 +40,14 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+# post_asset_folder: true
+
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
+
+
 relative_link: false
 future: true
 # highlight:
@@ -56,18 +63,15 @@ future: true
   #line_number: true
   #tab_replace: ''
 
-# 关闭 highlight
-highlight:
-  enable: false
 
-# 启用 prism
-prismjs:
+highlight: 
   enable: true
-  preprocess: true
   line_number: true
-  line_threshold: 0
-  tab_replace: ''
+  auto_detect: true
+  tab_replace:
 
+prismjs:
+  enable: false
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -136,3 +140,17 @@ search:
   field: post
   format: html
   limit: 10000
+
+# 懒加载
+lazyload:
+  enable: true
+  onlypost: false
+  loadingImg: /images/lazyload.gif
+
+# 播放器
+aplayer:
+  cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js  # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
+  style_cdn: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
+  meting: true       # MetingJS 支持
+  meting_cdn: https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js # 引用 Meting.js 外部 CDN 地址 (默认不开启)
+  asset_inject: false

@@ -2,19 +2,24 @@
 title: letter for your 21st
 date: 2022-04-07 22:11:03
 tags: personal
-categories: 写给STico
+categories: 
+- 写给STico
+- 2022
 hide: true
 password: 118414
+aplayer: true
 ---
 要每天都快乐
+
 <!--more-->
 写给STico小朋友：
-
-> 我以为我不会比今天更爱你了，
->
-> 但是，我昨天也是这么想的
-
+{% cq %} 
+我以为我不会比今天更爱你了，
+但是，我昨天也是这么想的
+{% endcq %} 
 ​		哒哒\~没有想到吧\~还有一封信哟\~
+
+<img src="lazyload.gif" style="zoom:69%;" />
 
 ​		嘻，首先祝贺我的小朋友21岁啦，哥哥都比我大2岁了哩！虽然没有办法在你身边陪你过生日，吃蛋糕，吹蜡烛，许愿......但是我们可以联动的呢，要认真唱生日快乐歌，要认真许愿！而且现在你应该以及收到我给你的大礼包惊喜了吧\~嘻（半透明裤裤老公\~ 嘿嘿 \~ 黑网纱老公 \~嘿嘿\~）。这些东西我都准备了很久很久的哦，都是实用的哩！就是要虽然我不在你身边，但是你的生活必须要处处都是我的影子！
 
@@ -29,3 +34,11 @@ password: 118414
 2022-04-07
 
 JennyCruise  
+
+<img src="cute.jpg" style="zoom:150%;" />
+
+The End(假的!)
+
+当当\~，有彩蛋哟\~
+
+<audio src="https://cdn.jsdelivr.net/gh/JennyCruise/mycdn/music/happybirthday.m4a" style="max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">Your browser does not support the audio tag.</audio>
