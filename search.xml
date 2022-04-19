@@ -1,56 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/04/01/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Wellcome To Hexo</p>
-<span id="more"></span>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>letter for your 21st</title>
-    <url>/2022/04/07/letter-for-your-21st/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="ffab6f8902b96d4c8e0f36b08faf534424ce81d913818dc8b5bb4feba91c428e">b23d15b9c62a7a3d80dca50489572af20b1231328abcbcb4dd850d949de3dd26a53282614c3049186e53b3d0709ee1055d73b537da208963c51fdd739ed734ba5e4dddcaa98a50f2b6db238551209c246cc328c418ab180ec3443e45f1fec0a76d45f75951bc3e95cb8fe3b26529ef1ac685a0c8911887101fe97ef569b85a4f89ef8fda30a93063b14082f22b045810734c42575580bd5a956b582c9732e738a91023469054058f7972d9e986eec7f7a0f1edccc948843869474db187b29ceb67dff2d4c3cfc5a684d8638a5c6a1eba1205e2ee2921a932d1df6d73fc44d9cfb7bb9de380f97f0ba861911d2cc88c98b5472f66b488f84ebaa170f16ee478d452ac63d99372283b48675bced91e5c4ce54ffdfaa878ab66f557fd2e289b3e5e155571c3a2e37ee82734b5ae25eab188ade56ce7f28b9314b2327304d42a7f19b7a2839ecadc173dd4991ce072ce9f76288e6db4a0654889c94a2ca933230f76e322669cd78f0db3f7ad8ed6bde0653995f2bad253149a6f074294d3acdf86223ac1249d47806198d1ffbba45ba7248748f57d52854c1acfff8956fed5475c784d5b5f99bc16bd78432f54b6a987026c68c9d9303d28281e354d6334978cd7dffa79c656715afc223405fe026aceb07bdd4fc9228e67904a9647a3bf06d8c97f22f614558b51231206d643f5ffc123ae16a774c034a4699da4b413aa4ac6acedda5bdd1d5f374d5a6535342b574f6a5822119a548874d08de116568f9112263fc41a2261a86311b60b2b0d314caff7df34b5f6ef60975fe9a0ec195e54308c4bbe63610032f46b8c2fcbe153c3400f97defba0240d6d3e9eeed17476b2870f0d7106991905bf005f7c20d9c5d790fb6776c14ab3141a00bc4b9d9fd021e491a26888ef254f197cd7fcb337a8175b6146b56755f434114022927bd8aab4bb253056f5a4f5f9552fefcc7c5077b14c375245dc44c42a3e6f0ade0b55fa0ab582968f0f32b64f62ce3cd59e3751584953efb22a538c5f109fab1b6eca0a6b3870eaf038f2f6284462687eeb455b6fb7190b059f9ac547fa43cc68abef767ee8fccf177b8b5cd26ee6c26f9203af47c6cc421836c5aefc240ebc8b7b8bc079bd1700cf08e076af116e4066aaa3dc90733dc60e688712f2fbb90187d7492b97c545f93e6f50912ff046f26731608d22f1f466a561891bd2f34d6d25a0446ac8be8d3e0a3ffdb8f9bc60ca6edc856a618d53ab756094097e078c345d67c5fb242b17557f34d9a308d2f651b04be55c8cd50b85b32967d661238e5c10677610564d76423c403a0601f702b063b630ed339b4eb4ff49d19a2844a866d3327fd5944b6b9fad3dd7f9495c0fd3502f9c1bd4bcbce9de2732164a3f5737350924b92e073318e6ada82d5f11fe4ee283d61326374757fd32ed0d6a1920d7b0504d581c188c52a6267bb6a61cb3085e4b40ba6df6e3f6a4104abc7b69bca4aff1fbd2825a31ff25068838fc24737bc45ead3087e420948011c19f3a21f834c9940818bc02d28dc4ba5a230b00e9261142e6b73cb271b85a58ee52486732de25af5b821af9b2f96b57c4aabda22ac00069b4fd8a9ab4108b278c588b086499eaf52d3c64a0d1f07d668681cb5d4b4455668849797a6965b263727f3bc5330de6d1f02c67dc75933a611ed5af12069d82f88f20c4131c312302abebf33e6f8c1abfd4759b6a4137b8eab3652e6d4ada7b29bd45f6908fc803639407414b92212ded9fdf1221f92769906f8267958b56776d537c851832b0457f0ba3d1328fa40967be663ac98b9ee4bbe7d27e6b4b7377da2540af4e987e292d9b747483180e1c5a63cafe63a6128d3fb1d000ea33afaefead6765f967163e390bf391b4ac620fc43d7d0529e89e0a7b2a598343b232b649d31278c135e529366aca6535e7512f634c7b8744aa13cd4330ef44da4a339a37401e667a0095103fe4bf61648b74a6106be9b38539c7d59f0f322e9557c7257ddcf7626f6381acacad832d92a9f7f960c4ac02dab220d4b9cf40ce9413e8795709f59ebc1387138f65982fb903aa323581fac166969787048e3442c07058cd1eaa62224a82152b9092976bc172f202f7eef83905de2557885e1ff9d7b143effb9f30fd8209b0c50546235470c22dc2baf07db1095f6a51d1b84b3bd737dc66ff6e2f5d5a3f13d01565a2aea9103d89a9713e54effff199972d0cc092ed2359c6f83afd7dde425b331cd2dbb6e172ccde0a66eda83f06283f6fa8f7e49120b2bef9fa2b72069b87ba2b8191a8b251b032c58750e26fd0e99696b71a5bd9efe2f4f70b33d3c8f14b92336ac6dc9d8ed554a8d1e666c98d5d22bbf6f062c0f346ea616eff29b5f6d4c61cdc02418eddef87d6c6a1cc9eb467c726d7660ae2dbfc83c7b5803967b4c9c2b1be1c7a185d9e6ab9a3fd1978d34803c2fa08d6499fd004ceeb9988fdbf00c53f7cc9233aa24a83f33bb50ec764ca2e28a7f4e17aeb8e54cfe456938238e4990f0f0b574cf85299397c32757740bfd6df77fd1a21e9d780bdb3f37515d6f4370ead57272340269a325fa1e69b11a5419133fe76f665e4b876867e17f98411371b5eaa176cfaf769b50853ce5b1a7c04d632917d0b7e685d2a85d49bf59b6f54ce4190452b8b9e8ef629689711789d3ab79ca6e7fa33a14b332f78febfd3a8dbb857aec5c53efaf3c505348efb459ce97e02c60c77822f0814468ce1560bf2ec92177443cafab48beefc7b22a571156fe54a1a6857c707fcfd7dfa6270d45df200fa42afb532ced8d0a198e00f927be22733379c4530d8dcef0e60081b3d4a86543a83ec18500fcbbe56db2b18628cb30c5ff7b011382ec5dfbb2b058cb8727a6d3e54427d92b3402b4793718d156497d5592ff22ce91f1465c7641826891eafa618e96bd0a94ca951363c34faa41abf13b6e9673611ee446dc1fc5457719ca92d04b78396e5abebcf544e97a9adea5f1a1a7a13a5518714a6b48e76b79183d80ec377a51f396e77c303f14285ffb6e5ad72e9b865bb7e784ed5f31626eb9762f1f240970eb54eedecd73523875e05bfaa3c28633952765676936ce8d837bf49a8c416af8088332d143f8051121238d61eff5feff4de0ae78bcf52823dd2aeaa1e85bf305e0d5635036ef55992feb13e532ece2f986ea73d59357423206f3c2f67646a795d5f7099edcbee304ca256aea758b77b5429026a1e12f4a73def0a4e04c26f462f760e0148d4aee721d5a6c698144605c2ed555f4a1d9557284948057860c5d23527fe5c38a909192fd3aba7acb5cf5c2f2ca2053e230b3867d2b81820926af5a9ff4fef3fd6e921c37d21ba75759e4d2aea392c8a26f885b22128d0994fc61f3b6d7eb94f428a3474cb103736a8782e21742eeaa2397c24618221d2de53d547b2b1d17f0abb69bdb0ee039963b7d550938c9b93273c2429bba5aa5a5ed79bc66777f43df392bbee6ba2de2e899deed11f1d28c5cb1b44c4a2d221b1b1ac9d9bae823ce6deaca8fb086520443c88fc6ffcdeeae319820d2ac6e917558a58ffbdb265e605af5514bca7b462811f5a802acd67f477f6866450ee36d4aaa1061f398a38e0899148e7fa243fdb30687481cb5e691ac9147d9d6e94ebcfd5529166f5c3b95267d0e310232cf265c1df80917ac30004f27a2965c08ef950c27f487cbaae6689f0af4dc3c548a2f1260f42eab24148db35e21bc8fb92668e00d02e2ef3258fd2c29ee9bf0f0ed33ff1d1d46a7a7a30b4750d6f2b8c719d2fc8625d0315e9b060e05db17e837808dbd980f0a8967cdf1c1e40c3f54e9d442b53c262fe539c5011bc7370b8f6a936292976fdeef1851ec871243b79188d8d5806a747c1023fc9eb73d743279fe68c1fcaef5068982e389d41210b3cefd4fc7dd0c1de4d449e973eeefe122185f059375734802a01eb56ac6dec7cb1e9e6471833f59c9d286bb63e017e474ae748937a469933568946eafde2f62d696b2df683e0d871376bd1b746141a628373d76c75f18a3a53a54db8e3dcb75fe2706a2a31e65212caa6d5263e9d80c4d1520aa978e162bcc41cb65ed8861c464f6db7e7659af535d55f7e370cdd5a522b5ba145f25df4138310fe5ad7bdf73b5ab98d63efc2f42680493caf00dcf1d52c0f5b5a520a65a14e33e93e74d11eb91e6d29087e8c598a8f986b4a49d1c51c33bf1cb08d859c10e05644d52329ffdb697577e77a91f0471cb461d21b287ea0b1418a6e680d4b3958ce5403e22fbfef1cd421a67eae043736d9050bb8bc387ac1fbc800b141bac7cf90be669c839e89be4346b274f2a9c04b3193d6a8fdec3de0b9627e6094f8ded58bac316f70fc89627dd08d649899a6733089888c264079849b5c76d2f680102acbc7f6dfbd73d8ad4d3ec0d460466859a56d5069b1a9fc3184f9554ad24d859f9d3405d57fb137e64f3c535d7a4080592f744427ada729d3c040378be14183f57ba54f2616168d6779bcf06d9d3ac49c611a39cfdde7aca8f413881330fea029dcd0a573ee4cd7f70a622623ffda5e692b0b1084169b7e98a9f7255578d1aefc9a63d9787c8790486c963f5bf1d9405bf6be8e0d80ec8f53300696a9aa40a3646c78b022b407fe6e0d3020143d63d0aeff3c725feafae3602ff828616dba0cd7313fdaa9217e00322267a424b12c5bbd7d037fad5222e4fce036ae1d9e2e2e43e8ad6225bfaf7b343e1151986515970033973bd89999918640d16f73c60f4b5303ee7275de4d0603eacdd61107c896af1735a706911f561877b81828818f65186346bb8085a51e3a46ecb3a1e56bbdb2e0af7069bc3bc0508a1731dc3f9ce7951f225b6d602c486f07fb2ea9fb4ad47f5ddfc3eca97345215e5dccb0ca3cd2d8ef0f7f9805da66f5ba2023c5e7234fbd026ff359333227fc292b317f5035e957951bee8c31bcaa3550aa12c959510633db26691ee6515e84051fffc6e7c26c29bc6b6d46e3bf1c357735a544e368160788423bf28939a907b129574b46acbfc3a3ae817d4adafb0a15ef2bfa1be4a707944a516e3dea457d493e46cd602f2e718792ed0ff04e0b3df26cd9a7d1ad5523afa4a72d73d38bb61ca511d0bdc6a264a0b5256cd8758900945136e0c888a5d344f2818e50c81df6508cc366c920e6f0e7a697ee222bf49265574f108b97d236a2a96d1124773014d6b3770201db72fc55a87e0ccde867f919a64b6127276c604630eafb57522bc915a0ebbfaf67ca7565878563529cfba9d22d7e9507cb86e7fca09e2cdae414e862010dcfa1943c7a5fd4270aee6ef72ccf28fbbd2b44cac02b6539bf65b68b91a8f837f5bb2983bd6004b645b95e1586650ba42da1267c6ebefe83b10903eafdac321fe6ff8c72b1290c192f3ff6a0325b40d57866414bd86adb8ced062ca048c7990319c1b4e3b0432ddf69c4faffe3de2f2ac5a5a67a99c0fd3b020bc5f8342d467f2f90ee6052345e3f59afe63a3155356007c1e8f2a689d5aebb8b6dd87fdfc6a5c783e4d09f34e9d42ab521160ca0823091d7b135022e8b17f028ebaf98ac42fdce6c169a13d3ce99f1fff85a17a43592ee33c1b69dd5fd72b831272157adf25543a08be2d4fbf6905e8fa3d4443ae237ffc06c0ab64e175d66448fec34f9cecafdc4c885de42fabb695331f78a0e9c643f5b0894b75dcd2f207e448af21a30cad1234831340c16bc28f5e5bb4cf22f0a</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>写给STico</category>
-        <category>2022</category>
-      </categories>
-      <tags>
-        <tag>personal</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>简明手册</title>
     <url>/2022/04/01/markdown/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>介绍hexo常用的命令以及markdown常用语法</p>
 <span id="more"></span>
 <h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">&quot;postName&quot;</span>		<span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">&quot;pageName&quot;</span><span class="comment">#新建页面</span></span><br><span class="line">hexo generate 			<span class="comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server 			<span class="comment">#开启预览访问端口</span></span><br><span class="line">hexo deploy 			<span class="comment">#部署到GitHub</span></span><br><span class="line">hexo <span class="built_in">help</span>  				<span class="comment">#查看帮助</span></span><br><span class="line">hexo version  			<span class="comment">#查看Hexo的版本</span></span><br><span class="line">hexo clean 				<span class="comment">#清理public的内容</span></span><br><span class="line">组合命令：</span><br><span class="line">hexo s -g			 	<span class="comment">#生成并本地预览</span></span><br><span class="line">hexo d -g		 		<span class="comment">#生成并上传</span></span><br></pre></td></tr></table></figure>
-<h2 id="Hexo-Markdown简明语法"><a href="#Hexo-Markdown简明语法" class="headerlink" title="Hexo Markdown简明语法"></a>Hexo Markdown简明语法</h2><h3 id="内容目录"><a href="#内容目录" class="headerlink" title="内容目录"></a>内容目录</h3><p>使用的yun主题自带目录生成(正确使用markdown语法)<br>新建的文章默认生成目录<br>新建的页面可以在首部添加: <code>toc: true</code></p>
-<h3 id="斜体和粗体"><a href="#斜体和粗体" class="headerlink" title="斜体和粗体"></a>斜体和粗体</h3><p>使用<code>*</code>和<code>**</code>表示斜体和粗体，格式如下：</p>
+
+<h2 id="备份与自动部署"><a href="#备份与自动部署" class="headerlink" title="备份与自动部署"></a>备份与自动部署</h2><p><code>hexo d</code>和<code>hexo d</code> 只是将生成的静态文件部署到了云端。</p>
+<p>为了备份，将网站的源代码文件也推送到GitHub仓库备份。</p>
+<p><code>你的名字.github.io</code> 部署后，GitHub Pages 将默认使用你的 main 分支作为静态文件部署。所以我们最好新建一个 hexo 分支（命名无所谓）用来存储 Hexo 地源代码，master 分支则用来存储部署后的静态文件。</p>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line">git checkout -b hexo</span><br></pre></td></tr></table></figure>
+<p>这时便成功建立了一个 hexo 分支。（此后的工作都将在 hexo 分支下进行）</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">git remote add origin https://github.com/你的用户名/你的名字.github.io</span><br></pre></td></tr></table></figure>
+<p>接下来准备提交，这几句命令将是你以后每次备份所需要输入。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加到缓存区</span></span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;这次做了什么更改，简单描述下即可&quot;</span></span><br><span class="line"><span class="comment"># 推送至远程仓库</span></span><br><span class="line">git push</span><br><span class="line"><span class="comment"># 第一次提交，你可能需设置一下默认提交分支</span></span><br><span class="line"><span class="comment"># git push --set-upstream origin hexo</span></span><br></pre></td></tr></table></figure>
+
+<p>每次推送都要输入这三条命令，你可能觉得有些麻烦。<br>那么你可以编写 bash 脚本。</p>
+<p>譬如，在根目录下新建 <code>update.sh</code>。</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 如果没有消息后缀，默认提交信息为 `:pencil: update content`</span></span><br><span class="line">info=$<span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> [<span class="string">&quot;$info&quot;</span> = <span class="string">&quot;&quot;</span>];</span><br><span class="line">then info=<span class="string">&quot;:pencil: update content&quot;</span></span><br><span class="line">fi</span><br><span class="line">git add -A</span><br><span class="line">git commit -m <span class="string">&quot;$info&quot;</span></span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+
+<p>此后更新的话，只需要在终端执行 <code>sh update.sh</code> 即可。</p>
+<h2 id="Hexo-Markdown简明语法"><a href="#Hexo-Markdown简明语法" class="headerlink" title="Hexo Markdown简明语法"></a>Hexo Markdown简明语法</h2><h3 id="斜体和粗体"><a href="#斜体和粗体" class="headerlink" title="斜体和粗体"></a>斜体和粗体</h3><p>使用<code>*</code>和<code>**</code>表示斜体和粗体，格式如下：</p>
 <figure class="highlight asciidoc"><table><tr><td class="code"><pre><span class="line"><span class="strong">*斜体*</span>，<span class="strong">**粗体**</span></span><br></pre></td></tr></table></figure>
 <p>效果如下：<em>斜体</em>，<strong>粗体</strong></p>
 <h3 id="分级标题"><a href="#分级标题" class="headerlink" title="分级标题"></a>分级标题</h3><p>使用 <code>===</code>表示一级标题，使用<code>---</code>表示二级标题，格式如下：</p>
@@ -193,6 +164,29 @@
       </tags>
   </entry>
   <entry>
+    <title>letter for your 21st</title>
+    <url>/2022/04/07/letter-for-your-21st/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="ffab6f8902b96d4c8e0f36b08faf534424ce81d913818dc8b5bb4feba91c428e">b23d15b9c62a7a3d80dca50489572af20b1231328abcbcb4dd850d949de3dd26a53282614c3049186e53b3d0709ee1055d73b537da208963c51fdd739ed734ba5e4dddcaa98a50f2b6db238551209c246cc328c418ab180ec3443e45f1fec0a76d45f75951bc3e95cb8fe3b26529ef1ac685a0c8911887101fe97ef569b85a4f89ef8fda30a93063b14082f22b045810734c42575580bd5a956b582c9732e738a91023469054058f7972d9e986eec7f7a0f1edccc948843869474db187b29ceb67dff2d4c3cfc5a684d8638a5c6a1eba1205e2ee2921a932d1df6d73fc44d9cfb7bb9de380f97f0ba861911d2cc88c98b5472f66b488f84ebaa170f16ee478d452ac63d99372283b48675bced91e5c4ce54ffdfaa878ab66f557fd2e289b3e5e155571c3a2e37ee82734b5ae25eab188ade56ce7f28b9314b2327304d42a7f19b7a2839ecadc173dd4991ce072ce9f76288e6db4a0654889c94a2ca933230f76e322669cd78f0db3f7ad8ed6bde0653995f2bad253149a6f074294d3acdf86223ac1249d47806198d1ffbba45ba7248748f57d52854c1acfff8956fed5475c784d5b5f99bc16bd78432f54b6a987026c68c9d9303d28281e354d6334978cd7dffa79c656715afc223405fe026aceb07bdd4fc9228e67904a9647a3bf06d8c97f22f614558b51231206d643f5ffc123ae16a774c034a4699da4b413aa4ac6acedda5bdd1d5f374d5a6535342b574f6a5822119a548874d08de116568f9112263fc41a2261a86311b60b2b0d314caff7df34b5f6ef60975fe9a0ec195e54308c4bbe63610032f46b8c2fcbe153c3400f97defba0240d6d3e9eeed17476b2870f0d7106991905bf005f7c20d9c5d790fb6776c14ab3141a00bc4b9d9fd021e491a26888ef254f197cd7fcb337a8175b6146b56755f434114022927bd8aab4bb253056f5a4f5f9552fefcc7c5077b14c375245dc44c42a3e6f0ade0b55fa0ab582968f0f32b64f62ce3cd59e3751584953efb22a538c5f109fab1b6eca0a6b3870eaf038f2f6284462687eeb455b6fb7190b059f9ac547fa43cc68abef767ee8fccf177b8b5cd26ee6c26f9203af47c6cc421836c5aefc240ebc8b7b8bc079bd1700cf08e076af116e4066aaa3dc90733dc60e688712f2fbb90187d7492b97c545f93e6f50912ff046f26731608d22f1f466a561891bd2f34d6d25a0446ac8be8d3e0a3ffdb8f9bc60ca6edc856a618d53ab756094097e078c345d67c5fb242b17557f34d9a308d2f651b04be55c8cd50b85b32967d661238e5c10677610564d76423c403a0601f702b063b630ed339b4eb4ff49d19a2844a866d3327fd5944b6b9fad3dd7f9495c0fd3502f9c1bd4bcbce9de2732164a3f5737350924b92e073318e6ada82d5f11fe4ee283d61326374757fd32ed0d6a1920d7b0504d581c188c52a6267bb6a61cb3085e4b40ba6df6e3f6a4104abc7b69bca4aff1fbd2825a31ff25068838fc24737bc45ead3087e420948011c19f3a21f834c9940818bc02d28dc4ba5a230b00e9261142e6b73cb271b85a58ee52486732de25af5b821af9b2f96b57c4aabda22ac00069b4fd8a9ab4108b278c588b086499eaf52d3c64a0d1f07d668681cb5d4b4455668849797a6965b263727f3bc5330de6d1f02c67dc75933a611ed5af12069d82f88f20c4131c312302abebf33e6f8c1abfd4759b6a4137b8eab3652e6d4ada7b29bd45f6908fc803639407414b92212ded9fdf1221f92769906f8267958b56776d537c851832b0457f0ba3d1328fa40967be663ac98b9ee4bbe7d27e6b4b7377da2540af4e987e292d9b747483180e1c5a63cafe63a6128d3fb1d000ea33afaefead6765f967163e390bf391b4ac620fc43d7d0529e89e0a7b2a598343b232b649d31278c135e529366aca6535e7512f634c7b8744aa13cd4330ef44da4a339a37401e667a0095103fe4bf61648b74a6106be9b38539c7d59f0f322e9557c7257ddcf7626f6381acacad832d92a9f7f960c4ac02dab220d4b9cf40ce9413e8795709f59ebc1387138f65982fb903aa323581fac166969787048e3442c07058cd1eaa62224a82152b9092976bc172f202f7eef83905de2557885e1ff9d7b143effb9f30fd8209b0c50546235470c22dc2baf07db1095f6a51d1b84b3bd737dc66ff6e2f5d5a3f13d01565a2aea9103d89a9713e54effff199972d0cc092ed2359c6f83afd7dde425b331cd2dbb6e172ccde0a66eda83f06283f6fa8f7e49120b2bef9fa2b72069b87ba2b8191a8b251b032c58750e26fd0e99696b71a5bd9efe2f4f70b33d3c8f14b92336ac6dc9d8ed554a8d1e666c98d5d22bbf6f062c0f346ea616eff29b5f6d4c61cdc02418eddef87d6c6a1cc9eb467c726d7660ae2dbfc83c7b5803967b4c9c2b1be1c7a185d9e6ab9a3fd1978d34803c2fa08d6499fd004ceeb9988fdbf00c53f7cc9233aa24a83f33bb50ec764ca2e28a7f4e17aeb8e54cfe456938238e4990f0f0b574cf85299397c32757740bfd6df77fd1a21e9d780bdb3f37515d6f4370ead57272340269a325fa1e69b11a5419133fe76f665e4b876867e17f98411371b5eaa176cfaf769b50853ce5b1a7c04d632917d0b7e685d2a85d49bf59b6f54ce4190452b8b9e8ef629689711789d3ab79ca6e7fa33a14b332f78febfd3a8dbb857aec5c53efaf3c505348efb459ce97e02c60c77822f0814468ce1560bf2ec92177443cafab48beefc7b22a571156fe54a1a6857c707fcfd7dfa6270d45df200fa42afb532ced8d0a198e00f927be22733379c4530d8dcef0e60081b3d4a86543a83ec18500fcbbe56db2b18628cb30c5ff7b011382ec5dfbb2b058cb8727a6d3e54427d92b3402b4793718d156497d5592ff22ce91f1465c7641826891eafa618e96bd0a94ca951363c34faa41abf13b6e9673611ee446dc1fc5457719ca92d04b78396e5abebcf544e97a9adea5f1a1a7a13a5518714a6b48e76b79183d80ec377a51f396e77c303f14285ffb6e5ad72e9b865bb7e784ed5f31626eb9762f1f240970eb54eedecd73523875e05bfaa3c28633952765676936ce8d837bf49a8c416af8088332d143f8051121238d61eff5feff4de0ae78bcf52823dd2aeaa1e85bf305e0d5635036ef55992feb13e532ece2f986ea73d59357423206f3c2f67646a795d5f7099edcbee304ca256aea758b77b5429026a1e12f4a73def0a4e04c26f462f760e0148d4aee721d5a6c698144605c2ed555f4a1d9557284948057860c5d23527fe5c38a909192fd3aba7acb5cf5c2f2ca2053e230b3867d2b81820926af5a9ff4fef3fd6e921c37d21ba75759e4d2aea392c8a26f885b22128d0994fc61f3b6d7eb94f428a3474cb103736a8782e21742eeaa2397c24618221d2de53d547b2b1d17f0abb69bdb0ee039963b7d550938c9b93273c2429bba5aa5a5ed79bc66777f43df392bbee6ba2de2e899deed11f1d28c5cb1b44c4a2d221b1b1ac9d9bae823ce6deaca8fb086520443c88fc6ffcdeeae319820d2ac6e917558a58ffbdb265e605af5514bca7b462811f5a802acd67f477f6866450ee36d4aaa1061f398a38e0899148e7fa243fdb30687481cb5e691ac9147d9d6e94ebcfd5529166f5c3b95267d0e310232cf265c1df80917ac30004f27a2965c08ef950c27f487cbaae6689f0af4dc3c548a2f1260f42eab24148db35e21bc8fb92668e00d02e2ef3258fd2c29ee9bf0f0ed33ff1d1d46a7a7a30b4750d6f2b8c719d2fc8625d0315e9b060e05db17e837808dbd980f0a8967cdf1c1e40c3f54e9d442b53c262fe539c5011bc7370b8f6a936292976fdeef1851ec871243b79188d8d5806a747c1023fc9eb73d743279fe68c1fcaef5068982e389d41210b3cefd4fc7dd0c1de4d449e973eeefe122185f059375734802a01eb56ac6dec7cb1e9e6471833f59c9d286bb63e017e474ae748937a469933568946eafde2f62d696b2df683e0d871376bd1b746141a628373d76c75f18a3a53a54db8e3dcb75fe2706a2a31e65212caa6d5263e9d80c4d1520aa978e162bcc41cb65ed8861c464f6db7e7659af535d55f7e370cdd5a522b5ba145f25df4138310fe5ad7bdf73b5ab98d63efc2f42680493caf00dcf1d52c0f5b5a520a65a14e33e93e74d11eb91e6d29087e8c598a8f986b4a49d1c51c33bf1cb08d859c10e05644d52329ffdb697577e77a91f0471cb461d21b287ea0b1418a6e680d4b3958ce5403e22fbfef1cd421a67eae043736d9050bb8bc387ac1fbc800b141bac7cf90be669c839e89be4346b274f2a9c04b3193d6a8fdec3de0b9627e6094f8ded58bac316f70fc89627dd08d649899a6733089888c264079849b5c76d2f680102acbc7f6dfbd73d8ad4d3ec0d460466859a56d5069b1a9fc3184f9554ad24d859f9d3405d57fb137e64f3c535d7a4080592f744427ada729d3c040378be14183f57ba54f2616168d6779bcf06d9d3ac49c611a39cfdde7aca8f413881330fea029dcd0a573ee4cd7f70a622623ffda5e692b0b1084169b7e98a9f7255578d1aefc9a63d9787c8790486c963f5bf1d9405bf6be8e0d80ec8f53300696a9aa40a3646c78b022b407fe6e0d3020143d63d0aeff3c725feafae3602ff828616dba0cd7313fdaa9217e00322267a424b12c5bbd7d037fad5222e4fce036ae1d9e2e2e43e8ad6225bfaf7b343e1151986515970033973bd89999918640d16f73c60f4b5303ee7275de4d0603eacdd61107c896af1735a706911f561877b81828818f65186346bb8085a51e3a46ecb3a1e56bbdb2e0af7069bc3bc0508a1731dc3f9ce7951f225b6d602c486f07fb2ea9fb4ad47f5ddfc3eca97345215e5dccb0ca3cd2d8ef0f7f9805da66f5ba2023c5e7234fbd026ff359333227fc292b317f5035e957951bee8c31bcaa3550aa12c959510633db26691ee6515e84051fffc6e7c26c29bc6b6d46e3bf1c357735a544e368160788423bf28939a907b129574b46acbfc3a3ae817d4adafb0a15ef2bfa1be4a707944a516e3dea457d493e46cd602f2e718792ed0ff04e0b3df26cd9a7d1ad5523afa4a72d73d38bb61ca511d0bdc6a264a0b5256cd8758900945136e0c888a5d344f2818e50c81df6508cc366c920e6f0e7a697ee222bf49265574f108b97d236a2a96d1124773014d6b3770201db72fc55a87e0ccde867f919a64b6127276c604630eafb57522bc915a0ebbfaf67ca7565878563529cfba9d22d7e9507cb86e7fca09e2cdae414e862010dcfa1943c7a5fd4270aee6ef72ccf28fbbd2b44cac02b6539bf65b68b91a8f837f5bb2983bd6004b645b95e1586650ba42da1267c6ebefe83b10903eafdac321fe6ff8c72b1290c192f3ff6a0325b40d57866414bd86adb8ced062ca048c7990319c1b4e3b0432ddf69c4faffe3de2f2ac5a5a67a99c0fd3b020bc5f8342d467f2f90ee6052345e3f59afe63a3155356007c1e8f2a689d5aebb8b6dd87fdfc6a5c783e4d09f34e9d42ab521160ca0823091d7b135022e8b17f028ebaf98ac42fdce6c169a13d3ce99f1fff85a17a43592ee33c1b69dd5fd72b831272157adf25543a08be2d4fbf6905e8fa3d4443ae237ffc06c0ab64e175d66448fec34f9cecafdc4c885de42fabb695331f78a0e9c643f5b0894b75dcd2f207e448af21a30cad1234831340c16bc28f5e5bb4cf22f0a</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>写给STico</category>
+        <category>2022</category>
+      </categories>
+      <tags>
+        <tag>personal</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>操作系统概述</title>
     <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
@@ -202,6 +196,213 @@
       </categories>
       <tags>
         <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据模型</title>
+    <url>/2022/04/18/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>数据模型是对现实世界数据特征的抽象。（通俗地讲数据模型就是现实世界的模拟）<br>数据模型是数据库系统的核心和基础<br>数据模型应满足三方面要求：<br>        能比较真实地模拟现实世界 ; 容易为人所理解 ; 便于在计算机上实现. </p>
+<span id="more"></span>
+
+<h2 id="两类数据模型"><a href="#两类数据模型" class="headerlink" title="两类数据模型"></a>两类数据模型</h2><h3 id="概念模型-信息模型"><a href="#概念模型-信息模型" class="headerlink" title="概念模型(信息模型)"></a>概念模型(信息模型)</h3><p>按照用户的观点来对数据和信息建模，用于数据库设计。</p>
+<h3 id="逻辑模型和物理模型"><a href="#逻辑模型和物理模型" class="headerlink" title="逻辑模型和物理模型"></a>逻辑模型和物理模型</h3><ul>
+<li><p>逻辑模型主要包括：</p>
+<p>网状模型、层次模型、关系模型、面向对象模型、对象关系数据模型、半结构化数据模型等</p>
+<p>按照计算机系统的观点对数据建模，用于DBMS实现</p>
+</li>
+<li><p>物理模型</p>
+<p>是对数据最底层的抽象，描述数据在系统内部的表示方式和存取方法，在磁盘或磁带上的存储方式和存取方法。</p>
+</li>
+</ul>
+<img src="两类模型.png" style="zoom: 50%;" />
+
+<h2 id="概念模型"><a href="#概念模型" class="headerlink" title="概念模型"></a>概念模型</h2><p><strong>用途</strong>：用于信息世界的建模；现实世界到机器世界的一个中间层次；数据库设计的工具；数据库设计人员和用户之间进行交流的语言。</p>
+<p><strong>基本要求</strong>：<br>    较强的语义表达能力；<br>    简单、清晰、易于用户理解。</p>
+<p><em>信息世界中的基本概念：</em></p>
+<ul>
+<li><p><strong>实体(entity)</strong></p>
+<p>客观存在并可相互区别的事物称为实体。（具体的人、事、物or抽象的概念）</p>
+</li>
+<li><p><strong>属性(attribute)</strong></p>
+<p>实体所具有的某一特性。（一个实体可以由多个属性刻画）</p>
+</li>
+<li><p><strong>码(key)</strong></p>
+<p>唯一标识实体的属性集称为码。</p>
+</li>
+<li><p><strong>实体型(entity type)</strong></p>
+<p>用实体名及其属性名集合 来抽象和刻画同类实体称为实体型。</p>
+</li>
+<li><p><strong>实体集(entity set)</strong></p>
+<p>同一类型实体的集合。</p>
+</li>
+<li><p><strong>联系(relationship)</strong></p>
+<p>现实世界中事物内部以及事物之间的联系在信息世界中反映为实体（型）内部的联系和实体（型）之间的联系；</p>
+<p><strong>实体内部的联系</strong>通常是指组成实体的各属性之间的联系</p>
+<p><strong>实体之间的联系</strong>通常是指不同实体集之间的联系</p>
+<p>实体之间的联系有<em>一对一、一对多、多对多</em> 等多种类型</p>
+</li>
+</ul>
+<p>概念模型的一种表示方法：<strong>实体-联系方法</strong> ( Entity-Relationship Approach )</p>
+<p>​        用<strong>E-R图</strong>来描述现实世界的概念模型（E-R方法也称为E-R模型）</p>
+<h2 id="数据模型的组成要素"><a href="#数据模型的组成要素" class="headerlink" title="数据模型的组成要素"></a>数据模型的组成要素</h2><ul>
+<li><p><strong>数据结构</strong></p>
+<p>描述数据库的组成对象，以及对象之间的联系；</p>
+<p>数据结构是对系统静态特性的描述。</p>
+</li>
+<li><p><strong>数据操作</strong></p>
+<p>操作即集合，包括操作及有关的操作规则；</p>
+<p>数据操作的类型：查询，更新（包括插、删、改）</p>
+<p><em><strong>数据模型对操作的定义：</strong></em></p>
+<blockquote>
+<p>操作的确切含义<br>操作符号<br>操作规则（eg. 优先级）<br>实现操作的语言</p>
+</blockquote>
+<p><em>数据操作使对系统动态特性的描述</em></p>
+</li>
+<li><p><strong>数据的完整性约束条件</strong></p>
+<p><strong>完整性规则</strong>给定的数据模型中数据及其联系所具有的制约和依存规则。</p>
+<p>用以限定符合数据模型的数据库状态以及状态的变化，以保证数据的正确、有效和相容。</p>
+<p><em><strong>数据模型对完整性约束条件的定义</strong></em></p>
+<blockquote>
+<p>反映和规定必须遵守的基本的通用的完整性约束条件。</p>
+<p>提供完整性约束条件的机制，以反映具体应用所涉及的数据必须遵守的特定的语义约束条件。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="常用的数据模型"><a href="#常用的数据模型" class="headerlink" title="常用的数据模型"></a>常用的数据模型</h2><ul>
+<li><p>层次模型</p>
+</li>
+<li><p>网状模型</p>
+</li>
+<li><p>关系模型</p>
+</li>
+<li><p>面向对象数据模型</p>
+</li>
+<li><p>对象关系数据模型</p>
+</li>
+<li><p>半结构化数据模型</p>
+</li>
+</ul>
+<p><strong>格式化模型</strong></p>
+<p>​    层次模型和网状模型统称为 <strong>格式化模型</strong></p>
+<p>​    格式化模型中数据结构的单位是 <strong>基本层次联系</strong></p>
+<p>​        <strong>基本层次联系</strong>是指两个记录以及它们之间的一对多的联系</p>
+<h2 id="层次模型"><a href="#层次模型" class="headerlink" title="层次模型"></a>层次模型</h2><p> 层次模型用 <strong>树状结构</strong>来表示各类实体以及实体间的联系。</p>
+<p>满足下面两个条件的基本层次联系的集合为层次模型：</p>
+<ol>
+<li>有且只有一个结点没有双亲结点-根结点</li>
+<li>根以外的其它结点有且只有一个双亲结点</li>
+</ol>
+<img src="数据模型/层次模型.png" style="zoom:50%;" />
+
+<p>层次模型的<strong>特点</strong>：</p>
+<blockquote>
+<p>结点的双亲是唯一的<br>只能直接处理一对多的实体联系<br>每个记录类型可以定义一个排序字段，称为码字段<br>任何记录值只有按其路径查看时，才能显出它的全部意义<br>没有一个子女记录值能够脱离双亲记录而独立存在</p>
+</blockquote>
+<p>层次模型的<strong>数据操纵</strong>：</p>
+<blockquote>
+<p>查询、插入、删除、更新</p>
+</blockquote>
+<p>层次模型的<strong>完整性约束条件</strong></p>
+<blockquote>
+<p>无相应的双亲结点值就不能插入子女结点值</p>
+<p>如果删除双亲结点值，则相应的子女结点值也被同时删除</p>
+<p>更新操作时，应更新所有相应记录，以保证数据的一致性</p>
+</blockquote>
+<p>层次模型的<strong>优缺点</strong>：<br>        <em>优点</em></p>
+<blockquote>
+<p>数据结构简单清晰</p>
+<p>查询效率高，性能优于关系模型，不低于网状模型</p>
+<p>提供了良好的完整性支持</p>
+</blockquote>
+<p>​        <em>缺点</em></p>
+<blockquote>
+<p>结点之间的多对多联系表示不自然</p>
+<p>插入和删除操作的限制多，应用程序的编写复杂</p>
+<p>查询子女结点必须通过双亲结点</p>
+<p>层次命令趋于程序化</p>
+</blockquote>
+<h2 id="网状模型"><a href="#网状模型" class="headerlink" title="网状模型"></a>网状模型</h2><p>满足下面两个条件的基本层次联系的集合：</p>
+<ol>
+<li>允许一个以上的结点无双亲</li>
+<li>一个结点可以有多于一个的双亲</li>
+</ol>
+<p>网状模型与层次模型的区别：</p>
+<blockquote>
+<p>网状模型允许多个结点没有双亲结点</p>
+<p>网状模型允许结点有多个双亲结点</p>
+<p>网状模型允许两个结点之间有多种联系（复合联系）</p>
+<p>网状模型可以更直接地描述现实世界</p>
+<p>层次模型是网状模型的一个特例</p>
+</blockquote>
+<p>网状模型的操纵与完整性约束：</p>
+<blockquote>
+<p>码：唯一表示记录的数据项的集合</p>
+<p>一个联系中双亲记录与子女记录之间是一对多联系</p>
+<p>支持双亲记录和子女记录之间某些约束条件</p>
+</blockquote>
+<p>网状模型的优缺点：</p>
+<p>​        <em>优点：</em></p>
+<blockquote>
+<p>能够更为直接地描述现实世界，如一个结点可以有多个双亲</p>
+<p>具有良好的性能，存取效率较高</p>
+</blockquote>
+<p>​        <em>缺点：</em></p>
+<blockquote>
+<p>结构较为复杂。且随着应用环境的扩大，数据库的结构更加复杂，不利于最终用户掌握</p>
+<p>DDL、DML语言复杂，用户不容易使用</p>
+<p>记录之间联系是通过存取路径实现的，用户必须了解系统结构的细节</p>
+</blockquote>
+<h2 id="关系模型"><a href="#关系模型" class="headerlink" title="关系模型"></a>关系模型</h2><p>关系模型的数据结构：</p>
+<ul>
+<li><p>关系（relation）</p>
+<p>一个关系对应通常说的一张表</p>
+</li>
+<li><p>元组（tuple）</p>
+<p>表中的一行即为一个元组</p>
+</li>
+<li><p>属性（attribute）</p>
+<p>表中的一列即为属性，给每个属性起一个名称即属性名</p>
+</li>
+<li><p>主码（码键）</p>
+<p>表中的某个属性组，可以唯一确定一个元组</p>
+</li>
+<li><p>域（domain）</p>
+<p>是一组具有相同数据类型的值的集合。属性的取值范围来自某个域</p>
+</li>
+<li><p>分量</p>
+<p>元组中的一个属性值</p>
+</li>
+<li><p>关系模式</p>
+<p>对关系的描述</p>
+</li>
+</ul>
+<p>关系必须是规范化的，满足一定的规范条件<br>        最基本的规范条件：关系的每一个分量必须是一个不可分的数据项，不允许表        中还有表。</p>
+<p>关系模型的操纵：<br>        数据操作是集合操作，操作对象和操作结果都是关系<br>        <code>查询</code>  <code>插入</code>  <code>删除</code>  <code>更新</code>  </p>
+<p>关系的完整性约束条件：</p>
+<ul>
+<li>实体完整性</li>
+<li>参照完整性</li>
+<li>用户定义的完整性</li>
+</ul>
+<p>关系模型的优缺点：</p>
+<p>​        <em>优点：</em></p>
+<blockquote>
+<p>建立在严格的数学概念的基础上</p>
+<p>概念单一<br>        实体和各类联系都用关系来表示<br>        对数据的检索结果也是关系</p>
+<p>关系模型的存取路径对用户透明<br>        具有更高的数据独立性，更好的安全保密性<br>        简化了程序员的工作和数据库开发建立的工作</p>
+</blockquote>
+<p>​        <em>缺点：</em></p>
+<blockquote>
+<p>存取路径对用户透明，查询效率不如格式化数据模型</p>
+<p>为提高性能，必须对用户的查询请求进行优化，增加了开发数据库管理系统的难度</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>数据库原理</category>
+        <category>绪论</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -323,61 +524,6 @@
 </li>
 </ul>
 ]]></content>
-      <categories>
-        <category>数据库原理</category>
-        <category>绪论</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据模型</title>
-    <url>/2022/04/18/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>数据模型是对现实世界数据特征的抽象。（通俗地讲数据模型就是现实世界的模拟）<br>数据模型是数据库系统的核心和基础<br>数据模型应满足三方面要求：<br>能比较真实地模拟现实世界 ; 容易为人所理解 ; 便于在计算机上实现. </p>
-<span id="more"></span>
-
-<h2 id="两类数据模型"><a href="#两类数据模型" class="headerlink" title="两类数据模型"></a>两类数据模型</h2><h3 id="概念模型-信息模型"><a href="#概念模型-信息模型" class="headerlink" title="概念模型(信息模型)"></a>概念模型(信息模型)</h3><p>按照用户的观点来对数据和信息建模，用于数据库设计。</p>
-<h3 id="逻辑模型和物理模型"><a href="#逻辑模型和物理模型" class="headerlink" title="逻辑模型和物理模型"></a>逻辑模型和物理模型</h3><ul>
-<li><p>逻辑模型主要包括：</p>
-<p>网状模型、层次模型、关系模型、面向对象模型、对象关系数据模型、半结构化数据模型等</p>
-<p>按照计算机系统的观点对数据建模，用于DBMS实现</p>
-</li>
-<li><p>物理模型</p>
-<p>是对数据最底层的抽象，描述数据在系统内部的表示方式和存取方法，在磁盘或磁带上的存储方式和存取方法。</p>
-</li>
-</ul>
-<img src="两类模型.png" style="zoom: 50%;" />
-
-<h2 id="概念模型"><a href="#概念模型" class="headerlink" title="概念模型"></a>概念模型</h2><p><strong>用途</strong>：用于信息世界的建模；现实世界到机器世界的一个中间层次；数据库设计的工具；数据库设计人员和用户之间进行交流的语言。</p>
-<p><strong>基本要求</strong>：<br>    较强的语义表达能力；<br>    简单、清晰、易于用户理解。</p>
-<p><em>信息世界中的基本概念：</em></p>
-<ul>
-<li><p>实体(entity)</p>
-<p>客观存在并可相互区别的事物称为实体。（具体的人、事、物or抽象的概念）</p>
-</li>
-<li><p>属性(attribute)</p>
-<p>实体所具有的某一特性。（一个实体可以由多个属性刻画）</p>
-</li>
-<li><p>码(key)</p>
-<p>唯一标识实体的属性集称为码。</p>
-</li>
-<li><p>实体型(entity type)</p>
-<p>用实体名及其属性名集合 来抽象和刻画同类实体称为实体型。</p>
-</li>
-<li><p>实体集(entity set)</p>
-<p>同一类型实体的集合。</p>
-</li>
-<li><p>联系(relationship)</p>
-<p>现实世界中事物内部以及事物之间的联系在信息世界中反映为实体（型）内部的联系和实体（型）之间的联系；</p>
-<p><strong>实体内部的联系</strong>通常是指组成实体的各属性之间的联系</p>
-<p><strong>实体之间的联系</strong>通常是指不同实体集之间的联系</p>
-<p>实体之间的联系有<em>一对一、一对多、多对多</em> 等多种类型</p>
-</li>
-</ul>
-<p>概念模型的一种表示方法：<strong>实体-联系方法</strong> ( Entity-Relationship Approach )</p>
-<p>用E-R图来描述现实世界的概念模型（E-R方法也称为E-R模型）</p>
-<h2 id="数据模型的组成"><a href="#数据模型的组成" class="headerlink" title="数据模型的组成"></a>数据模型的组成</h2><h2 id="常用的数据模型"><a href="#常用的数据模型" class="headerlink" title="常用的数据模型"></a>常用的数据模型</h2><h2 id="层次模型"><a href="#层次模型" class="headerlink" title="层次模型"></a>层次模型</h2><h2 id="网状模型"><a href="#网状模型" class="headerlink" title="网状模型"></a>网状模型</h2><h2 id="关系模型"><a href="#关系模型" class="headerlink" title="关系模型"></a>关系模型</h2>]]></content>
       <categories>
         <category>数据库原理</category>
         <category>绪论</category>
