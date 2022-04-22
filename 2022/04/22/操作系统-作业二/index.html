@@ -66,7 +66,7 @@
 
 
 
-  <meta name="keywords" content="数据库," />
+  <meta name="keywords" content="操作系统," />
 
 
 
@@ -77,15 +77,17 @@
 
 
 
+<meta name="description" content="实现一程序，分别在Windows、Linux操作系统下验证:  栈、堆、数据区是否可读可写不可执行 代码段是否可读可执行不可写  截止时间：2022.4.22">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关系的完整性">
-<meta property="og:url" content="http://example.com/2022/04/20/%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7/index.html">
+<meta property="og:title" content="操作系统-作业二">
+<meta property="og:url" content="http://example.com/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%BA%8C/index.html">
 <meta property="og:site_name" content="Finding Paradise">
+<meta property="og:description" content="实现一程序，分别在Windows、Linux操作系统下验证:  栈、堆、数据区是否可读可写不可执行 代码段是否可读可执行不可写  截止时间：2022.4.22">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-04-20T02:04:43.000Z">
-<meta property="article:modified_time" content="2022-04-20T02:06:28.206Z">
+<meta property="article:published_time" content="2022-04-22T15:15:23.000Z">
+<meta property="article:modified_time" content="2022-04-22T15:19:45.573Z">
 <meta property="article:author" content="Jenny Cruise">
-<meta property="article:tag" content="数据库">
+<meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary">
 
 
@@ -116,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/2022/04/20/关系的完整性/"/>
+  <link rel="canonical" href="http://example.com/2022/04/22/操作系统-作业二/"/>
 
 
 
 
 
-  <title>关系的完整性 | Finding Paradise</title>
+  <title>操作系统-作业二 | Finding Paradise</title>
   
 
 
@@ -297,7 +299,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/20/%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%BA%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -314,7 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">关系的完整性</h1>
+          <h1 class="post-title" itemprop="name headline">操作系统-作业二</h1>
         
 
         <div class="post-meta">
@@ -326,8 +328,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-04-20T10:04:43+08:00">
-                2022-04-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2022-04-22T23:15:23+08:00">
+                2022-04-22
               </time>
             
 
@@ -342,8 +344,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2022-04-20T10:06:28+08:00">
-                2022-04-20
+              <time title="更新于" itemprop="dateModified" datetime="2022-04-22T23:19:45+08:00">
+                2022-04-22
               </time>
             
           </span>
@@ -361,8 +363,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/" itemprop="url" rel="index">
-                    <span itemprop="name">数据库原理</span>
+                  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index">
+                    <span itemprop="name">操作系统</span>
                   </a>
                 </span>
 
@@ -372,8 +374,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index">
-                    <span itemprop="name">关系数据库</span>
+                  <a href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E4%BD%9C%E4%B8%9A/" itemprop="url" rel="index">
+                    <span itemprop="name">作业</span>
                   </a>
                 </span>
 
@@ -390,9 +392,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2022/04/20/%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7/#comments" itemprop="discussionUrl">
+                <a href="/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%BA%8C/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2022/04/20/关系的完整性/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2022/04/22/操作系统-作业二/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -420,7 +422,17 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现一程序，分别在Windows、Linux操作系统下验证:</p>
+<ul>
+<li>栈、堆、数据区是否可读可写不可执行</li>
+<li>代码段是否可读可执行不可写</li>
+</ul>
+<p>截止时间：2022.4.22</p>
+<span id="more"></span>
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/time.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//数据段</span></span><br><span class="line"><span class="type">int</span> DataArea;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span>* <span class="title">Stack</span><span class="params">( <span class="type">int</span> x )</span>    <span class="comment">//代码段</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> StackArea;      <span class="comment">//栈</span></span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;StackValue   &quot;</span>&lt;&lt;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;HeapAddress &quot;</span>&lt;&lt;&amp;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">    *(&amp;StackArea) = <span class="number">12</span>;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">CodeArea</span><span class="params">( <span class="type">int</span> y )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;CodeArea is executing&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Ending...&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> ch = <span class="number">1</span>;</span><br><span class="line">    <span class="type">float</span> time_use=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">timeval</span> start;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">timeval</span> end;<span class="comment">//struct timezone tz;</span></span><br><span class="line"></span><br><span class="line">    <span class="type">static</span> <span class="type">void</span>* p;</span><br><span class="line">    <span class="type">char</span>* HeapArea = ( <span class="type">char</span>* ) <span class="built_in">malloc</span> ( <span class="built_in">sizeof</span>( <span class="type">char</span> ) );  <span class="comment">//堆段</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>( ch != <span class="number">0</span> )</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;_______________________________________________________________________&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;please select: &quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;1.DataSegment    2.CodeSegment   3.StackSegment  4.HeapSegment   0.exit&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;_______________________________________________________________________&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cin&gt;&gt;ch;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>( ch == <span class="number">1</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//dataseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;DataValue   &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;DataAddress &quot;</span>&lt;&lt;&amp;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            *(&amp;DataArea) = <span class="number">21</span>;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">2</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//codeseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeValue   &quot;</span>&lt;&lt;CodeArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeAddress &quot;</span>&lt;&lt;&amp;CodeArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            <span class="comment">//*(&amp;CodeArea) = 21;</span></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeBlocks warning-&gt; error: assignment of read-only location &#x27;* CodeArea&#x27;|&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Unwritable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Now execute-&gt; &quot;</span>&lt;&lt;endl;</span><br><span class="line">            (<span class="built_in">void</span> (*)())&amp;CodeArea;<span class="comment">//将地址转换为函数指针运行</span></span><br><span class="line">            (*(<span class="built_in">void</span> (*)())&amp;CodeArea)();</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;&lt;- Executable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">3</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//stackseg</span></span><br><span class="line">            <span class="built_in">Stack</span>(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">4</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//heapseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;HeapValue   &quot;</span>&lt;&lt;HeapArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;HeapAddress &quot;</span>&lt;&lt;&amp;HeapArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            *(&amp;HeapArea) = <span class="string">&quot;HEAP&quot;</span>;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">0</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     
@@ -437,7 +449,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"><i class="fa fa-tag"></i> 数据库</a>
+            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag"><i class="fa fa-tag"></i> 操作系统</a>
           
         </div>
       
@@ -450,8 +462,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2022/04/20/%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C/" rel="next" title="关系操作">
-                <i class="fa fa-chevron-left"></i> 关系操作
+              <a href="/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%B8%80/" rel="next" title="操作系统-作业一">
+                <i class="fa fa-chevron-left"></i> 操作系统-作业一
               </a>
             
           </div>
@@ -459,10 +471,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2022/04/20/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0/" rel="prev" title="关系代数">
-                关系代数 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -764,9 +772,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://example.com/2022/04/20/%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7/';
-          this.page.identifier = '2022/04/20/关系的完整性/';
-          this.page.title = '关系的完整性';
+          this.page.url = 'http://example.com/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%BA%8C/';
+          this.page.identifier = '2022/04/22/操作系统-作业二/';
+          this.page.title = '操作系统-作业二';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';

@@ -223,6 +223,18 @@
       </tags>
   </entry>
   <entry>
+    <title>关系演算</title>
+    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+      <categories>
+        <category>数据库原理</category>
+        <category>关系数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关系数据结构及形式化定义</title>
     <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>讲解关系数据结构，包括关系的形式化定义及有关概念</p>
@@ -238,15 +250,55 @@
       </tags>
   </entry>
   <entry>
-    <title>关系演算</title>
-    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+    <title>操作系统-作业一</title>
+    <url>/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%B8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>一般操作系统中，进程的每个段内部地址均连续，但段与段的相对次序可能不同。<br>用C&#x2F;C++语言写一个小程序，探测一个操作系统中进程的各段的相对位置。<br>(输出次序即可)</p>
+<p>截至日期：2022.4.14</p>
+<span id="more"></span>
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iomanip&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span>       g_A = <span class="number">1</span>;    <span class="comment">//代码段， 常量</span></span><br><span class="line"><span class="type">int</span>             g_B = <span class="number">2</span>;	<span class="comment">//数据段， 全局变量</span></span><br><span class="line"><span class="type">static</span> <span class="type">int</span>      g_C;		<span class="comment">//BSS段， 未初始化全局静态变量</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">AddStruct</span></span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    string name;</span><br><span class="line">    <span class="type">long</span> <span class="type">long</span> add;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">bool</span> <span class="title">Cmpare</span><span class="params">(<span class="type">const</span> AddStruct&amp; a, <span class="type">const</span> AddStruct&amp; b)</span><span class="comment">//const必须加,不然会错 当return的是ture时, a先输出, 所以示例中是升序</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.add &lt; b.add;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">(<span class="type">int</span> argc, <span class="type">char</span> <span class="type">const</span>* argv[])</span> 	<span class="comment">//栈，函数参数</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> local_A;					    <span class="comment">//栈，局部变量</span></span><br><span class="line">    <span class="type">static</span> <span class="type">int</span> local_B = <span class="number">4</span>;			    <span class="comment">//数据段，局部静态变量</span></span><br><span class="line">    <span class="type">static</span> <span class="type">int</span> local_C;				    <span class="comment">//BSS段，未初始化局部静态变量</span></span><br><span class="line"></span><br><span class="line">    <span class="type">char</span>* p2 = <span class="string">&quot;123456&quot;</span>;			    <span class="comment">//“123456”在代码段，</span></span><br><span class="line">                                        <span class="comment">//字符串常量， P2在栈上</span></span><br><span class="line">    <span class="type">char</span>* g_p1 = (<span class="type">char</span>*)<span class="built_in">malloc</span>(<span class="number">100</span>);	    <span class="comment">//申请的10字节空间在堆上</span></span><br><span class="line"></span><br><span class="line">    AddStruct MyStruct[<span class="number">5</span>];</span><br><span class="line">    MyStruct[<span class="number">0</span>].name = <span class="string">&quot;Code&quot;</span>;</span><br><span class="line">    MyStruct[<span class="number">0</span>].add = <span class="keyword">reinterpret_cast</span> &lt;<span class="type">long</span> <span class="type">long</span>&gt;(&amp;main);</span><br><span class="line"></span><br><span class="line">    MyStruct[<span class="number">1</span>].name = <span class="string">&quot;Data&quot;</span>;</span><br><span class="line">    MyStruct[<span class="number">1</span>].add = <span class="keyword">reinterpret_cast</span> &lt;<span class="type">long</span> <span class="type">long</span>&gt;(&amp;g_B);</span><br><span class="line"></span><br><span class="line">    MyStruct[<span class="number">2</span>].name = <span class="string">&quot;BSS&quot;</span>;</span><br><span class="line">    MyStruct[<span class="number">2</span>].add = <span class="keyword">reinterpret_cast</span> &lt;<span class="type">long</span> <span class="type">long</span>&gt;(&amp;g_C);</span><br><span class="line"></span><br><span class="line">    MyStruct[<span class="number">3</span>].name = <span class="string">&quot;Stack&quot;</span>;</span><br><span class="line">    MyStruct[<span class="number">3</span>].add = <span class="keyword">reinterpret_cast</span> &lt;<span class="type">long</span> <span class="type">long</span>&gt;(p2);</span><br><span class="line"></span><br><span class="line">    MyStruct[<span class="number">4</span>].name = <span class="string">&quot;Heap&quot;</span>;</span><br><span class="line">    MyStruct[<span class="number">4</span>].add = <span class="keyword">reinterpret_cast</span> &lt;<span class="type">long</span> <span class="type">long</span>&gt;(&amp;g_p1);</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>;    </span><br><span class="line">    <span class="built_in">sort</span>(MyStruct, MyStruct+ <span class="number">5</span>, Cmpare);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cout &lt;&lt; <span class="built_in">setw</span>(<span class="number">6</span>)&lt;&lt; MyStruct[i].name &lt;&lt; <span class="string">&quot;Segment 的 address 为: &quot;</span> &lt;&lt; MyStruct[i].add &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
-        <category>数据库原理</category>
-        <category>关系数据库</category>
+        <category>操作系统</category>
+        <category>作业</category>
       </categories>
       <tags>
-        <tag>数据库</tag>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统-作业二</title>
+    <url>/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%BA%8C/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现一程序，分别在Windows、Linux操作系统下验证:</p>
+<ul>
+<li>栈、堆、数据区是否可读可写不可执行</li>
+<li>代码段是否可读可执行不可写</li>
+</ul>
+<p>截止时间：2022.4.22</p>
+<span id="more"></span>
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/time.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//数据段</span></span><br><span class="line"><span class="type">int</span> DataArea;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span>* <span class="title">Stack</span><span class="params">( <span class="type">int</span> x )</span>    <span class="comment">//代码段</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> StackArea;      <span class="comment">//栈</span></span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;StackValue   &quot;</span>&lt;&lt;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;HeapAddress &quot;</span>&lt;&lt;&amp;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">    *(&amp;StackArea) = <span class="number">12</span>;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">CodeArea</span><span class="params">( <span class="type">int</span> y )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;CodeArea is executing&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Ending...&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> ch = <span class="number">1</span>;</span><br><span class="line">    <span class="type">float</span> time_use=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">timeval</span> start;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">timeval</span> end;<span class="comment">//struct timezone tz;</span></span><br><span class="line"></span><br><span class="line">    <span class="type">static</span> <span class="type">void</span>* p;</span><br><span class="line">    <span class="type">char</span>* HeapArea = ( <span class="type">char</span>* ) <span class="built_in">malloc</span> ( <span class="built_in">sizeof</span>( <span class="type">char</span> ) );  <span class="comment">//堆段</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>( ch != <span class="number">0</span> )</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;_______________________________________________________________________&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;please select: &quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;1.DataSegment    2.CodeSegment   3.StackSegment  4.HeapSegment   0.exit&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;_______________________________________________________________________&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cin&gt;&gt;ch;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>( ch == <span class="number">1</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//dataseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;DataValue   &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;DataAddress &quot;</span>&lt;&lt;&amp;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            *(&amp;DataArea) = <span class="number">21</span>;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">2</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//codeseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeValue   &quot;</span>&lt;&lt;CodeArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeAddress &quot;</span>&lt;&lt;&amp;CodeArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            <span class="comment">//*(&amp;CodeArea) = 21;</span></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeBlocks warning-&gt; error: assignment of read-only location &#x27;* CodeArea&#x27;|&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Unwritable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Now execute-&gt; &quot;</span>&lt;&lt;endl;</span><br><span class="line">            (<span class="built_in">void</span> (*)())&amp;CodeArea;<span class="comment">//将地址转换为函数指针运行</span></span><br><span class="line">            (*(<span class="built_in">void</span> (*)())&amp;CodeArea)();</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;&lt;- Executable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">3</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//stackseg</span></span><br><span class="line">            <span class="built_in">Stack</span>(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">4</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//heapseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;HeapValue   &quot;</span>&lt;&lt;HeapArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;HeapAddress &quot;</span>&lt;&lt;&amp;HeapArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            *(&amp;HeapArea) = <span class="string">&quot;HEAP&quot;</span>;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">0</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>操作系统</category>
+        <category>作业</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统概述</title>
+    <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+      <categories>
+        <category>操作系统</category>
+        <category>操作系统引论</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
       </tags>
   </entry>
   <entry>
@@ -377,15 +429,168 @@
       </tags>
   </entry>
   <entry>
-    <title>操作系统概述</title>
-    <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+    <title>数据库系统结构和组成</title>
+    <url>/2022/04/20/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%92%8C%E7%BB%84%E6%88%90/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>❖从数据库应用开发人员角度看，数据库系统通常采用三级 模式结构，是数据库系统内部的系统结构</p>
+<p>❖从数据库最终用户角度看，数据库系统的结构分为: - 单用户结构 - 主从式结构 - 分布式结构 -客户-服务器 等</p>
+<p>❖数据库的组成: 数据库 + 数据库管理系统（及其开发工具）+ 应用程序 + 数据库管理员</p>
+<span id="more"></span>
+
+<h2 id="数据库系统模式的概念"><a href="#数据库系统模式的概念" class="headerlink" title="数据库系统模式的概念"></a>数据库系统模式的概念</h2><h3 id="型（type）"><a href="#型（type）" class="headerlink" title="型（type）"></a>型（type）</h3><p>对某一类数据的结构和属性的说明</p>
+<h3 id="值（value）"><a href="#值（value）" class="headerlink" title="值（value）"></a>值（value）</h3><p>是型的一个具体赋值</p>
+<blockquote>
+<p>eg.<br>学生记录：<br>（学号，姓名，性别，系别，年龄，籍贯）</p>
+<p>一个记录值：<br>（201315130，李明，男，计算机系，19，江苏南京市）</p>
+</blockquote>
+<h3 id="模式（schema）"><a href="#模式（schema）" class="headerlink" title="模式（schema）"></a>模式（schema）</h3><ul>
+<li>数据库逻辑结构和特征的描述</li>
+<li>是型的描述，不涉及具体值</li>
+<li>反映的是数据的结构及其联系</li>
+<li>模式是相对稳定的</li>
+</ul>
+<h3 id="实例（instance）"><a href="#实例（instance）" class="headerlink" title="实例（instance）"></a>实例（instance）</h3><ul>
+<li>模式的一个具体值</li>
+<li>反映数据库某一时刻的状态</li>
+<li>同一个模式可以有很多实例</li>
+<li>实例随数据库中的数据的更新而变动</li>
+</ul>
+<h2 id="数据库系统的三级模式结构"><a href="#数据库系统的三级模式结构" class="headerlink" title="数据库系统的三级模式结构"></a>数据库系统的三级模式结构</h2><img src="三级模式.png" style="zoom:50%;" />
+
+<h3 id="模式（逻辑模式）"><a href="#模式（逻辑模式）" class="headerlink" title="模式（逻辑模式）"></a>模式（逻辑模式）</h3><ul>
+<li>数据库中全体数据的逻辑结构和特征的描述</li>
+<li>所有用户的公共数据视图</li>
+<li>一个数据库只有一个模式</li>
+<li><em>是数据库系统模式结构的中间层</em><ul>
+<li>与数据的物理存储细节和硬件环境无关</li>
+<li>与具体的应用程序、开发工具及高级程序设计语言无关</li>
+</ul>
+</li>
+</ul>
+<p>模式的定义：</p>
+<ul>
+<li>数据的逻辑结构（数据项的名字、类型、取值范围等）</li>
+<li>数据之间的联系</li>
+<li>数据有关的安全性、完整性要求</li>
+</ul>
+<h3 id="外模式（子模式OR用户模式）"><a href="#外模式（子模式OR用户模式）" class="headerlink" title="外模式（子模式OR用户模式）"></a>外模式（子模式OR用户模式）</h3><ul>
+<li><p>数据库用户使用的局部数据的逻辑结构和特征的描述</p>
+</li>
+<li><p>数据库用户的数据视图，是与某一应用有关的数据的逻辑表示</p>
+</li>
+<li><p><em>介于模式与应用之间</em></p>
+<ul>
+<li><p>模式与外模式的关系：一对多</p>
+<blockquote>
+<p>外模式通常是模式的子集</p>
+<p>一个数据库可以有多个外模式</p>
+<p>对模式中同一数据，在外模式中的结构、类型、长度、保密级别等都可以不同</p>
+</blockquote>
+</li>
+<li><p>外模式与应用的关系：一对多</p>
+<blockquote>
+<p>同一外模式也可以为某一用户的多个应用系统所使用</p>
+<p>但一个应用程序只能使用一个外模式</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>外模式的用途</p>
+<ul>
+<li>保证数据库安全性</li>
+<li>每个用户只能看见和访问所对应的外模式中的数据</li>
+</ul>
+<h3 id="内模式"><a href="#内模式" class="headerlink" title="内模式"></a>内模式</h3><ul>
+<li>是数据物理结构和存储方式的描述</li>
+<li>是数据在数据库内部的表示方式</li>
+<li>一个数据库只有一个内模式</li>
+</ul>
+<h2 id="数据库的二级印象功能与数据独立性"><a href="#数据库的二级印象功能与数据独立性" class="headerlink" title="数据库的二级印象功能与数据独立性"></a>数据库的二级印象功能与数据独立性</h2><p><strong>三级模式</strong>是对数据的三个抽象级别</p>
+<p><strong>二级映像</strong>在数据库管理系统内部实现这三个抽象层次的联系和转换</p>
+<p><code>外模式/模式 映像</code>&amp; <code>模式/内模式 映像</code></p>
+<h3 id="外模式-x2F-模式-映像"><a href="#外模式-x2F-模式-映像" class="headerlink" title="外模式&#x2F;模式 映像"></a>外模式&#x2F;模式 映像</h3><p><strong>模式：</strong>描述的是数据的 <code>全局</code> 逻辑结构</p>
+<p><strong>外模式：</strong>描述的是数据的 <code>局部</code> 逻辑结构</p>
+<ul>
+<li>同一个模式可以有任意多个外模式</li>
+<li>每一个外模式，数据库系统都有一个<code>外模式/模式 映像</code>，定义外模式与模式之间的对应关系映像定义通常包含在各自外模式的描述中</li>
+<li><em>保证数据的逻辑独立性</em><ul>
+<li>模式改变时，数据库管理员对<code>外模式/模式</code>作相应改变，使外模式保持不变</li>
+<li>应用程序是依据数据的外模式编写的，应用程序不必修改，保证了数据与程序的逻辑独立性（数据的逻辑独立性）</li>
+</ul>
+</li>
+</ul>
+<h3 id="模式-x2F-内模式-映像"><a href="#模式-x2F-内模式-映像" class="headerlink" title="模式&#x2F;内模式 映像"></a>模式&#x2F;内模式 映像</h3><ul>
+<li><p>模式／内模式映象是唯一的，定义了数据全局逻辑结构与 存储结构之间的对应关系。</p>
+</li>
+<li><p>映象定义通常包含在模式描述中</p>
+</li>
+<li><p><em>保证数据的物理独立性</em></p>
+<ul>
+<li>当数据库的存储结构改变了（例如选用了另一种存储结构，数据库管理员修改模式／内模式映象，使模式保持不变。</li>
+<li>应用程序不受影响。保证了数据与程序的物理独立性， 简称数据的物理独立性。</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据库模式"><a href="#数据库模式" class="headerlink" title="数据库模式"></a>数据库模式</h3><ul>
+<li>全局逻辑结构，是数据库的中心与关键</li>
+<li>独立于数据库的其他层次</li>
+<li>设计数据库模式结构时应首先确定数据库的逻辑模式</li>
+</ul>
+<h3 id="数据库的内模式"><a href="#数据库的内模式" class="headerlink" title="数据库的内模式"></a>数据库的内模式</h3><ul>
+<li>依赖于它的全局逻辑结构</li>
+<li>独立于数据库的用户视图（外模式）</li>
+<li>独立于具体的存储设备</li>
+<li>将全局逻辑结构中所定义的数据结构及其联系按照一定的物理存储策略进行组织，以达到较好的时间与空间效率</li>
+</ul>
+<h3 id="数据库的外模式"><a href="#数据库的外模式" class="headerlink" title="数据库的外模式"></a>数据库的外模式</h3><ul>
+<li>面向具体二点应用程序</li>
+<li>定义在逻辑模式之上</li>
+<li>独立于存储模式和存储设备</li>
+<li>当应用需求发生较大变化，相应外模式不能满足其视图要求时，该外模式就得做相应改动</li>
+<li>设计外模式时应充分考虑到应用的扩充性</li>
+</ul>
+<h3 id="数据库的二级映像"><a href="#数据库的二级映像" class="headerlink" title="数据库的二级映像"></a>数据库的二级映像</h3><ul>
+<li>保证了数据库外模式的稳定性</li>
+<li>从底层保证了应用程序的稳定性</li>
+</ul>
+<h2 id="数据库系统的组成"><a href="#数据库系统的组成" class="headerlink" title="数据库系统的组成"></a>数据库系统的组成</h2><blockquote>
+<p>数据库<br>数据库管理系统<br>应用程序<br>数据库管理员</p>
+</blockquote>
+<p>还包括：</p>
+<blockquote>
+<p><strong>硬件平台及数据库</strong></p>
+<ul>
+<li>内存大 </li>
+<li>足够大的磁盘存放数据库和数据备份</li>
+<li>要求系统有较高的通道能力，提高数据传送率</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>软件</strong></p>
+<ul>
+<li>数据库管理系统</li>
+<li>支持数据库管理系统运行的操作系统</li>
+<li>与数据库接口的高级语言及其编译系统</li>
+<li>以数据库管理系统为核心的应用开发工具</li>
+<li>为特定应用环境开发的数据库应用系统</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>人员</strong></p>
+<ul>
+<li>数据库管理员</li>
+<li>系统分析员和数据库设计人员</li>
+<li>应用程序员</li>
+<li>最终用户</li>
+</ul>
+</blockquote>
+]]></content>
       <categories>
-        <category>操作系统</category>
-        <category>操作系统引论</category>
+        <category>数据库原理</category>
+        <category>绪论</category>
       </categories>
       <tags>
-        <tag>操作系统</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -585,171 +790,6 @@
 <blockquote>
 <p>存取路径对用户透明，查询效率不如格式化数据模型</p>
 <p>为提高性能，必须对用户的查询请求进行优化，增加了开发数据库管理系统的难度</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>数据库原理</category>
-        <category>绪论</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据库系统结构和组成</title>
-    <url>/2022/04/20/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E7%BB%93%E6%9E%84%E5%92%8C%E7%BB%84%E6%88%90/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>❖从数据库应用开发人员角度看，数据库系统通常采用三级 模式结构，是数据库系统内部的系统结构</p>
-<p>❖从数据库最终用户角度看，数据库系统的结构分为: - 单用户结构 - 主从式结构 - 分布式结构 -客户-服务器 等</p>
-<p>❖数据库的组成: 数据库 + 数据库管理系统（及其开发工具）+ 应用程序 + 数据库管理员</p>
-<span id="more"></span>
-
-<h2 id="数据库系统模式的概念"><a href="#数据库系统模式的概念" class="headerlink" title="数据库系统模式的概念"></a>数据库系统模式的概念</h2><h3 id="型（type）"><a href="#型（type）" class="headerlink" title="型（type）"></a>型（type）</h3><p>对某一类数据的结构和属性的说明</p>
-<h3 id="值（value）"><a href="#值（value）" class="headerlink" title="值（value）"></a>值（value）</h3><p>是型的一个具体赋值</p>
-<blockquote>
-<p>eg.<br>学生记录：<br>（学号，姓名，性别，系别，年龄，籍贯）</p>
-<p>一个记录值：<br>（201315130，李明，男，计算机系，19，江苏南京市）</p>
-</blockquote>
-<h3 id="模式（schema）"><a href="#模式（schema）" class="headerlink" title="模式（schema）"></a>模式（schema）</h3><ul>
-<li>数据库逻辑结构和特征的描述</li>
-<li>是型的描述，不涉及具体值</li>
-<li>反映的是数据的结构及其联系</li>
-<li>模式是相对稳定的</li>
-</ul>
-<h3 id="实例（instance）"><a href="#实例（instance）" class="headerlink" title="实例（instance）"></a>实例（instance）</h3><ul>
-<li>模式的一个具体值</li>
-<li>反映数据库某一时刻的状态</li>
-<li>同一个模式可以有很多实例</li>
-<li>实例随数据库中的数据的更新而变动</li>
-</ul>
-<h2 id="数据库系统的三级模式结构"><a href="#数据库系统的三级模式结构" class="headerlink" title="数据库系统的三级模式结构"></a>数据库系统的三级模式结构</h2><img src="三级模式.png" style="zoom:50%;" />
-
-<h3 id="模式（逻辑模式）"><a href="#模式（逻辑模式）" class="headerlink" title="模式（逻辑模式）"></a>模式（逻辑模式）</h3><ul>
-<li>数据库中全体数据的逻辑结构和特征的描述</li>
-<li>所有用户的公共数据视图</li>
-<li>一个数据库只有一个模式</li>
-<li><em>是数据库系统模式结构的中间层</em><ul>
-<li>与数据的物理存储细节和硬件环境无关</li>
-<li>与具体的应用程序、开发工具及高级程序设计语言无关</li>
-</ul>
-</li>
-</ul>
-<p>模式的定义：</p>
-<ul>
-<li>数据的逻辑结构（数据项的名字、类型、取值范围等）</li>
-<li>数据之间的联系</li>
-<li>数据有关的安全性、完整性要求</li>
-</ul>
-<h3 id="外模式（子模式OR用户模式）"><a href="#外模式（子模式OR用户模式）" class="headerlink" title="外模式（子模式OR用户模式）"></a>外模式（子模式OR用户模式）</h3><ul>
-<li><p>数据库用户使用的局部数据的逻辑结构和特征的描述</p>
-</li>
-<li><p>数据库用户的数据视图，是与某一应用有关的数据的逻辑表示</p>
-</li>
-<li><p><em>介于模式与应用之间</em></p>
-<ul>
-<li><p>模式与外模式的关系：一对多</p>
-<blockquote>
-<p>外模式通常是模式的子集</p>
-<p>一个数据库可以有多个外模式</p>
-<p>对模式中同一数据，在外模式中的结构、类型、长度、保密级别等都可以不同</p>
-</blockquote>
-</li>
-<li><p>外模式与应用的关系：一对多</p>
-<blockquote>
-<p>同一外模式也可以为某一用户的多个应用系统所使用</p>
-<p>但一个应用程序只能使用一个外模式</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<p>外模式的用途</p>
-<ul>
-<li>保证数据库安全性</li>
-<li>每个用户只能看见和访问所对应的外模式中的数据</li>
-</ul>
-<h3 id="内模式"><a href="#内模式" class="headerlink" title="内模式"></a>内模式</h3><ul>
-<li>是数据物理结构和存储方式的描述</li>
-<li>是数据在数据库内部的表示方式</li>
-<li>一个数据库只有一个内模式</li>
-</ul>
-<h2 id="数据库的二级印象功能与数据独立性"><a href="#数据库的二级印象功能与数据独立性" class="headerlink" title="数据库的二级印象功能与数据独立性"></a>数据库的二级印象功能与数据独立性</h2><p><strong>三级模式</strong>是对数据的三个抽象级别</p>
-<p><strong>二级映像</strong>在数据库管理系统内部实现这三个抽象层次的联系和转换</p>
-<p><code>外模式/模式 映像</code>&amp; <code>模式/内模式 映像</code></p>
-<h3 id="外模式-x2F-模式-映像"><a href="#外模式-x2F-模式-映像" class="headerlink" title="外模式&#x2F;模式 映像"></a>外模式&#x2F;模式 映像</h3><p><strong>模式：</strong>描述的是数据的 <code>全局</code> 逻辑结构</p>
-<p><strong>外模式：</strong>描述的是数据的 <code>局部</code> 逻辑结构</p>
-<ul>
-<li>同一个模式可以有任意多个外模式</li>
-<li>每一个外模式，数据库系统都有一个<code>外模式/模式 映像</code>，定义外模式与模式之间的对应关系映像定义通常包含在各自外模式的描述中</li>
-<li><em>保证数据的逻辑独立性</em><ul>
-<li>模式改变时，数据库管理员对<code>外模式/模式</code>作相应改变，使外模式保持不变</li>
-<li>应用程序是依据数据的外模式编写的，应用程序不必修改，保证了数据与程序的逻辑独立性（数据的逻辑独立性）</li>
-</ul>
-</li>
-</ul>
-<h3 id="模式-x2F-内模式-映像"><a href="#模式-x2F-内模式-映像" class="headerlink" title="模式&#x2F;内模式 映像"></a>模式&#x2F;内模式 映像</h3><ul>
-<li><p>模式／内模式映象是唯一的，定义了数据全局逻辑结构与 存储结构之间的对应关系。</p>
-</li>
-<li><p>映象定义通常包含在模式描述中</p>
-</li>
-<li><p><em>保证数据的物理独立性</em></p>
-<ul>
-<li>当数据库的存储结构改变了（例如选用了另一种存储结构，数据库管理员修改模式／内模式映象，使模式保持不变。</li>
-<li>应用程序不受影响。保证了数据与程序的物理独立性， 简称数据的物理独立性。</li>
-</ul>
-</li>
-</ul>
-<h3 id="数据库模式"><a href="#数据库模式" class="headerlink" title="数据库模式"></a>数据库模式</h3><ul>
-<li>全局逻辑结构，是数据库的中心与关键</li>
-<li>独立于数据库的其他层次</li>
-<li>设计数据库模式结构时应首先确定数据库的逻辑模式</li>
-</ul>
-<h3 id="数据库的内模式"><a href="#数据库的内模式" class="headerlink" title="数据库的内模式"></a>数据库的内模式</h3><ul>
-<li>依赖于它的全局逻辑结构</li>
-<li>独立于数据库的用户视图（外模式）</li>
-<li>独立于具体的存储设备</li>
-<li>将全局逻辑结构中所定义的数据结构及其联系按照一定的物理存储策略进行组织，以达到较好的时间与空间效率</li>
-</ul>
-<h3 id="数据库的外模式"><a href="#数据库的外模式" class="headerlink" title="数据库的外模式"></a>数据库的外模式</h3><ul>
-<li>面向具体二点应用程序</li>
-<li>定义在逻辑模式之上</li>
-<li>独立于存储模式和存储设备</li>
-<li>当应用需求发生较大变化，相应外模式不能满足其视图要求时，该外模式就得做相应改动</li>
-<li>设计外模式时应充分考虑到应用的扩充性</li>
-</ul>
-<h3 id="数据库的二级映像"><a href="#数据库的二级映像" class="headerlink" title="数据库的二级映像"></a>数据库的二级映像</h3><ul>
-<li>保证了数据库外模式的稳定性</li>
-<li>从底层保证了应用程序的稳定性</li>
-</ul>
-<h2 id="数据库系统的组成"><a href="#数据库系统的组成" class="headerlink" title="数据库系统的组成"></a>数据库系统的组成</h2><blockquote>
-<p>数据库<br>数据库管理系统<br>应用程序<br>数据库管理员</p>
-</blockquote>
-<p>还包括：</p>
-<blockquote>
-<p><strong>硬件平台及数据库</strong></p>
-<ul>
-<li>内存大 </li>
-<li>足够大的磁盘存放数据库和数据备份</li>
-<li>要求系统有较高的通道能力，提高数据传送率</li>
-</ul>
-</blockquote>
-<blockquote>
-<p><strong>软件</strong></p>
-<ul>
-<li>数据库管理系统</li>
-<li>支持数据库管理系统运行的操作系统</li>
-<li>与数据库接口的高级语言及其编译系统</li>
-<li>以数据库管理系统为核心的应用开发工具</li>
-<li>为特定应用环境开发的数据库应用系统</li>
-</ul>
-</blockquote>
-<blockquote>
-<p><strong>人员</strong></p>
-<ul>
-<li>数据库管理员</li>
-<li>系统分析员和数据库设计人员</li>
-<li>应用程序员</li>
-<li>最终用户</li>
-</ul>
 </blockquote>
 ]]></content>
       <categories>
