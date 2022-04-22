@@ -211,6 +211,21 @@
       </tags>
   </entry>
   <entry>
+    <title>关系数据结构及形式化定义</title>
+    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>讲解关系数据结构，包括关系的形式化定义及有关概念</p>
+<span id="more"></span>
+
+<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><h3 id="域"><a href="#域" class="headerlink" title="域"></a>域</h3><h3 id="笛卡尔积"><a href="#笛卡尔积" class="headerlink" title="笛卡尔积"></a>笛卡尔积</h3><h3 id="关系-1"><a href="#关系-1" class="headerlink" title="关系"></a>关系</h3><h2 id="关系模式"><a href="#关系模式" class="headerlink" title="关系模式"></a>关系模式</h2><h2 id="关系数据库"><a href="#关系数据库" class="headerlink" title="关系数据库"></a>关系数据库</h2><h2 id="关系模型的存储结构"><a href="#关系模型的存储结构" class="headerlink" title="关系模型的存储结构"></a>关系模型的存储结构</h2>]]></content>
+      <categories>
+        <category>数据库原理</category>
+        <category>关系数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关系的完整性</title>
     <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
@@ -226,21 +241,6 @@
     <title>关系演算</title>
     <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
-      <categories>
-        <category>数据库原理</category>
-        <category>关系数据库</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关系数据结构及形式化定义</title>
-    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>讲解关系数据结构，包括关系的形式化定义及有关概念</p>
-<span id="more"></span>
-
-<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><h3 id="域"><a href="#域" class="headerlink" title="域"></a>域</h3><h3 id="笛卡尔积"><a href="#笛卡尔积" class="headerlink" title="笛卡尔积"></a>笛卡尔积</h3><h3 id="关系-1"><a href="#关系-1" class="headerlink" title="关系"></a>关系</h3><h2 id="关系模式"><a href="#关系模式" class="headerlink" title="关系模式"></a>关系模式</h2><h2 id="关系数据库"><a href="#关系数据库" class="headerlink" title="关系数据库"></a>关系数据库</h2><h2 id="关系模型的存储结构"><a href="#关系模型的存储结构" class="headerlink" title="关系模型的存储结构"></a>关系模型的存储结构</h2>]]></content>
       <categories>
         <category>数据库原理</category>
         <category>关系数据库</category>
@@ -268,6 +268,18 @@
       </tags>
   </entry>
   <entry>
+    <title>操作系统概述</title>
+    <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+      <categories>
+        <category>操作系统</category>
+        <category>操作系统引论</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>操作系统-作业二</title>
     <url>/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%BA%8C/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现一程序，分别在Windows、Linux操作系统下验证:</p>
@@ -284,18 +296,6 @@
       <categories>
         <category>操作系统</category>
         <category>作业</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>操作系统概述</title>
-    <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
-      <categories>
-        <category>操作系统</category>
-        <category>操作系统引论</category>
       </categories>
       <tags>
         <tag>操作系统</tag>
