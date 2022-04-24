@@ -85,7 +85,7 @@
 <meta property="og:description" content="讲解关系数据结构，包括关系的形式化定义及有关概念">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-04-20T02:04:04.000Z">
-<meta property="article:modified_time" content="2022-04-22T07:23:53.112Z">
+<meta property="article:modified_time" content="2022-04-24T13:06:58.280Z">
 <meta property="article:author" content="Jenny Cruise">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
@@ -344,8 +344,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2022-04-22T15:23:53+08:00">
-                2022-04-22
+              <time title="更新于" itemprop="dateModified" datetime="2022-04-24T21:06:58+08:00">
+                2022-04-24
               </time>
             
           </span>
@@ -425,7 +425,96 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>讲解关系数据结构，包括关系的形式化定义及有关概念</p>
 <span id="more"></span>
 
-<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><h3 id="域"><a href="#域" class="headerlink" title="域"></a>域</h3><h3 id="笛卡尔积"><a href="#笛卡尔积" class="headerlink" title="笛卡尔积"></a>笛卡尔积</h3><h3 id="关系-1"><a href="#关系-1" class="headerlink" title="关系"></a>关系</h3><h2 id="关系模式"><a href="#关系模式" class="headerlink" title="关系模式"></a>关系模式</h2><h2 id="关系数据库"><a href="#关系数据库" class="headerlink" title="关系数据库"></a>关系数据库</h2><h2 id="关系模型的存储结构"><a href="#关系模型的存储结构" class="headerlink" title="关系模型的存储结构"></a>关系模型的存储结构</h2>
+<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><h3 id="域（domain）"><a href="#域（domain）" class="headerlink" title="域（domain）"></a>域（domain）</h3><p><strong>域</strong> 是一组具有相同数据类型的值的集合</p>
+<h3 id="笛卡尔积（Cartesian-Product）"><a href="#笛卡尔积（Cartesian-Product）" class="headerlink" title="笛卡尔积（Cartesian Product）"></a>笛卡尔积（Cartesian Product）</h3><p>给定一组域D1，D2，…，Dn，允许其中某些域是相同的。 </p>
+<p>D1，D2，…，Dn的笛卡尔积为：</p>
+<p> <code>D1×D2×…×Dn＝｛（d1，d2，…，dn）｜di ∈ Di，i ＝ 1，2，…，n  ｝</code></p>
+<p><strong>元组</strong></p>
+<blockquote>
+<p>笛卡尔积中每一个元素（d1，d2，…，dn）叫作一个n元组 （n-tuple）或简称元组</p>
+</blockquote>
+<p><strong>分量</strong></p>
+<blockquote>
+<p>笛卡尔积元素（d1，d2，…，dn）中的每一个值di 叫作一个 分量</p>
+</blockquote>
+<p><strong>基数</strong></p>
+<blockquote>
+<p>若Di（i＝1，2，…，n）为有限集，其基数为mi（i＝1， 2，…，n），则D1×D2×…×Dn的基数M为：</p>
+<p>M &#x3D; Π(i: 1-&gt;n) mi</p>
+</blockquote>
+<h3 id="关系（relation）"><a href="#关系（relation）" class="headerlink" title="关系（relation）"></a>关系（relation）</h3><p><strong>关系</strong></p>
+<blockquote>
+<p>D1×D2×…×Dn的子集叫作在域D1，D2，…，Dn上的 关系，表示为:</p>
+<p><code>R（D1，D2，…，Dn）</code></p>
+<p>R：关系名， n：关系的目或度（degree）</p>
+</blockquote>
+<p><strong>元组</strong></p>
+<blockquote>
+<p>关系中的每个元素是关系中的元组，通常用 <em><strong>t</strong></em> 表示</p>
+</blockquote>
+<p><strong>单元关系与二元关系</strong></p>
+<blockquote>
+<p>当n&#x3D;1时，称该关系为单元关系（Unary relation） 或一元关系<br>当n&#x3D;2时，称该关系为二元关系（Binary relation）</p>
+</blockquote>
+<p><strong>关系的表示</strong></p>
+<blockquote>
+<p>关系也是一个二维表，表的每行对应一个元组，表的每列对应一个域</p>
+</blockquote>
+<p><strong>属性</strong></p>
+<blockquote>
+<p>为了加以区分，必须对每列起一个名字，称为属性</p>
+</blockquote>
+<p><strong>码</strong></p>
+<ul>
+<li>候选码（candidate key）</li>
+</ul>
+<blockquote>
+<p>若关系中的某一属性组的值能<em>唯一</em>地标识一个元组，而其真子集不能，则称该属性组为候选码 简单的情况：候选码只包含一个属性</p>
+</blockquote>
+<ul>
+<li><p>全码（All-key）</p>
+<blockquote>
+<p>最极端的情况：关系模式的<em>所有</em>属性组是这个关系模式的候选码，称为全码（All-key）</p>
+</blockquote>
+</li>
+<li><p>主码</p>
+<blockquote>
+<p>若一个关系有多个候选码，则选定其中一个为主码（Primary key）</p>
+</blockquote>
+</li>
+<li><p>主属性</p>
+<blockquote>
+<p>候选码的诸属性称为主属性（Prime attribute） 不包含在任何侯选码中的属性称为非主属性（Non-Prime attribute）或非码属性（Non-key attribute</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="关系模式"><a href="#关系模式" class="headerlink" title="关系模式"></a>关系模式</h2><p>关系模式是 <em>型</em> ，关系是 <em>值</em> 。<br>关系模式是对关系的描述</p>
+<p><strong>关系模式可以形式化地表示为：</strong></p>
+<blockquote>
+<p>R（U，D，DOM，F） </p>
+<p>R          关系名<br>U          组成该关系的属性名集合<br>D          U中属性所来自的域<br>DOM    属性向域的映象集合<br>F          属性间数据的依赖关系的集合</p>
+</blockquote>
+<p><strong>关系模式通常可以简记为：</strong></p>
+<blockquote>
+<p>R (U) 或 R (A1，A2，…，An)</p>
+<ul>
+<li><p>R: 关系名</p>
+</li>
+<li><p>A1，A2，…，An : 属性名</p>
+<p>注：域名及属性向域的映象常常直接说明为 属性的类型、长度</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="关系数据库"><a href="#关系数据库" class="headerlink" title="关系数据库"></a>关系数据库</h2><ul>
+<li>在一个给定的应用领域中，所有关系的集合构成一个 <em><strong>关系数据库</strong></em></li>
+<li>关系数据库的型: 关系数据库模式，是对关系数据库的描述</li>
+<li>关系数据库的值: 关系模式在某一时刻对应的关系的集合，通常称为关系数据库</li>
+</ul>
+<h2 id="关系模型的存储结构"><a href="#关系模型的存储结构" class="headerlink" title="关系模型的存储结构"></a>关系模型的存储结构</h2><ul>
+<li>有的关系数据库管理系统中一个表对应一个操作系统 文件，将物理数据组织交给操作系统完成</li>
+<li>有的关系数据库管理系统从操作系统那里申请若干个 大的文件，自己划分文件空间，组织表、索引等存储 结构，并进行存储管理</li>
+</ul>
+
       
     </div>
     
@@ -628,7 +717,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB"><span class="nav-number">1.</span> <span class="nav-text">关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%9F"><span class="nav-number">1.1.</span> <span class="nav-text">域</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF"><span class="nav-number">1.2.</span> <span class="nav-text">笛卡尔积</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB-1"><span class="nav-number">1.3.</span> <span class="nav-text">关系</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">关系模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">关系数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="nav-number">4.</span> <span class="nav-text">关系模型的存储结构</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB"><span class="nav-number">1.</span> <span class="nav-text">关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%9F%EF%BC%88domain%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">域（domain）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%9B%E5%8D%A1%E5%B0%94%E7%A7%AF%EF%BC%88Cartesian-Product%EF%BC%89"><span class="nav-number">1.2.</span> <span class="nav-text">笛卡尔积（Cartesian Product）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%EF%BC%88relation%EF%BC%89"><span class="nav-number">1.3.</span> <span class="nav-text">关系（relation）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">关系模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">关系数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="nav-number">4.</span> <span class="nav-text">关系模型的存储结构</span></a></li></ol></div>
             
 
           </div>
