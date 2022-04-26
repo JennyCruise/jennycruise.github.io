@@ -77,13 +77,15 @@
 
 
 
+<meta name="description" content="关系的三类完整性约束：  实体完整性 &amp; 参照完整性  关系模型必须满足的完整性约束条件，称为关系的两个不变性，应该由关系系统自动支持   用户定义的完整性  应用领域需要遵循的约束条件，体现了具体领域中的语义约束">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关系的完整性">
 <meta property="og:url" content="http://example.com/2022/04/20/%E5%85%B3%E7%B3%BB%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7/index.html">
 <meta property="og:site_name" content="Finding Paradise">
+<meta property="og:description" content="关系的三类完整性约束：  实体完整性 &amp; 参照完整性  关系模型必须满足的完整性约束条件，称为关系的两个不变性，应该由关系系统自动支持   用户定义的完整性  应用领域需要遵循的约束条件，体现了具体领域中的语义约束">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-04-20T02:04:43.000Z">
-<meta property="article:modified_time" content="2022-04-20T02:06:28.206Z">
+<meta property="article:modified_time" content="2022-04-26T13:37:04.897Z">
 <meta property="article:author" content="Jenny Cruise">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
@@ -342,8 +344,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2022-04-20T10:06:28+08:00">
-                2022-04-20
+              <time title="更新于" itemprop="dateModified" datetime="2022-04-26T21:37:04+08:00">
+                2022-04-26
               </time>
             
           </span>
@@ -420,7 +422,92 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>关系的三类完整性约束：</p>
+<ul>
+<li><p>实体完整性 &amp; 参照完整性</p>
+<blockquote>
+<p>关系模型必须满足的完整性约束条件，称为<code>关系的两个不变性</code>，应该由关系系统自动支持</p>
+</blockquote>
+</li>
+<li><p>用户定义的完整性</p>
+<blockquote>
+<p>应用领域需要遵循的约束条件，体现了具体领域中的语义约束</p>
+</blockquote>
+</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="实体完整性"><a href="#实体完整性" class="headerlink" title="实体完整性"></a>实体完整性</h2><ul>
+<li>若属性A是基本关系R的主属性，则属性A不能取空值</li>
+<li>空值就是“不知道”或“不存在”或“无意义”的值</li>
+</ul>
+<p>eg: </p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">选修（学号，课程号，成绩） </span><br><span class="line">	“学号、课程号”为主码 </span><br><span class="line">	“学号”和“课程号”两个属性都不能取空值</span><br></pre></td></tr></table></figure>
+
+<p>实体完整性规则的说明：</p>
+<ol>
+<li>实体完整性规则是针对基本关系而言的。<br> 一个基本表通常对应现实世界的一个实体集。</li>
+<li>现实世界中的实体是可区分的，<br>即它们具有某种唯 一性标识</li>
+<li>关系模型中以主码（候选码）作为唯一性标识。</li>
+<li>主码中的属性是主属性（候选码的诸属性）不能取空值</li>
+</ol>
+<blockquote>
+<p>主属性取空值，就说明存在某个不可标识的实体，即存在不可区分的实体，<br>这与第（2）点相矛盾，因此这个规则称为实体完整性</p>
+</blockquote>
+<h2 id="参照完整性"><a href="#参照完整性" class="headerlink" title="参照完整性"></a>参照完整性</h2><h3 id="关系间的引用"><a href="#关系间的引用" class="headerlink" title="关系间的引用"></a>关系间的引用</h3><p><strong>在关系模型中实体及实体间的联系都是用关系来 描述的，自然存在着关系与关系间的引用。</strong></p>
+<blockquote>
+<p>eg：</p>
+<p>学生（<em>学号</em>，姓名，性别，专业号，年龄）<br>专业（<em>专业号</em>，专业名）</p>
+<p>学生关系引用了专业关系的主码“专业号”<br>学生关系中的“专业号”值必须是确实存在的专业的专业号</p>
+</blockquote>
+<h3 id="外码"><a href="#外码" class="headerlink" title="外码"></a>外码</h3><ul>
+<li>设F是基本关系R的一个或一组属性，但不是关系R的码。 如果F与基本关系S的主码Ks相对应，则称F是R的外码</li>
+<li>基本关系R称为参照关系（Referencing Relation）</li>
+<li>基本关系S称为被参照关系（Referenced Relation） 或目标关系（Target Relation）</li>
+</ul>
+<blockquote>
+<p>eg</p>
+<p> [例2.1]中学生关系的“专业号”与专业关系的主码“专业号”相对应 </p>
+<ul>
+<li>“专业号”属性是学生关系的外码</li>
+<li>专业关系是被参照关系，学生关系为参照关系</li>
+</ul>
+</blockquote>
+<ul>
+<li><p>关系R和S不一定是不同的关系</p>
+</li>
+<li><p>目标关系S的主码Ks和参照关系的外码F必须定义在同一个（或一组）域上</p>
+</li>
+<li><p>外码并不一定要与相应的主码同名</p>
+<p>当外码与相应的主码属于不同关系时，往往取相同的名字，以便于识别</p>
+</li>
+</ul>
+<h3 id="参照完整性规则"><a href="#参照完整性规则" class="headerlink" title="参照完整性规则"></a>参照完整性规则</h3><p><strong>规则2.2 参照完整性规则</strong> </p>
+<p>若属性（或属性组）F是基本关系 R 的外码 它与基本关系S 的主码Ks相对应（基本关系R和S不一定是不同的关系）， 则对于R中每个元组在F上的值必须为： </p>
+<ul>
+<li>或者取空值（F的每个属性值均为空值）</li>
+<li>或者等于S中某个元组的主码值</li>
+</ul>
+<blockquote>
+<p>[例2.1]中<br>学生关系中每个元组的“专业号”属性只取两类值：</p>
+<ol>
+<li>空值，表示尚未给该学生分配专业 </li>
+<li>非空值，这时该值必须是专业关系中某个元组的“专业号”值，表示该学生不可能分配一个不存在的专业</li>
+</ol>
+</blockquote>
+<h2 id="用户定义的完整性"><a href="#用户定义的完整性" class="headerlink" title="用户定义的完整性"></a>用户定义的完整性</h2><ul>
+<li>针对某一具体关系数据库的约束条件，反映某一具体应用所涉及的数据必须满足的语义要求</li>
+<li>关系模型应提供定义和检验这类完整性的机制，以便用统一的系统的方法处理它们，而不需由应用程序承担这一功能</li>
+</ul>
+<blockquote>
+<p>课程（课程号，课程名，学分）</p>
+<ul>
+<li>“课程号”属性必须取唯一值</li>
+<li>非主属性“课程名”也不能取空值 </li>
+<li>“学分”属性只能取值{1，2，3，4}</li>
+</ul>
+</blockquote>
+
       
     </div>
     
@@ -524,8 +611,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -604,6 +700,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9E%E4%BD%93%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">实体完整性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E7%85%A7%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-number">2.</span> <span class="nav-text">参照完整性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E7%B3%BB%E9%97%B4%E7%9A%84%E5%BC%95%E7%94%A8"><span class="nav-number">2.1.</span> <span class="nav-text">关系间的引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%96%E7%A0%81"><span class="nav-number">2.2.</span> <span class="nav-text">外码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E7%85%A7%E5%AE%8C%E6%95%B4%E6%80%A7%E8%A7%84%E5%88%99"><span class="nav-number">2.3.</span> <span class="nav-text">参照完整性规则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E6%88%B7%E5%AE%9A%E4%B9%89%E7%9A%84%E5%AE%8C%E6%95%B4%E6%80%A7"><span class="nav-number">3.</span> <span class="nav-text">用户定义的完整性</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
