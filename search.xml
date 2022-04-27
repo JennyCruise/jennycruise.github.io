@@ -187,6 +187,56 @@
       </tags>
   </entry>
   <entry>
+    <title>关系操作</title>
+    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Nothing to say</p>
+<span id="more"></span>
+
+<h2 id="基本的关系操作"><a href="#基本的关系操作" class="headerlink" title="基本的关系操作"></a>基本的关系操作</h2><p><strong>常用的关系操作</strong></p>
+<ul>
+<li>查询操作：<code>选择</code>， <code>投影</code>, <code>连接</code> , <code>除</code>, <code>并</code> ,  <code>差</code>,  <code>交</code>, <code>笛卡尔积</code> <ul>
+<li><code>选择</code>、<code>投影</code>、<code>并</code>、<code>差</code>、<code>笛卡尔积</code>是5种基本操作</li>
+</ul>
+</li>
+<li>关系操作的特点<ul>
+<li>集合操作方式：操作的对象和结果都是集合，一次一集 合的方式</li>
+</ul>
+</li>
+</ul>
+<h2 id="关系数据库语言的分类"><a href="#关系数据库语言的分类" class="headerlink" title="关系数据库语言的分类"></a>关系数据库语言的分类</h2><ul>
+<li>关系代数语言<ul>
+<li>用对关系的运算来表达查询要求</li>
+<li>eg：ISBL</li>
+</ul>
+</li>
+<li>关系演算语言<ul>
+<li>元组关系演算语言<ul>
+<li>谓词变元的基本对象是元组变量</li>
+<li>eg：ALPHA, QUEL</li>
+</ul>
+</li>
+<li>域关系演算语言<ul>
+<li>谓词变元的基本对象是域变量</li>
+<li>eg：QBE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>具有关系代数和关系演算双重特点的语言<ul>
+<li>eg：SQL（Structured Query Language）</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据库原理</category>
+        <category>关系数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关系代数</title>
     <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -277,56 +327,196 @@
 </ul>
 <img src="笛卡尔积.png" style="zoom:50%;" />
 
-<h2 id="专门的关系运算"><a href="#专门的关系运算" class="headerlink" title="专门的关系运算"></a>专门的关系运算</h2>]]></content>
-      <categories>
-        <category>数据库原理</category>
-        <category>关系数据库</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关系操作</title>
-    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Nothing to say</p>
-<span id="more"></span>
+<h2 id="专门的关系运算"><a href="#专门的关系运算" class="headerlink" title="专门的关系运算"></a>专门的关系运算</h2><h3 id="先行"><a href="#先行" class="headerlink" title="先行"></a>先行</h3><ol>
+<li><img src="关系代数/先行1.png" style="zoom:67%;" />
+</li>
+<li><img src="关系代数/先行2.png" style="zoom:63%;" />
+</li>
+<li><img src="关系代数/先行3.png" style="zoom:68%;" />
+</li>
+<li><img src="关系代数/先行4.png" style="zoom:60%;" /></li>
+</ol>
+<img src="关系代数/像集.png" style="zoom:50%;" />
 
-<h2 id="基本的关系操作"><a href="#基本的关系操作" class="headerlink" title="基本的关系操作"></a>基本的关系操作</h2><p><strong>常用的关系操作</strong></p>
-<ul>
-<li>查询操作：<code>选择</code>， <code>投影</code>, <code>连接</code> , <code>除</code>, <code>并</code> ,  <code>差</code>,  <code>交</code>, <code>笛卡尔积</code> <ul>
-<li><code>选择</code>、<code>投影</code>、<code>并</code>、<code>差</code>、<code>笛卡尔积</code>是5种基本操作</li>
-</ul>
-</li>
-<li>关系操作的特点<ul>
-<li>集合操作方式：操作的对象和结果都是集合，一次一集 合的方式</li>
-</ul>
-</li>
-</ul>
-<h2 id="关系数据库语言的分类"><a href="#关系数据库语言的分类" class="headerlink" title="关系数据库语言的分类"></a>关系数据库语言的分类</h2><ul>
-<li>关系代数语言<ul>
-<li>用对关系的运算来表达查询要求</li>
-<li>eg：ISBL</li>
-</ul>
-</li>
-<li>关系演算语言<ul>
-<li>元组关系演算语言<ul>
-<li>谓词变元的基本对象是元组变量</li>
-<li>eg：ALPHA, QUEL</li>
-</ul>
-</li>
-<li>域关系演算语言<ul>
-<li>谓词变元的基本对象是域变量</li>
-<li>eg：QBE</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>具有关系代数和关系演算双重特点的语言<ul>
-<li>eg：SQL（Structured Query Language）</li>
-</ul>
-</li>
-</ul>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><p><strong>学生-课程数据库：</strong></p>
+<p>​    <em>学生关系 Student、课程关系 Course 和 选修关系 SC</em></p>
+<h4 id="Student"><a href="#Student" class="headerlink" title="Student"></a><em><strong>Student</strong></em></h4><table>
+<thead>
+<tr>
+<th>学号<br />Sno</th>
+<th>姓名<br />Sname</th>
+<th>性别<br />Ssex</th>
+<th>年龄<br />Sage</th>
+<th>所在系<br />Sdept</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>201215121</td>
+<td>李勇</td>
+<td>男</td>
+<td>20</td>
+<td>CS</td>
+</tr>
+<tr>
+<td>201215122</td>
+<td>刘晨</td>
+<td>女</td>
+<td>19</td>
+<td>CS</td>
+</tr>
+<tr>
+<td>201215123</td>
+<td>王敏</td>
+<td>女</td>
+<td>18</td>
+<td>MA</td>
+</tr>
+<tr>
+<td>201215125</td>
+<td>张立</td>
+<td>男</td>
+<td>19</td>
+<td>IS</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="Course"><a href="#Course" class="headerlink" title="Course"></a><em><strong>Course</strong></em></h4><table>
+<thead>
+<tr>
+<th>课程号<br />Cno</th>
+<th>课程名<br />Cname</th>
+<th>先行课<br />Cpno</th>
+<th>学分<br />Ccredit</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>数据库</td>
+<td>5</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>数学</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>信息系统</td>
+<td>1</td>
+<td>4</td>
+</tr>
+<tr>
+<td>4</td>
+<td>操作系统</td>
+<td>6</td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>数据结构</td>
+<td>7</td>
+<td>4</td>
+</tr>
+<tr>
+<td>6</td>
+<td>数据处理</td>
+<td></td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Pascal语言</td>
+<td>6</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="SC"><a href="#SC" class="headerlink" title="SC"></a><em><strong>SC</strong></em></h4><table>
+<thead>
+<tr>
+<th>学号<br />Sno</th>
+<th>课程号<br />Cno</th>
+<th>成绩<br />Grade92</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>201215121</td>
+<td>1</td>
+<td>92</td>
+</tr>
+<tr>
+<td>201215121</td>
+<td>2</td>
+<td>85</td>
+</tr>
+<tr>
+<td>201215121</td>
+<td>3</td>
+<td>88</td>
+</tr>
+<tr>
+<td>201215122</td>
+<td>2</td>
+<td>90</td>
+</tr>
+<tr>
+<td>201215122</td>
+<td>3</td>
+<td>80</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="选择-σ"><a href="#选择-σ" class="headerlink" title="选择 ( σ )"></a>选择 ( σ )</h3><blockquote>
+<p>选择运算是从关系R中选取使逻辑表达式F为真的元组，是从<strong>行的角度</strong>进行的运算</p>
+</blockquote>
+<p>eg 2.4</p>
+<img src="关系代数/选择1.png" style="zoom:50%;" />
+
+<p>eg 2.5</p>
+<img src="关系代数/选择2.png" style="zoom:50%;" />
+
+<h3 id="投影-Π"><a href="#投影-Π" class="headerlink" title="投影 ( Π )"></a>投影 ( Π )</h3><blockquote>
+<p>从R中选择出若干属性列组成新的关系，主要是从<strong>列的角度</strong>进行运算</p>
+<p>投影之后不仅取消了原关系中的某些列，而且还可能取消某些元组（避免重复行）</p>
+</blockquote>
+<p>$$<br>Π_A(R)&#x3D;{ t [A] | t ∈ R }<br>$$</p>
+<p>A: R 中的属性列</p>
+<p>eg 2.6</p>
+<img src="关系代数/投影1.png" style="zoom:50%;" />
+
+<p>eg 2.7</p>
+<img src="关系代数/投影2.png" style="zoom:50%;" />
+
+
+
+<h3 id="连接-⋈"><a href="#连接-⋈" class="headerlink" title="连接 ( ⋈ )"></a>连接 ( ⋈ )</h3><blockquote>
+<p>分为<strong>等值连接</strong>和<strong>自然连接</strong></p>
+</blockquote>
+<p>eg 2.8 关系R和关系S 如下所示：</p>
+<img src="关系代数/image-20220427215751097.png" alt="image-20220427215751097" style="zoom:50%;" />
+
+<p>一般连接：</p>
+<img src="关系代数/image-20220427215833155.png" alt="image-20220427215833155" style="zoom:50%;" />
+
+<p>等值连接</p>
+<img src="关系代数/image-20220427215856240.png" alt="image-20220427215856240" style="zoom:50%;" />
+
+<p>自然连接</p>
+<img src="关系代数/image-20220427215920881.png" alt="image-20220427215920881" style="zoom:50%;" />
+
+
+
+<h3 id="除运算-÷"><a href="#除运算-÷" class="headerlink" title="除运算 ( ÷ )"></a>除运算 ( ÷ )</h3><p>同时从行和列角度进行运算</p>
+<p>给定关系<em><strong>R (X，Y)</strong></em> 和***S (Y，Z)***，其中X，Y，Z为属性组。<br><code>（ R中的Y与S中的Y可以有不同的属性名，但必须出自相同的域集。）</code></p>
+<p> R与S的除运算得到一个新的关系**P(X)**， P是R中满足下列条件的元组在 X属性列上的投影： </p>
+<p>元组在<strong>X</strong>上分量值 <strong>x</strong> 的象集 Yx 包含 S 在 Y 上投影的集合，记作：</p>
+<p>$$<br>R÷S &#x3D; { tr [X] | tr ∈ R ∧ Π_Y(S)⊆Y_x }<br>$$<br>Yx：x在R中的象集，x &#x3D; tr[X]</p>
+<p>eg 2.9</p>
+<img src="关系代数/image-20220427220546061.png" alt="image-20220427220546061" style="zoom:50%;" />
+
+<h3 id="综合举例"><a href="#综合举例" class="headerlink" title="综合举例"></a>综合举例</h3><p>书本P56</p>
 ]]></content>
       <categories>
         <category>数据库原理</category>
@@ -568,38 +758,12 @@
       </tags>
   </entry>
   <entry>
-    <title>操作系统-作业二</title>
-    <url>/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%BA%8C/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现一程序，分别在Windows、Linux操作系统下验证:</p>
-<ul>
-<li>栈、堆、数据区是否可读可写不可执行</li>
-<li>代码段是否可读可执行不可写</li>
-</ul>
-<p>截止时间：2022.4.22</p>
+    <title>操作系统-作业三</title>
+    <url>/2022/04/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%B8%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>go语言是一门非常优秀的语言，go语言最大的特色就是从语言层面支持并发(Goroutine)，<br>调研Goroutine的底层原理，形成研究报告</p>
+<p>截止时间：2022-04-28</p>
 <span id="more"></span>
-
-<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/time.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//数据段</span></span><br><span class="line"><span class="type">int</span> DataArea;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span>* <span class="title">Stack</span><span class="params">( <span class="type">int</span> x )</span>    <span class="comment">//代码段</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> StackArea;      <span class="comment">//栈</span></span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;StackValue   &quot;</span>&lt;&lt;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;HeapAddress &quot;</span>&lt;&lt;&amp;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">    *(&amp;StackArea) = <span class="number">12</span>;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">CodeArea</span><span class="params">( <span class="type">int</span> y )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;CodeArea is executing&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Ending...&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> ch = <span class="number">1</span>;</span><br><span class="line">    <span class="type">float</span> time_use=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">timeval</span> start;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">timeval</span> end;<span class="comment">//struct timezone tz;</span></span><br><span class="line"></span><br><span class="line">    <span class="type">static</span> <span class="type">void</span>* p;</span><br><span class="line">    <span class="type">char</span>* HeapArea = ( <span class="type">char</span>* ) <span class="built_in">malloc</span> ( <span class="built_in">sizeof</span>( <span class="type">char</span> ) );  <span class="comment">//堆段</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>( ch != <span class="number">0</span> )</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;_______________________________________________________________________&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;please select: &quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;1.DataSegment    2.CodeSegment   3.StackSegment  4.HeapSegment   0.exit&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;_______________________________________________________________________&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cin&gt;&gt;ch;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>( ch == <span class="number">1</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//dataseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;DataValue   &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;DataAddress &quot;</span>&lt;&lt;&amp;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            *(&amp;DataArea) = <span class="number">21</span>;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">2</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//codeseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeValue   &quot;</span>&lt;&lt;CodeArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeAddress &quot;</span>&lt;&lt;&amp;CodeArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            <span class="comment">//*(&amp;CodeArea) = 21;</span></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeBlocks warning-&gt; error: assignment of read-only location &#x27;* CodeArea&#x27;|&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Unwritable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Now execute-&gt; &quot;</span>&lt;&lt;endl;</span><br><span class="line">            (<span class="built_in">void</span> (*)())&amp;CodeArea;<span class="comment">//将地址转换为函数指针运行</span></span><br><span class="line">            (*(<span class="built_in">void</span> (*)())&amp;CodeArea)();</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;&lt;- Executable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">3</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//stackseg</span></span><br><span class="line">            <span class="built_in">Stack</span>(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">4</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//heapseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;HeapValue   &quot;</span>&lt;&lt;HeapArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;HeapAddress &quot;</span>&lt;&lt;&amp;HeapArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            *(&amp;HeapArea) = <span class="string">&quot;HEAP&quot;</span>;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">0</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 ]]></content>
-      <categories>
-        <category>操作系统</category>
-        <category>作业</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>操作系统概述</title>
-    <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
-      <categories>
-        <category>操作系统</category>
-        <category>操作系统引论</category>
-      </categories>
-      <tags>
-        <tag>操作系统</tag>
-      </tags>
   </entry>
   <entry>
     <title>数据库系统概述</title>
@@ -726,6 +890,40 @@
       </categories>
       <tags>
         <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统-作业二</title>
+    <url>/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%BA%8C/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>实现一程序，分别在Windows、Linux操作系统下验证:</p>
+<ul>
+<li>栈、堆、数据区是否可读可写不可执行</li>
+<li>代码段是否可读可执行不可写</li>
+</ul>
+<p>截止时间：2022.4.22</p>
+<span id="more"></span>
+
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;sys/time.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="comment">//数据段</span></span><br><span class="line"><span class="type">int</span> DataArea;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span>* <span class="title">Stack</span><span class="params">( <span class="type">int</span> x )</span>    <span class="comment">//代码段</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> StackArea;      <span class="comment">//栈</span></span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;StackValue   &quot;</span>&lt;&lt;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;HeapAddress &quot;</span>&lt;&lt;&amp;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">    *(&amp;StackArea) = <span class="number">12</span>;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;StackArea&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">CodeArea</span><span class="params">( <span class="type">int</span> y )</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;CodeArea is executing&quot;</span>&lt;&lt;endl;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Ending...&quot;</span>&lt;&lt;endl;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="type">int</span> ch = <span class="number">1</span>;</span><br><span class="line">    <span class="type">float</span> time_use=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">timeval</span> start;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">timeval</span> end;<span class="comment">//struct timezone tz;</span></span><br><span class="line"></span><br><span class="line">    <span class="type">static</span> <span class="type">void</span>* p;</span><br><span class="line">    <span class="type">char</span>* HeapArea = ( <span class="type">char</span>* ) <span class="built_in">malloc</span> ( <span class="built_in">sizeof</span>( <span class="type">char</span> ) );  <span class="comment">//堆段</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span>( ch != <span class="number">0</span> )</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;_______________________________________________________________________&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;please select: &quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;1.DataSegment    2.CodeSegment   3.StackSegment  4.HeapSegment   0.exit&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cout&lt;&lt;<span class="string">&quot;_______________________________________________________________________&quot;</span>&lt;&lt;endl;</span><br><span class="line">        cin&gt;&gt;ch;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>( ch == <span class="number">1</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//dataseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;DataValue   &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;DataAddress &quot;</span>&lt;&lt;&amp;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            *(&amp;DataArea) = <span class="number">21</span>;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">2</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//codeseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeValue   &quot;</span>&lt;&lt;CodeArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeAddress &quot;</span>&lt;&lt;&amp;CodeArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            <span class="comment">//*(&amp;CodeArea) = 21;</span></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;CodeBlocks warning-&gt; error: assignment of read-only location &#x27;* CodeArea&#x27;|&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Unwritable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Now execute-&gt; &quot;</span>&lt;&lt;endl;</span><br><span class="line">            (<span class="built_in">void</span> (*)())&amp;CodeArea;<span class="comment">//将地址转换为函数指针运行</span></span><br><span class="line">            (*(<span class="built_in">void</span> (*)())&amp;CodeArea)();</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;&lt;- Executable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">3</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//stackseg</span></span><br><span class="line">            <span class="built_in">Stack</span>(<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">4</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//heapseg</span></span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;HeapValue   &quot;</span>&lt;&lt;HeapArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;HeapAddress &quot;</span>&lt;&lt;&amp;HeapArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Readable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Trying writing... &quot;</span>&lt;&lt;endl;</span><br><span class="line">            *(&amp;HeapArea) = <span class="string">&quot;HEAP&quot;</span>;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Value after change: &quot;</span>&lt;&lt;DataArea&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;<span class="string">&quot;Writable&quot;</span>&lt;&lt;endl;</span><br><span class="line">            cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>( ch == <span class="number">0</span> )</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">system</span>(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>操作系统</category>
+        <category>作业</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>操作系统概述</title>
+    <url>/2022/04/12/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+      <categories>
+        <category>操作系统</category>
+        <category>操作系统引论</category>
+      </categories>
+      <tags>
+        <tag>操作系统</tag>
       </tags>
   </entry>
   <entry>

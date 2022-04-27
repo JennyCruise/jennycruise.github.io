@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a3062e;
+  background: #384104;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3176,6 +3176,9 @@ body {
 .content-wrap {
   opacity: 0.9;
 }
+.main-inner {
+  background-color: rgba(255,255,255,0);
+}
 .sidebar-inner {
   background: rgba(255,255,255,0.9) none repeat scroll !important;
 }
@@ -3186,10 +3189,13 @@ body {
   opacity: 1;
 }
 .post-block {
-  background: rgba(255,255,255,0.9) none repeat scroll !important;
+  background: #fff;
 }
 .comments {
-  background: rgba(255,255,255,0.9) none repeat scroll !important;
+  background: #fff;
+}
+.pagination {
+  opacity: 0.9;
 }
 .post-toc .nav .nav-child {
   display: block;
