@@ -77,13 +77,15 @@
 
 
 
+<meta name="description" content="按谓词变元不同进行分类：  元组关系演算：  以元组变量作为谓词变元的基本对象  元组关系演算语言ALPHA  域关系演算：  以域变量作为谓词变元的基本对象  域关系演算语言QBE">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关系演算">
 <meta property="og:url" content="http://example.com/2022/04/20/%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97/index.html">
 <meta property="og:site_name" content="Finding Paradise">
+<meta property="og:description" content="按谓词变元不同进行分类：  元组关系演算：  以元组变量作为谓词变元的基本对象  元组关系演算语言ALPHA  域关系演算：  以域变量作为谓词变元的基本对象  域关系演算语言QBE">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-04-20T02:05:13.000Z">
-<meta property="article:modified_time" content="2022-04-20T02:06:37.171Z">
+<meta property="article:modified_time" content="2022-05-03T14:58:58.491Z">
 <meta property="article:author" content="Jenny Cruise">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
@@ -352,8 +354,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2022-04-20T10:06:37+08:00">
-                2022-04-20
+              <time title="更新于" itemprop="dateModified" datetime="2022-05-03T22:58:58+08:00">
+                2022-05-03
               </time>
             
           </span>
@@ -419,7 +421,65 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>按谓词变元不同进行分类：</p>
+<ol>
+<li><p>元组关系演算： </p>
+<p>以元组变量作为谓词变元的基本对象 </p>
+<p>元组关系演算语言ALPHA</p>
+</li>
+<li><p>域关系演算： </p>
+<p>以域变量作为谓词变元的基本对象 </p>
+<p>域关系演算语言QBE</p>
+</li>
+</ol>
+<span id="more"></span>
+
+<h2 id="ALPHA语言"><a href="#ALPHA语言" class="headerlink" title="ALPHA语言"></a>ALPHA语言</h2><h3 id="检索语句"><a href="#检索语句" class="headerlink" title="检索语句"></a>检索语句</h3><blockquote>
+<p>GET</p>
+</blockquote>
+<h4 id="1-简单检索"><a href="#1-简单检索" class="headerlink" title="(1) 简单检索"></a>(1) 简单检索</h4><p><code>GET 工作空间名（表达式1）</code></p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.14] 查询所有被选修的课程号码<br>     <code>GET W (SC.Cno)</code></p>
+<p>[例2.15] 查询所有学生的数据<br>    <code>GET W (Student)</code></p>
+</blockquote>
+<h4 id="2-限定的检索"><a href="#2-限定的检索" class="headerlink" title="(2) 限定的检索"></a>(2) 限定的检索</h4><p><code>GET 工作空间名（表达式1）：操作条件</code></p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.16]查询信息系(IS)中年龄小于20岁的学生的学号和年龄<br><code>GET W (Student.Sno，Student.Sage): Student.Sdept=&#39;IS&#39;∧ Student.Sage&lt;20</code></p>
+</blockquote>
+<h4 id="3-带排序的检索"><a href="#3-带排序的检索" class="headerlink" title="(3) 带排序的检索"></a>(3) 带排序的检索</h4><p><code>GET 工作空间名（表达式1）[：操作条件] DOWN/UP 表达式2</code></p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.17]查询计算机科学系(CS)学生的学号、年龄，结果按年龄降序排序<br><code>GET W (Student.Sno，Student.Sage): Student.Sdept=&#39;CS&#39; DOWN Student.Sage</code></p>
+</blockquote>
+<h4 id="4-带定额的检索"><a href="#4-带定额的检索" class="headerlink" title="(4) 带定额的检索"></a>(4) 带定额的检索</h4><p><code>GET 工作空间名（定额）（表达式1） [：操作条件] [DOWN/UP 表达式2]</code></p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.18] 取出一个信息系学生的学号<br><code>GET W (1) (Student.Sno): Student.Sdept=&#39;IS&#39;</code></p>
+<p>[例2.19] 查询信息系年龄最大的三个学生的学号及其年龄，结果按年龄降序排序<br><code>GET W (3) (Student.Sno，Student.Sage): Student.Sdept=&#39;IS&#39; DOWN Student.Sage</code></p>
+</blockquote>
+<p>(5) 用元组变量的检索</p>
+<p>元组变量的用途：</p>
+<ol>
+<li>简化关系名：设一个较短名字的元组变量来代替较长的关系名。</li>
+<li>操作条件中使用量词时必须用元组变量。</li>
+</ol>
+<blockquote>
+<p>eg.</p>
+<p>[例2.20] 查询信息系学生的名字<br><code>RANGE Student X  GET W (X.Sname): X.Sdept=‘IS&#39;</code></p>
+</blockquote>
+<p>(6) 用存在量词的检索</p>
+<p>操作条件中使用量词时必须用元组变量</p>
+<blockquote>
+<p>eg</p>
+<p>[例2.21] 查询选修2号课程的学生名字<br><code>RANGE SC X  GET W (Student.Sname):  ョX(X.Sno=Student.Sno∧X.Cno=&#39;2&#39;)</code></p>
+<p>[例2.22] 查询选修了这样课程的学生学号，其直接先行课是6号课程。<br><code>RANGE Course CX GET W (SC.Sno): ョCX (CX.Cno=SC.Cno∧CX.Cpno=&#39;6&#39;)</code></p>
+</blockquote>
+<h3 id="更新语句"><a href="#更新语句" class="headerlink" title="更新语句"></a>更新语句</h3><blockquote>
+<p>PUT, HOLD, UPDATE, DELETE, DROP</p>
+</blockquote>
+
       
     </div>
     
@@ -518,8 +578,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -598,6 +667,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ALPHA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">ALPHA语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A3%80%E7%B4%A2%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.1.</span> <span class="nav-text">检索语句</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E7%AE%80%E5%8D%95%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.1.</span> <span class="nav-text">(1) 简单检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E9%99%90%E5%AE%9A%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.2.</span> <span class="nav-text">(2) 限定的检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%B8%A6%E6%8E%92%E5%BA%8F%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.3.</span> <span class="nav-text">(3) 带排序的检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E5%B8%A6%E5%AE%9A%E9%A2%9D%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.4.</span> <span class="nav-text">(4) 带定额的检索</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.2.</span> <span class="nav-text">更新语句</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

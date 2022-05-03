@@ -187,45 +187,99 @@
       </tags>
   </entry>
   <entry>
-    <title>关系操作</title>
-    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Nothing to say</p>
+    <title>关系数据结构及形式化定义</title>
+    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>讲解关系数据结构，包括关系的形式化定义及有关概念</p>
 <span id="more"></span>
 
-<h2 id="基本的关系操作"><a href="#基本的关系操作" class="headerlink" title="基本的关系操作"></a>基本的关系操作</h2><p><strong>常用的关系操作</strong></p>
+<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><h3 id="域（domain）"><a href="#域（domain）" class="headerlink" title="域（domain）"></a>域（domain）</h3><p><strong>域</strong> 是一组具有相同数据类型的值的集合</p>
+<h3 id="笛卡尔积（Cartesian-Product）"><a href="#笛卡尔积（Cartesian-Product）" class="headerlink" title="笛卡尔积（Cartesian Product）"></a>笛卡尔积（Cartesian Product）</h3><p>给定一组域D1，D2，…，Dn，允许其中某些域是相同的。 </p>
+<p>D1，D2，…，Dn的笛卡尔积为：</p>
+<p> <code>D1×D2×…×Dn＝｛（d1，d2，…，dn）｜di ∈ Di，i ＝ 1，2，…，n  ｝</code></p>
+<p><strong>元组</strong></p>
+<blockquote>
+<p>笛卡尔积中每一个元素（d1，d2，…，dn）叫作一个n元组 （n-tuple）或简称元组</p>
+</blockquote>
+<p><strong>分量</strong></p>
+<blockquote>
+<p>笛卡尔积元素（d1，d2，…，dn）中的每一个值di 叫作一个 分量</p>
+</blockquote>
+<p><strong>基数</strong></p>
+<blockquote>
+<p>若Di（i＝1，2，…，n）为有限集，其基数为mi（i＝1， 2，…，n），则D1×D2×…×Dn的基数M为：</p>
+<p>M &#x3D; Π(i: 1-&gt;n) mi</p>
+</blockquote>
+<h3 id="关系（relation）"><a href="#关系（relation）" class="headerlink" title="关系（relation）"></a>关系（relation）</h3><p><strong>关系</strong></p>
+<blockquote>
+<p>D1×D2×…×Dn的子集叫作在域D1，D2，…，Dn上的 关系，表示为:</p>
+<p><code>R（D1，D2，…，Dn）</code></p>
+<p>R：关系名， n：关系的目或度（degree）</p>
+</blockquote>
+<p><strong>元组</strong></p>
+<blockquote>
+<p>关系中的每个元素是关系中的元组，通常用 <em><strong>t</strong></em> 表示</p>
+</blockquote>
+<p><strong>单元关系与二元关系</strong></p>
+<blockquote>
+<p>当n&#x3D;1时，称该关系为单元关系（Unary relation） 或一元关系<br>当n&#x3D;2时，称该关系为二元关系（Binary relation）</p>
+</blockquote>
+<p><strong>关系的表示</strong></p>
+<blockquote>
+<p>关系也是一个二维表，表的每行对应一个元组，表的每列对应一个域</p>
+</blockquote>
+<p><strong>属性</strong></p>
+<blockquote>
+<p>为了加以区分，必须对每列起一个名字，称为属性</p>
+</blockquote>
+<p><strong>码</strong></p>
 <ul>
-<li>查询操作：<code>选择</code>， <code>投影</code>, <code>连接</code> , <code>除</code>, <code>并</code> ,  <code>差</code>,  <code>交</code>, <code>笛卡尔积</code> <ul>
-<li><code>选择</code>、<code>投影</code>、<code>并</code>、<code>差</code>、<code>笛卡尔积</code>是5种基本操作</li>
+<li>候选码（candidate key）</li>
 </ul>
+<blockquote>
+<p>若关系中的某一属性组的值能<em>唯一</em>地标识一个元组，而其真子集不能，则称该属性组为候选码 简单的情况：候选码只包含一个属性</p>
+</blockquote>
+<ul>
+<li><p>全码（All-key）</p>
+<blockquote>
+<p>最极端的情况：关系模式的<em>所有</em>属性组是这个关系模式的候选码，称为全码（All-key）</p>
+</blockquote>
 </li>
-<li>关系操作的特点<ul>
-<li>集合操作方式：操作的对象和结果都是集合，一次一集 合的方式</li>
-</ul>
+<li><p>主码</p>
+<blockquote>
+<p>若一个关系有多个候选码，则选定其中一个为主码（Primary key）</p>
+</blockquote>
 </li>
-</ul>
-<h2 id="关系数据库语言的分类"><a href="#关系数据库语言的分类" class="headerlink" title="关系数据库语言的分类"></a>关系数据库语言的分类</h2><ul>
-<li>关系代数语言<ul>
-<li>用对关系的运算来表达查询要求</li>
-<li>eg：ISBL</li>
-</ul>
-</li>
-<li>关系演算语言<ul>
-<li>元组关系演算语言<ul>
-<li>谓词变元的基本对象是元组变量</li>
-<li>eg：ALPHA, QUEL</li>
-</ul>
-</li>
-<li>域关系演算语言<ul>
-<li>谓词变元的基本对象是域变量</li>
-<li>eg：QBE</li>
-</ul>
+<li><p>主属性</p>
+<blockquote>
+<p>候选码的诸属性称为主属性（Prime attribute） 不包含在任何侯选码中的属性称为非主属性（Non-Prime attribute）或非码属性（Non-key attribute</p>
+</blockquote>
 </li>
 </ul>
+<h2 id="关系模式"><a href="#关系模式" class="headerlink" title="关系模式"></a>关系模式</h2><p>关系模式是 <em>型</em> ，关系是 <em>值</em> 。<br>关系模式是对关系的描述</p>
+<p><strong>关系模式可以形式化地表示为：</strong></p>
+<blockquote>
+<p>R（U，D，DOM，F） </p>
+<p>R          关系名<br>U          组成该关系的属性名集合<br>D          U中属性所来自的域<br>DOM    属性向域的映象集合<br>F          属性间数据的依赖关系的集合</p>
+</blockquote>
+<p><strong>关系模式通常可以简记为：</strong></p>
+<blockquote>
+<p>R (U) 或 R (A1，A2，…，An)</p>
+<ul>
+<li><p>R: 关系名</p>
 </li>
-<li>具有关系代数和关系演算双重特点的语言<ul>
-<li>eg：SQL（Structured Query Language）</li>
+<li><p>A1，A2，…，An : 属性名</p>
+<p>注：域名及属性向域的映象常常直接说明为 属性的类型、长度</p>
+</li>
 </ul>
-</li>
+</blockquote>
+<h2 id="关系数据库"><a href="#关系数据库" class="headerlink" title="关系数据库"></a>关系数据库</h2><ul>
+<li>在一个给定的应用领域中，所有关系的集合构成一个 <em><strong>关系数据库</strong></em></li>
+<li>关系数据库的型: 关系数据库模式，是对关系数据库的描述</li>
+<li>关系数据库的值: 关系模式在某一时刻对应的关系的集合，通常称为关系数据库</li>
+</ul>
+<h2 id="关系模型的存储结构"><a href="#关系模型的存储结构" class="headerlink" title="关系模型的存储结构"></a>关系模型的存储结构</h2><ul>
+<li>有的关系数据库管理系统中一个表对应一个操作系统 文件，将物理数据组织交给操作系统完成</li>
+<li>有的关系数据库管理系统从操作系统那里申请若干个 大的文件，自己划分文件空间，组织表、索引等存储 结构，并进行存储管理</li>
 </ul>
 ]]></content>
       <categories>
@@ -527,113 +581,47 @@
       </tags>
   </entry>
   <entry>
-    <title>关系数据结构及形式化定义</title>
-    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%8F%8A%E5%BD%A2%E5%BC%8F%E5%8C%96%E5%AE%9A%E4%B9%89/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>讲解关系数据结构，包括关系的形式化定义及有关概念</p>
+    <title>关系操作</title>
+    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>Nothing to say</p>
 <span id="more"></span>
 
-<h2 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h2><h3 id="域（domain）"><a href="#域（domain）" class="headerlink" title="域（domain）"></a>域（domain）</h3><p><strong>域</strong> 是一组具有相同数据类型的值的集合</p>
-<h3 id="笛卡尔积（Cartesian-Product）"><a href="#笛卡尔积（Cartesian-Product）" class="headerlink" title="笛卡尔积（Cartesian Product）"></a>笛卡尔积（Cartesian Product）</h3><p>给定一组域D1，D2，…，Dn，允许其中某些域是相同的。 </p>
-<p>D1，D2，…，Dn的笛卡尔积为：</p>
-<p> <code>D1×D2×…×Dn＝｛（d1，d2，…，dn）｜di ∈ Di，i ＝ 1，2，…，n  ｝</code></p>
-<p><strong>元组</strong></p>
-<blockquote>
-<p>笛卡尔积中每一个元素（d1，d2，…，dn）叫作一个n元组 （n-tuple）或简称元组</p>
-</blockquote>
-<p><strong>分量</strong></p>
-<blockquote>
-<p>笛卡尔积元素（d1，d2，…，dn）中的每一个值di 叫作一个 分量</p>
-</blockquote>
-<p><strong>基数</strong></p>
-<blockquote>
-<p>若Di（i＝1，2，…，n）为有限集，其基数为mi（i＝1， 2，…，n），则D1×D2×…×Dn的基数M为：</p>
-<p>M &#x3D; Π(i: 1-&gt;n) mi</p>
-</blockquote>
-<h3 id="关系（relation）"><a href="#关系（relation）" class="headerlink" title="关系（relation）"></a>关系（relation）</h3><p><strong>关系</strong></p>
-<blockquote>
-<p>D1×D2×…×Dn的子集叫作在域D1，D2，…，Dn上的 关系，表示为:</p>
-<p><code>R（D1，D2，…，Dn）</code></p>
-<p>R：关系名， n：关系的目或度（degree）</p>
-</blockquote>
-<p><strong>元组</strong></p>
-<blockquote>
-<p>关系中的每个元素是关系中的元组，通常用 <em><strong>t</strong></em> 表示</p>
-</blockquote>
-<p><strong>单元关系与二元关系</strong></p>
-<blockquote>
-<p>当n&#x3D;1时，称该关系为单元关系（Unary relation） 或一元关系<br>当n&#x3D;2时，称该关系为二元关系（Binary relation）</p>
-</blockquote>
-<p><strong>关系的表示</strong></p>
-<blockquote>
-<p>关系也是一个二维表，表的每行对应一个元组，表的每列对应一个域</p>
-</blockquote>
-<p><strong>属性</strong></p>
-<blockquote>
-<p>为了加以区分，必须对每列起一个名字，称为属性</p>
-</blockquote>
-<p><strong>码</strong></p>
+<h2 id="基本的关系操作"><a href="#基本的关系操作" class="headerlink" title="基本的关系操作"></a>基本的关系操作</h2><p><strong>常用的关系操作</strong></p>
 <ul>
-<li>候选码（candidate key）</li>
+<li>查询操作：<code>选择</code>， <code>投影</code>, <code>连接</code> , <code>除</code>, <code>并</code> ,  <code>差</code>,  <code>交</code>, <code>笛卡尔积</code> <ul>
+<li><code>选择</code>、<code>投影</code>、<code>并</code>、<code>差</code>、<code>笛卡尔积</code>是5种基本操作</li>
 </ul>
-<blockquote>
-<p>若关系中的某一属性组的值能<em>唯一</em>地标识一个元组，而其真子集不能，则称该属性组为候选码 简单的情况：候选码只包含一个属性</p>
-</blockquote>
-<ul>
-<li><p>全码（All-key）</p>
-<blockquote>
-<p>最极端的情况：关系模式的<em>所有</em>属性组是这个关系模式的候选码，称为全码（All-key）</p>
-</blockquote>
 </li>
-<li><p>主码</p>
-<blockquote>
-<p>若一个关系有多个候选码，则选定其中一个为主码（Primary key）</p>
-</blockquote>
-</li>
-<li><p>主属性</p>
-<blockquote>
-<p>候选码的诸属性称为主属性（Prime attribute） 不包含在任何侯选码中的属性称为非主属性（Non-Prime attribute）或非码属性（Non-key attribute</p>
-</blockquote>
+<li>关系操作的特点<ul>
+<li>集合操作方式：操作的对象和结果都是集合，一次一集 合的方式</li>
+</ul>
 </li>
 </ul>
-<h2 id="关系模式"><a href="#关系模式" class="headerlink" title="关系模式"></a>关系模式</h2><p>关系模式是 <em>型</em> ，关系是 <em>值</em> 。<br>关系模式是对关系的描述</p>
-<p><strong>关系模式可以形式化地表示为：</strong></p>
-<blockquote>
-<p>R（U，D，DOM，F） </p>
-<p>R          关系名<br>U          组成该关系的属性名集合<br>D          U中属性所来自的域<br>DOM    属性向域的映象集合<br>F          属性间数据的依赖关系的集合</p>
-</blockquote>
-<p><strong>关系模式通常可以简记为：</strong></p>
-<blockquote>
-<p>R (U) 或 R (A1，A2，…，An)</p>
-<ul>
-<li><p>R: 关系名</p>
+<h2 id="关系数据库语言的分类"><a href="#关系数据库语言的分类" class="headerlink" title="关系数据库语言的分类"></a>关系数据库语言的分类</h2><ul>
+<li>关系代数语言<ul>
+<li>用对关系的运算来表达查询要求</li>
+<li>eg：ISBL</li>
+</ul>
 </li>
-<li><p>A1，A2，…，An : 属性名</p>
-<p>注：域名及属性向域的映象常常直接说明为 属性的类型、长度</p>
+<li>关系演算语言<ul>
+<li>元组关系演算语言<ul>
+<li>谓词变元的基本对象是元组变量</li>
+<li>eg：ALPHA, QUEL</li>
+</ul>
+</li>
+<li>域关系演算语言<ul>
+<li>谓词变元的基本对象是域变量</li>
+<li>eg：QBE</li>
+</ul>
 </li>
 </ul>
-</blockquote>
-<h2 id="关系数据库"><a href="#关系数据库" class="headerlink" title="关系数据库"></a>关系数据库</h2><ul>
-<li>在一个给定的应用领域中，所有关系的集合构成一个 <em><strong>关系数据库</strong></em></li>
-<li>关系数据库的型: 关系数据库模式，是对关系数据库的描述</li>
-<li>关系数据库的值: 关系模式在某一时刻对应的关系的集合，通常称为关系数据库</li>
+</li>
+<li>具有关系代数和关系演算双重特点的语言<ul>
+<li>eg：SQL（Structured Query Language）</li>
 </ul>
-<h2 id="关系模型的存储结构"><a href="#关系模型的存储结构" class="headerlink" title="关系模型的存储结构"></a>关系模型的存储结构</h2><ul>
-<li>有的关系数据库管理系统中一个表对应一个操作系统 文件，将物理数据组织交给操作系统完成</li>
-<li>有的关系数据库管理系统从操作系统那里申请若干个 大的文件，自己划分文件空间，组织表、索引等存储 结构，并进行存储管理</li>
+</li>
 </ul>
 ]]></content>
-      <categories>
-        <category>数据库原理</category>
-        <category>关系数据库</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关系演算</title>
-    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
       <categories>
         <category>数据库原理</category>
         <category>关系数据库</category>
@@ -740,6 +728,76 @@
       </tags>
   </entry>
   <entry>
+    <title>关系演算</title>
+    <url>/2022/04/20/%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>按谓词变元不同进行分类：</p>
+<ol>
+<li><p>元组关系演算： </p>
+<p>以元组变量作为谓词变元的基本对象 </p>
+<p>元组关系演算语言ALPHA</p>
+</li>
+<li><p>域关系演算： </p>
+<p>以域变量作为谓词变元的基本对象 </p>
+<p>域关系演算语言QBE</p>
+</li>
+</ol>
+<span id="more"></span>
+
+<h2 id="ALPHA语言"><a href="#ALPHA语言" class="headerlink" title="ALPHA语言"></a>ALPHA语言</h2><h3 id="检索语句"><a href="#检索语句" class="headerlink" title="检索语句"></a>检索语句</h3><blockquote>
+<p>GET</p>
+</blockquote>
+<h4 id="1-简单检索"><a href="#1-简单检索" class="headerlink" title="(1) 简单检索"></a>(1) 简单检索</h4><p><code>GET 工作空间名（表达式1）</code></p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.14] 查询所有被选修的课程号码<br>     <code>GET W (SC.Cno)</code></p>
+<p>[例2.15] 查询所有学生的数据<br>    <code>GET W (Student)</code></p>
+</blockquote>
+<h4 id="2-限定的检索"><a href="#2-限定的检索" class="headerlink" title="(2) 限定的检索"></a>(2) 限定的检索</h4><p><code>GET 工作空间名（表达式1）：操作条件</code></p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.16]查询信息系(IS)中年龄小于20岁的学生的学号和年龄<br><code>GET W (Student.Sno，Student.Sage): Student.Sdept=&#39;IS&#39;∧ Student.Sage&lt;20</code></p>
+</blockquote>
+<h4 id="3-带排序的检索"><a href="#3-带排序的检索" class="headerlink" title="(3) 带排序的检索"></a>(3) 带排序的检索</h4><p><code>GET 工作空间名（表达式1）[：操作条件] DOWN/UP 表达式2</code></p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.17]查询计算机科学系(CS)学生的学号、年龄，结果按年龄降序排序<br><code>GET W (Student.Sno，Student.Sage): Student.Sdept=&#39;CS&#39; DOWN Student.Sage</code></p>
+</blockquote>
+<h4 id="4-带定额的检索"><a href="#4-带定额的检索" class="headerlink" title="(4) 带定额的检索"></a>(4) 带定额的检索</h4><p><code>GET 工作空间名（定额）（表达式1） [：操作条件] [DOWN/UP 表达式2]</code></p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.18] 取出一个信息系学生的学号<br><code>GET W (1) (Student.Sno): Student.Sdept=&#39;IS&#39;</code></p>
+<p>[例2.19] 查询信息系年龄最大的三个学生的学号及其年龄，结果按年龄降序排序<br><code>GET W (3) (Student.Sno，Student.Sage): Student.Sdept=&#39;IS&#39; DOWN Student.Sage</code></p>
+</blockquote>
+<p>(5) 用元组变量的检索</p>
+<p>元组变量的用途：</p>
+<ol>
+<li>简化关系名：设一个较短名字的元组变量来代替较长的关系名。</li>
+<li>操作条件中使用量词时必须用元组变量。</li>
+</ol>
+<blockquote>
+<p>eg.</p>
+<p>[例2.20] 查询信息系学生的名字<br><code>RANGE Student X  GET W (X.Sname): X.Sdept=‘IS&#39;</code></p>
+</blockquote>
+<p>(6) 用存在量词的检索</p>
+<p>操作条件中使用量词时必须用元组变量</p>
+<blockquote>
+<p>eg</p>
+<p>[例2.21] 查询选修2号课程的学生名字<br><code>RANGE SC X  GET W (Student.Sname):  ョX(X.Sno=Student.Sno∧X.Cno=&#39;2&#39;)</code></p>
+<p>[例2.22] 查询选修了这样课程的学生学号，其直接先行课是6号课程。<br><code>RANGE Course CX GET W (SC.Sno): ョCX (CX.Cno=SC.Cno∧CX.Cpno=&#39;6&#39;)</code></p>
+</blockquote>
+<h3 id="更新语句"><a href="#更新语句" class="headerlink" title="更新语句"></a>更新语句</h3><blockquote>
+<p>PUT, HOLD, UPDATE, DELETE, DROP</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>数据库原理</category>
+        <category>关系数据库</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>操作系统-作业一</title>
     <url>/2022/04/22/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%B8%80/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>一般操作系统中，进程的每个段内部地址均连续，但段与段的相对次序可能不同。<br>用C&#x2F;C++语言写一个小程序，探测一个操作系统中进程的各段的相对位置。<br>(输出次序即可)</p>
@@ -755,141 +813,6 @@
       </categories>
       <tags>
         <tag>操作系统</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>操作系统-作业三</title>
-    <url>/2022/04/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%B8%89/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>go语言是一门非常优秀的语言，go语言最大的特色就是从语言层面支持并发(Goroutine)，<br>调研Goroutine的底层原理，形成研究报告</p>
-<p>截止时间：2022-04-28</p>
-<span id="more"></span>
-]]></content>
-  </entry>
-  <entry>
-    <title>数据库系统概述</title>
-    <url>/2022/04/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1-1数据库系统概论，概念较多</p>
-<span id="more"></span>
-
-<h2 id="数据库的四个基本概念"><a href="#数据库的四个基本概念" class="headerlink" title="数据库的四个基本概念"></a>数据库的四个基本概念</h2><h3 id="数据-Data"><a href="#数据-Data" class="headerlink" title="数据(Data)"></a>数据(Data)</h3><ul>
-<li>描述事物的符号记录</li>
-<li>数据是数据库中存储的基本对象</li>
-<li>数据的含义称为数据的语义，数据与其语义是不可分的</li>
-</ul>
-<h3 id="数据库-DataBase"><a href="#数据库-DataBase" class="headerlink" title="数据库(DataBase)"></a>数据库(DataBase)</h3><ul>
-<li><em>长期储存</em>在计算机内、<em>有组织</em>的、<em>可共享</em>的大量数据的集合</li>
-<li>基本特征：<ul>
-<li>数据按一定的数据模型组织、描述和储存</li>
-<li>可为各种用户共享</li>
-<li>冗余度较小</li>
-<li>数据独立性较高</li>
-<li>易扩展</li>
-</ul>
-</li>
-</ul>
-<h3 id="数据库管理系统"><a href="#数据库管理系统" class="headerlink" title="数据库管理系统"></a>数据库管理系统</h3><ul>
-<li>位于用户与操作系统之间的一层数据管理软件</li>
-<li>科学地组织和存储数据、高效地获取和维护数据</li>
-<li>主要功能<ul>
-<li>数据定义功能<ul>
-<li>提供数据定义语言（DDL）</li>
-<li>定义数据库中的数据对象</li>
-</ul>
-</li>
-<li>数据组织、存储和管理<ul>
-<li>分类组织、存储和管理各种数据</li>
-<li>确定组织数据的文件结构和存取方式</li>
-<li>实现数据之间的联系</li>
-<li>提供多种存取方法提高效率</li>
-</ul>
-</li>
-<li>数据操纵功能<ul>
-<li>提供数据操纵语言（DML）</li>
-<li>实现对数据库的基本操作（查，插，删，改）</li>
-</ul>
-</li>
-<li>数据库的事务管理和运行管理<ul>
-<li>数据库在 <em>建立 运行 维护</em> 时，由数据库管理系统统一管理和控制</li>
-<li>保证数据的 <em>安全性 完整性 多用户对数据的并发使用</em></li>
-<li>发生故障后的系统修复</li>
-</ul>
-</li>
-<li>数据库的建立和维护功能<ul>
-<li>数据库初始数据的 <em>装载和维护</em></li>
-<li>数据库 <em>转储 恢复</em> 功能</li>
-<li>数据库的 <em>重组织</em></li>
-<li>性能监视分析等</li>
-</ul>
-</li>
-<li>其他功能<ul>
-<li>数据库管理功能 和 网络中其他软件系统的<em>通信</em></li>
-<li>数据库管理系统之间的<em>数据转换</em></li>
-<li>异构数据库之间的<em>互访和互操作</em></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="数据库系统-DataBase-System"><a href="#数据库系统-DataBase-System" class="headerlink" title="数据库系统(DataBase System)"></a>数据库系统(DataBase System)</h3><ul>
-<li>由 <em>数据库 + 数据库管理系统（及其应用开发工具）+应用程序+数据库管理员</em> 构成</li>
-</ul>
-<img src="数据库系统结构.png" style="zoom:40%;" />
-
-<h2 id="数据库管理技术的产生和发展"><a href="#数据库管理技术的产生和发展" class="headerlink" title="数据库管理技术的产生和发展"></a>数据库管理技术的产生和发展</h2><h3 id="数据库管理系统的发展过程"><a href="#数据库管理系统的发展过程" class="headerlink" title="数据库管理系统的发展过程"></a>数据库管理系统的发展过程</h3><ul>
-<li>人工管理阶段</li>
-<li>文件管理阶段</li>
-<li>数据库管理阶段</li>
-</ul>
-<h2 id="数据库系统的特点"><a href="#数据库系统的特点" class="headerlink" title="数据库系统的特点"></a>数据库系统的特点</h2><h3 id="数据结构化"><a href="#数据结构化" class="headerlink" title="数据结构化"></a>数据结构化</h3><ul>
-<li>不针对某一应用，面向全组织</li>
-<li>整体结构化，数据间有联系</li>
-<li>数据记录可以变长</li>
-<li>数据的最小存取单位是<em>数据项</em></li>
-</ul>
-<h3 id="数据共享性高、冗余性低且易扩充"><a href="#数据共享性高、冗余性低且易扩充" class="headerlink" title="数据共享性高、冗余性低且易扩充"></a>数据共享性高、冗余性低且易扩充</h3><ul>
-<li>数据面向整个系统，被共享使用</li>
-<li>优点<ul>
-<li>减少数据冗余，节约存储空间</li>
-<li>避免数据之间的不相容性&amp;不一致性</li>
-<li>使系统容易扩充</li>
-</ul>
-</li>
-</ul>
-<h3 id="数据独立性高"><a href="#数据独立性高" class="headerlink" title="数据独立性高"></a>数据独立性高</h3><ul>
-<li><p>物理独立性</p>
-<p>指<em>用户的 应用程序</em> 与 <em>数据库中数据的物理存储</em> 是相互 独立的</p>
-</li>
-<li><p>逻辑独立性</p>
-<p>指 <em>用户的应用程序</em> 与 <em>数据库的逻辑结构</em> 是相互独立的</p>
-</li>
-<li><p>数据独立性由数据库管理系统的 <em>二级映像</em>  功能来保证</p>
-</li>
-</ul>
-<h3 id="数据由数据库管理系统统一管理控制"><a href="#数据由数据库管理系统统一管理控制" class="headerlink" title="数据由数据库管理系统统一管理控制"></a>数据由数据库管理系统统一管理控制</h3><p>数据库管理系统要提供数据控制功能</p>
-<ul>
-<li>security 安全性保护</li>
-<li>integrity 完整性检查</li>
-<li>concurrency 并发控制</li>
-<li>recovery 数据库恢复</li>
-</ul>
-<h2 id="数据库概念小结"><a href="#数据库概念小结" class="headerlink" title="数据库概念小结"></a>数据库概念小结</h2><ul>
-<li><p><strong>数据库</strong> 是  <em>长期存储</em>  在计算机内<em>有组织的</em>  <em>大量的</em>  <em>共享的</em>  数据集合</p>
-</li>
-<li><p>可以为多种用户所<strong>共享</strong>，具有  <em>较小冗余度</em>  和  <em>较高数据独立性</em></p>
-</li>
-<li><p>数据库管理系统 在 数据库 <em>建立、运用和维护</em>  时对数据库进行统一控制：</p>
-<p>保证数据的 <em>完整性</em>、<em>安全性</em>，</p>
-<p>并在多用户同时使用数据库时进行<em>并发控制</em>，</p>
-<p>在发生故障后对数据库进行<em>恢复</em>。</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>数据库原理</category>
-        <category>绪论</category>
-      </categories>
-      <tags>
-        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -913,6 +836,44 @@
       <tags>
         <tag>操作系统</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>操作系统-作业三</title>
+    <url>/2022/04/27/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F-%E4%BD%9C%E4%B8%9A%E4%B8%89/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>go语言是一门非常优秀的语言，go语言最大的特色就是从语言层面支持并发(Goroutine)，<br>调研Goroutine的底层原理，形成研究报告</p>
+<p>截止时间：2022-04-28</p>
+<span id="more"></span>
+
+<h2 id="线程的分类"><a href="#线程的分类" class="headerlink" title="线程的分类"></a>线程的分类</h2><p>线程的实现可以分三类：用户级线程，内核级线程和混合式线程。</p>
+<h3 id="用户级线程"><a href="#用户级线程" class="headerlink" title="用户级线程"></a>用户级线程</h3><p><em>用户级线程</em>是指 不需要内核支持而在用户程序中实现的线程，它的内核的切换是由用户态程序自己控制内核的切换，不需要内核的干涉。但是它不能像内核级线程一样更好的运用多核CPU。</p>
+<p>库调度器从进程的多个线程中选择一个线程，然后该线程和该进程允许的一个内核线程关联起来。内核线程将被操作系统调度器指派到处理器内核。</p>
+<p>用户级线程是一种 <strong>多对一</strong> 的线程映射。</p>
+<img src="操作系统-作业三/image-20220427223139161.png" alt="image-20220427223139161" style="zoom:67%;" />
+
+<h3 id="内核级线程"><a href="#内核级线程" class="headerlink" title="内核级线程"></a>内核级线程</h3><p>内核级线程:切换由内核控制，当线程进行切换的时候，由用户态转化为内核态。切换完毕要从内核态返回用户态。可以很好的运用多核CPU，就像Windows电脑的四核八线程，双核四线程一样。</p>
+<p>内核线程驻留在内核空间，它们是内核对象。有了内核线程，每个用户线程被映射或绑定到一个内核线程。用户线程在其生命期内都会绑定到该内核线程。一旦用户线程终止，两个线程都将离开系统。</p>
+<p>这被称作<strong>一对一</strong>线程映射。</p>
+<img src="操作系统-作业三/image-20220427223238224.png" alt="image-20220427223238224" style="zoom:67%;" />
+
+<h2 id="goroutine"><a href="#goroutine" class="headerlink" title="goroutine"></a>goroutine</h2><p>通常goroutine会被当做coroutine（<strong>协程</strong>）的 golang实现。<br>goroutine和它的Go Scheduler在底层实现上其实是属于混合型线程，goroutine并不等同于协程。</p>
+<p>组合方式的多线程实现, 线程创建完全在用户空间中完成，线程的调度和同步也在应用程序中进行. 一个应用程序中的多个用户级线程被映射到一些（小于或等于用户级线程的数目）内核级线程上。</p>
+<p>下图说明了用户级与内核级的组合实现方式, 在这种模型中，每个内核级线程有一个可以轮流使用的用户级线程集合</p>
+<img src="操作系统-作业三/image-20220427223334547.png" alt="image-20220427223334547" style="zoom: 60%;" />
+
+
+
+<h2 id="goroutine的内存分配"><a href="#goroutine的内存分配" class="headerlink" title="goroutine的内存分配"></a>goroutine的内存分配</h2><p>每一个OS线程都有一个固定大小的内存块(一般会是2MB)来做栈，这个栈会用来存储当前正在被调用或挂起(指在调用其它函数时)的函数的内部变量。这个固定大小的栈同时很大又很小。因为2MB的栈对于一个小小的goroutine来说是很大的内存浪费，而对于一些复杂的任务（如深度嵌套的递归）来说又显得太小。因此，Go语言做了它自己的『线程』。</p>
+<p>在Go语言中，每一个goroutine是一个独立的执行单元，相较于每个OS线程固定分配2M内存的模式，goroutine的栈采取了动态扩容方式， 初始时仅为2KB，随着任务执行按需增长，最大可达1GB，且完全由golang自己的调度器 Go Scheduler 来调度。此外，GC还会周期性地将不再使用的内存回收，收缩栈空间。</p>
+<h2 id="G-P-M-模型"><a href="#G-P-M-模型" class="headerlink" title="G-P-M 模型"></a>G-P-M 模型</h2><ul>
+<li>G: 表示Goroutine，每个Goroutine对应一个G结构体，G存储Goroutine的运行堆栈、状态以及任务函数，可重用。G并非执行体，每个G需要绑定到P才能被调度执行。</li>
+<li>P: Processor，表示逻辑处理器， 对G来说，P相当于CPU核，G只有绑定到P(在P的local runq中)才能被调度。对M来说，P提供了相关的执行环境(Context)，如内存分配状态(mcache)，任务队列(G)等，<strong>P的数量决定了系统内最大可并行的G的数量</strong>（前提：物理CPU核数 &gt;&#x3D; P的数量），P的数量由用户设置的GOMAXPROCS决定，但是不论GOMAXPROCS设置为多大，P的数量最大为256。</li>
+<li>M: Machine，OS线程抽象，代表着真正执行计算的资源，在绑定有效的P后，进入schedule循环；而schedule循环的机制大致是从Global队列、P的Local队列以及wait队列中获取G，切换到G的执行栈上并执行G的函数，调用goexit做清理工作并回到M，如此反复。M并不保留G状态，这是G可以跨M调度的基础，M的数量是不定的，由Go Runtime调整，为了防止创建过多OS线程导致系统调度不过来，目前默认最大限制为10000个。</li>
+</ul>
+<img src="操作系统-作业三/image-20220427223558868.png" alt="image-20220427223558868" style="zoom:67%;" />
+
+<p>Go调度器工作时会维护两种用来保存G的任务队列：一种是一个Global任务队列，一种是每个P维护的Local任务队列。</p>
+<p>当通过go关键字创建一个新的goroutine的时候，它会优先被放入P的本地队列。为了运行goroutine，M需要持有（绑定）一个P，接着M会启动一个OS线程，循环从P的本地队列里取出一个goroutine并执行。还有work-stealing调度算法：当M执行完了当前P的Local队列里的所有G后，P也不会什么都不干，它会先尝试从Global队列寻找G来执行，如果Global队列为空，它会随机挑选另外一个P，从它的队列里中拿走一半的G到自己的队列中执行。</p>
+]]></content>
   </entry>
   <entry>
     <title>操作系统概述</title>
@@ -1089,29 +1050,6 @@
       </categories>
       <tags>
         <tag>数据库</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>正确吵架</title>
-    <url>/2022/04/10/%E6%AD%A3%E7%A1%AE%E5%90%B5%E6%9E%B6/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="007619e2454b128b868ec7a215d3569c417e7e08738ad0e6fd8137b256137a44">125d5861506b304b03688d1b4cb724cc2efcf53d80f0914c03525b008e414d7c680919db81a95232f64c0d1d950f83b47c7627d91b112542de85efc725778622c2a87fc87c8c7c739c141dcc1b748e47e21cca03c303d52fcb11d09b684208d2abb3806b930df77982a622e8fa34ffde4438b3c3997040ff8f2fb88dcbecb984de07d00f24ebd9a6ffebc76ed9724828568ac9ede09f3be2fca98aadcdcbbb6be887f4eb0bf6acc704b9d05ff26ce8cc0a16f4bdd2bf7ae6c78e102f7a761f7d34b808750478d60bfbde9f230ac4fb95d2d003febef731d4b16346526fa519c6f4c140f0b86453ea6e97526f7478301ae91ea5f6a7c527c2154ed3c112fc335fb4cf505c3557a319d807c6a42506f23b384db8b5c9507ba2f1e5a5b6c2b9a0e0591ea58078ef65cae83a0a6f391716012ead4d7ca911320f94598d308410bf95c32f3111cfa544579d5724e43bbda9e1b9642b79a7b885d22b162d5bcec2b90472ceb9024905cbe2facdeee62cf9537901a6ea312d71b191828dbea5b80e0123a6b00b1f4dbbfe791b5149c8aa79f889c743f74dcb918aaefa4c5f08ce4515150316c918316a37e4e6be241daa2e64312dc08300d018b87fecfd6f5abe7b60dabf00adb782175192643dbb32567d168041e07fd41e8013a3f32ba8ceb9c29397c38999d9d39dd13186e589a4573b03fda517c2b149e98f79c2fccc09ad9dc7ff8155033fa0495797913cf16485bd39a3a463cddca68eca7ca9f96e746ad533a1f2662c15045ceeb1ea82b5a765e4de29e102d120eb7344026b35080e9c7fc598822f92ee005f7cdac2ad3d5dce3b086e3feb701081f02452502c97244af29e66bf4c5e8e13de97bfaf50845650059dbfee3cf381ceb7057ccd1fb87edb27ee5f6eccd3fa003c5acc54bc441578a600ec1b36306dd10aef7bea54cf3344fc5b488bcca8bafbae5b3af80325e16fd269fdd531dd54a9f7671a80b2a361df97c0cdc119f19a0f133c9bafff6f3277df1b7bcc9e0fbc39788ad85a50896aa95eef2b2f0f1f6f5292defa19d166e26bb3d3d7fecf77079ce3b4e723f32bc60d3936e8b0e44ab78e7f10e8060a173c77a5f4088e27401bf4ea98502e296ffacda035062d19bfe424e11b2df688d59998bdbb7b149e970bbc9306541cc86f8339a0d423555d4c49da8220a8c2c07f9acf3e45119b49e6a2e5ef303b9ced44f3b0ca0a845cd1a481ed4ca2e4312cc334a4c0b59569cee91a8c0c0878cd9bcbb5a30a88d456dc449806d5f7a56370f8844fb3c6dfaaf73afed4eb1b67b45807ee8daa20e1de10a5483537a5e690d02ca60b814799caafc4b5cc87e8d8b91432c978c4dc7f1ea70223350071cda3725a5a43abf978ccc5ee3c2081d7bca8a2971486cc33f2a95c0018fa45d53b22e4081ddd41ab04be157712291c48c99e9f864b532df3d58ca84d9c0d3af0aa113971b479ec86042c24bfaba117ccb77b843b932e3ee6a1c0b672c0ff0df8098514245807e7c612782f00f7031f3a5ceaded3f66925d05bbaeaeeaf0b5c43257165402bcd3edbe29feb7268f81f72780f50520e662d944a80b1f91f3d7b4619714da135a195ad08e88a2b0a8b8d8e8d99ac70f8f650fa7417e75c7d1b9c90c072778bd151762ee66b76af6213e90bcd5b11ece535527174a50072e0bf7d54f446ce0d2c4b3a48ba34ba179a1fb76987ebd947f2c398b35c57d7a2b21333ddf7591f38a98cd79a5a73d0f64c0f3b537abf5422c257bab1d64f5b969cb13222ad752657325de527e2d714c44abcd8fc7bfe4e1e3b3f1c9fd5f837221fa62f13f84505380fbfd33ce6aa4a00198c7993ce7511bcb2fd4078590dc0e600f73b637806ad46c970209059e47331d25a7094d15c370fac4d1802a6154feaac8ac9c246bc8fc8548afa28736e062597e26a9980529411fd96790fb445b3277cf5d71a450a63ed289d168a5d59d484df6ac555324d5e272db1617797bb4ad094de1fe2ccedbd818192dd3b721337548a0675a4b18b11a025620e7e456a0b2e55becbaf04858730ea5e0a5805d14de07867bd0aa521b769a0a9d1b3b326f25b5315e9b046f8b3d187748918dd910c075aae6e553e7b873675ca69d57f8e928944802491b8218372590d080960c8873274159033258ea958cb47ffdff7af076c6f99e8d77bd036f05e3819bdc5a9b2e952dcac2c9f9b6304ebbb4eef00c130cad94a71fd72ce246cf0e98426e417718d46352425faea3c5c2af5602033974581846800e701f761efdd6434f2034e7dbc4f22e77fa6880b0e50793fa8eda8ebc1b29000502cd94142d891341d380abf50c0624b8c140d9a2feecf2ba7a076873d92b1616d2c40397c2e090801acbc5e299b554f5b1ab73270f7a89d0d488d179a3c117fcbd3e4b60360662677b47bdcc2545087f00875aaecac5233e76b22f4b1ea179f8a21dd11535c10eff89debe7b5b6b8ee24aeefc5ac7638515a1725ca804e3395429704a001f5bc004f810135a18f9c338c013721db3c1d18b88362fefa060b442e0dedba19e4ad27b6b87b3d677af8508b5370974c142266c950421797907f0a6342b40fde2164034c2aaac0e796290a26d60603cedf7da155b6ce728356c33276725ea092d3f855774f78c068020e254df78744d6926a72fe76c361dd37743883c6b0a0024ccdc504ff1ded81aecfb5067b4883d260cebada5d6792e8182c0fbdd5719d9a0e596dee31991afdc37d8025c424382000398f97bb003c08d2bc83a2863582e2b3358f163bfc14128f21c1ec4249923026e46953f391d781aeeb31e954f121f63fae5bbe1750a4634443d81f619a4de55989a51ed10feb3e97b69d15242f8605bca1427c91dc1f299a876efb9a6ad288cedcf49d60355167a749615d878b1525030ff19f78f8ec3a1a18c91e67cf60426d75f0574ecb2ff6365d228b77446695f185b314f00077a4629a7e20a355307fa33278e2e2022b8137d532e7879e92278f65440e73af236e959567315853ec69258ce9d593f40f505b91075fe4d968408857f7dd7d4586da8543705e71e7b297683afc732eff8d02f97520afc7fd2574c85aff71d96fa02582f069ff33953e5400caef9f56ed18e10c451dfcde20f32b4b521f4bec5ce3f81da2d91be93bc504d1a9d59b0bd3af14d8d7232de446ba1a582c324b70b9ab02192d57b5200678abf16a0f99a917d74c8d3bb5600dfd46c902e147883854c8fb4c01f23e58a073f6a592acd06544a49687d271eacee4e361d41f3a1e57a8908db08bc81327e5285123190757804ca004546147eab05da2bc1481a9be12e80e1eaeabb9de890512e141c4adcda1ba67cd74133e9cfe57358d8e110ef81ae20c7c366273f693fe4d4b43db83255e80d0319222305cba750a34086d4166a3eb71ba7be40a01f59ea1ee8ce78b7798590c835529f32f6bfd3cee6211c81df914112acd140cff6b18006ba4b08151fb15985c1970144a18c9c8caf498a6aff2393e8fa7461152dd02b544d5f248b81f9088acfda984a03e90d2e0b0351e8448d7573e57e530b131b84b9ba5f9be109ea18b8c386d8d7b6a4659508c43e5e1629ce31e2e4132c447a3e25fb9c29c1d3a757af7d196c376084439f76559a88ddc73df273060d0eb8ab22f2ef56126b2d3d1f28b651d5203c92b794b6737f141c102e152b7993d855104d945b60f857a98e5b0d315815b1b0675e8e92e115650222c287365b66d3e36b7689d39ef78534f9a45d867a33fe855fcae6416188886cd5986a596e193a95ffd4817ee02383f58124c64f28ac63a52f4bf7d2657e0de6926b65d4712fa5285653f0d24b834273fb10ead6ca2ecfc44aef6d5d209ac00e38b263d175f166b779fcf5311d07e3ba0bddbd26f81e89a5593950b8f5a6a186516bc7f454bc59ae580fb47b742783a1936371a48c844c1954a2b33de432346ee9df02093d09bfc0ce644463f3446a569a985aba4aa8da64bae4c2a30776aca301db3d2704ffc7b9df90cd99bd0a974ef169c41b636a2667c588625eae8fa1309bbd5f92ba12c8e7aa375f3a226d7e3d5e01a86477edac9b848dcd9213525fd42d44339742844946a06ec0d7e60810b350e6ae0614dc060f0de9e1a1f8d73cf92e7c298236faf017658e9bbf082b773b493876fae48af616f1ff4011696d7a993db455c2b5dfbf516a5a6c56a48b2d1534fdac56b4f6abf398646f9764fc6adefc8abfabaf88d5d11dfaad81efc81333dcf396df3b84c053a37a67e7d60f745da3f6918512301e615d677986a0b4e8be5d7ee32a91491a0b0355534cb8e36fd3d5bfe8a4509f338da159c8228fc6af7308f2738e890a3ec82452d34e9648f9a612284341e577e9c27d6b7f5d330e3facfeac3814edd2e8c0868fcddc1aa27645156abf17dc1cd9d61f92c4ed483ae172976e04f50b1911a046f2c4736d767dbb73aad16a6be3dcfadc301d1e7aa4eac66f83cad4498f60262fff88ad29c82b42d8236935c08e83aad84628b1ee65882b36c95cb2a4cf5a2e3894383bd8131a012e8d0b26da475c91d0e8d80191e3e0e63aef00cddaa9b6adb98ef5182e2e6e580e19dd8d5d6f5a78b94c4fc75ce1d98f6281397563e0bd065ffbbadd48a337f1a25f40b7689344701c385133fa2008b6690020647cb3e6d3563cdebebaeec6a8f789483ed015c23c8866d3bdfe6ae90c81dc6ac25d12ee9f8f4558b95a5e3fbb6979e3db304520d0e6d08f842bfd4d81775214fa5f7ecad001a2e020851281d77f43760f9c6a88490d15e071eb6a43f84fe5061d8689f90268db23f0f663a4dac6b4d18e795a640658a1dfe82b47f9515c561eb29b7536f3b2debac9005cebfc5c7ef38d7b90b5b106388ad0940793c7b368a8549efe2a638698e316a8769cf129a020e21ae9eb80bb9e666330c4e86122fd0baaea76ed736dc94959dcab50c80bf1b82529830dd8bbe71d606931b7c75fc03c0e89335d42a2005f8156806689f119b050c78ed05c5f4d2c173f5ffbdc811a4d43e69422e46c9b00e7c9f289f6cc94b07abc31e15402ea81e53e1d7b87d7dafab7a3eaa1f53bffc6b35a0f397cacfeea0d01e7d4001137f13da3011a73417a40fb6b6d7c2570b467f12a731cfd7f5085d10a7c9824e4c46135fc13a0063a3c9e14659e74731a641abd82b23c553b31d700bf07e6e05853cda0845e25318ff0c922257d4c6eeaa9c9574e328317e7894636a9ebf58e40c9f2682727fba119809d1f9846915f22ec170d43ce9a089ef7cdfc16686e607b86a9dd289640d99f7b12ccb34f8119a3186e2265c920861946df43494f4884bc799ba73d01290490fa184477c8baf40a68389eba85776d25c3ee9358ed4ad9ba4cd4e2f994d7ed933b5813a0d7f93e8eba21c47a317d3116188d01588bbf9dd6cc72c011729395aa979d40931c7056f8ad48f438bf0332bb9acc9897439c0edbb51cab21f740c353a60900b78fe105dd556c2ee81ed1c6201f6be1540f2176c4ea7e210ddab854043074d6eabdf253358849bc9402a552b1b7363d85915c69e217d370e6793daf980794cdd41ae2e101c1ac739e9f43d5528535086d5210a843ed36da9a5ba5c525179f9408f6df2f8023b5edcc62299d4a981817835cf69cd860d847de930cbcc4bcfa2cf10e4ca73e9b629ead7c575f607d310d9ba99c3b485a1d2c54b005dc28121389520b2690810386d37121dd9804687e35338c197a4ecaa0e307ff7928384fe29ad508110d0544897d2dac4c391d7e2ff33e8ea4aacc13e06fc46a08fa7cde4e42093221970f246d45881a07c0ed5e5f7ed3d99cf394ab43363d95e514c6f0fc6b003ac90fbfc483c3bb1d7ddb04e0f09d865aa2ccf1c3383293dc7a222241e6e2a66e44e092c7763eae293559157205c71fb4ddb01821ddf15f3ce8c3270e5627540d7d661ffb65d8b5803262ceb52959921ec7ab3c201cad3550fe68e867eb1c6e73bf429d72d4801001c5962d5e7fbd4b3e610073cb714bccaddb06adf099f002fe221726290748673ec5138e4f59a9a93c2b5f52f626d0cf6981546d0ea37abfde649821069ffcb5bfef62b616f30651a44901afc2ec76c2367fa737bd8e3493ef3987627132979623244deef3802aabad8c2da73a36bea6a805608cfb3fafac525ee8581f31dfd2c76e848f053a12b8113a4fe66403b24513333cefc299d4c36f8778735825326e7d58be074e639c32a99544330f9b195b1937d01e7f7735d86b3f170ea5c7a77708791ef062c64e47293634d2e0f7117140871314769b94a441f649a17610d01b21c6f30639e391d02e1980106e390bb3dfe837a69cdb0a954166d5a0e8492c801941f9cc49f4ed76845e36764a8d4ca665ed791d9a567b8a064834d43901e5f58236834349af4b9ce1e6b8540ba822859c86c42c546f552a21d4433d66a6704503419abb61bb036b7daeba6f4a86cf7c7b0bc329aa2c217a690e15a25e1c1f7d4713a429883c527bc5fcf8d3de63754d636f4406b037ee55ab56f537e8936ab02324382e592adbbf1850382f7ea2e4ddb9bc3fa30067c944996fb00c7766419089cf89d586bc711617c44011b968958e35f1b3274a1c57e0cdb631882bc40610a850c75e86bec80a0577c15ddd230e00a85ce2be799f38574ee84b58b84447f42fa51185bd163921c442a403cbf9492fdfff1d3ff7eb99a6f23b96affc4c6ef7ef662e919517c3e9199633e8a8946fb5b830e696407efd6d43043d2979433a0c5d58a40f7220ef5bbe0d95cf029f9014b03068e5a4bc1f193c98799fe76fe6f3e85d5951046f84989263471c29bc6c316aa1d0e6be37b7b9babff86b93b6901a86d1f31752a6e48ea3c41b41b93596fa311aad43048f000cd0890d85ac5fe646519aaa3f26bc2576f85474a86d1f530c5615d941e46dd598e5e941257141bb8102867f9a1c001ff377231d2b6855aedf42c28fd07dee9e8835bc6f82a055b16ebf7b93e8fcca8c64846b6469819a82d32befc177a07a373f87db570b1b439b3af3a9ffe0dbb97461d3375b7e48b588fffad8a3f47ccf168a1ad9feabd912fd5f2164c06efe3d9cd475835875b3cf7671aac771321610849c789b650c15bbea1517b9c31c507f01e7e50179a4686ac7bff4c393b3ad8390d33cba4bd4469c09de26db8de30ff6aecaf416606324d2fdd532225e24cfc9aae3dc141747c93a7255b08ada3853d1bd84b8f6906d69e5dbcfe37503fe8a78943e49a6e455b4eb0803a149ac61369888d10db310fcebcb9d2f9f929ac040a0e3a3dcf6d0fc9afcee6023e0f358718df02aad24423cafafaf45ffa7e0382498d9e822507b48cbbda3253e32b3a62c97c08613794dfe82634b356adcb9a0b56e61e6ce153354c2ec9fa4c25579e6a13c1dd6f0f0ae34f783af756501c88cc324cc7b88d87879842b3853a774532e62be3e5fd34b3a91b857806463c5dce29e90a597590029470aae21bd4a629b0f26d7c9b37cc10a5f96050c9ba918b7664e32720632fe336aeb0c1f1869378c3978b7ec1535dae769fde7e4d60f1d30a7097865f26d8e2c0ca1e255800d1a6f683b4c738f06c5a8809bc68fc70866d0ca4feb7987ac1f035d6e6787e391a79aa7286dbffec072eba4d05c07ddc54fff7fa6afae9e65fb237475db5cea11976f6bef851ed1155ae697b1b7d212dc79c4de87cfa2c3934ea60815dddde3dc72e1f70f1d1045aa3e25966b8806ac1a67e25e9c2b23afcaf3994d001dd5a765d858794e3270ac65dee0eae6c4e041017bbb073184f759a36bd823792760d8b453547c791a9dbebb98b2a48c3175ba22ac01074e0079bfe037df98447363a7d2d99233e83849671673a5f85243da427b9091c600811b3a6667ff2e1345a90f334f54a7461d5db4d3a8569c1c4f9b0f58183728361ceec93ec741a178a18e32d9885e762d83830674359722154c874d95a9d3b4ccdde5717af3514d637ebf39191d16adca98e9b095c02cc9e0ff2550aa02cac4675212116b398dfb60d4642f0bb4b07a89c08f724e5adb400bb95e98adfcff12e8c2476ce861cb7a22b27200a4146dea2728e9819a5d2614d331fcbd7b4f242625adaac6204a4713fd9d56a3f359a9451626477ca6f7ec428688b3b03d9147d</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>写给STico</category>
-        <category>2022</category>
-      </categories>
-      <tags>
-        <tag>personal</tag>
       </tags>
   </entry>
   <entry>
@@ -1322,6 +1260,133 @@
       </tags>
   </entry>
   <entry>
+    <title>数据库系统概述</title>
+    <url>/2022/04/12/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>1-1数据库系统概论，概念较多</p>
+<span id="more"></span>
+
+<h2 id="数据库的四个基本概念"><a href="#数据库的四个基本概念" class="headerlink" title="数据库的四个基本概念"></a>数据库的四个基本概念</h2><h3 id="数据-Data"><a href="#数据-Data" class="headerlink" title="数据(Data)"></a>数据(Data)</h3><ul>
+<li>描述事物的符号记录</li>
+<li>数据是数据库中存储的基本对象</li>
+<li>数据的含义称为数据的语义，数据与其语义是不可分的</li>
+</ul>
+<h3 id="数据库-DataBase"><a href="#数据库-DataBase" class="headerlink" title="数据库(DataBase)"></a>数据库(DataBase)</h3><ul>
+<li><em>长期储存</em>在计算机内、<em>有组织</em>的、<em>可共享</em>的大量数据的集合</li>
+<li>基本特征：<ul>
+<li>数据按一定的数据模型组织、描述和储存</li>
+<li>可为各种用户共享</li>
+<li>冗余度较小</li>
+<li>数据独立性较高</li>
+<li>易扩展</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据库管理系统"><a href="#数据库管理系统" class="headerlink" title="数据库管理系统"></a>数据库管理系统</h3><ul>
+<li>位于用户与操作系统之间的一层数据管理软件</li>
+<li>科学地组织和存储数据、高效地获取和维护数据</li>
+<li>主要功能<ul>
+<li>数据定义功能<ul>
+<li>提供数据定义语言（DDL）</li>
+<li>定义数据库中的数据对象</li>
+</ul>
+</li>
+<li>数据组织、存储和管理<ul>
+<li>分类组织、存储和管理各种数据</li>
+<li>确定组织数据的文件结构和存取方式</li>
+<li>实现数据之间的联系</li>
+<li>提供多种存取方法提高效率</li>
+</ul>
+</li>
+<li>数据操纵功能<ul>
+<li>提供数据操纵语言（DML）</li>
+<li>实现对数据库的基本操作（查，插，删，改）</li>
+</ul>
+</li>
+<li>数据库的事务管理和运行管理<ul>
+<li>数据库在 <em>建立 运行 维护</em> 时，由数据库管理系统统一管理和控制</li>
+<li>保证数据的 <em>安全性 完整性 多用户对数据的并发使用</em></li>
+<li>发生故障后的系统修复</li>
+</ul>
+</li>
+<li>数据库的建立和维护功能<ul>
+<li>数据库初始数据的 <em>装载和维护</em></li>
+<li>数据库 <em>转储 恢复</em> 功能</li>
+<li>数据库的 <em>重组织</em></li>
+<li>性能监视分析等</li>
+</ul>
+</li>
+<li>其他功能<ul>
+<li>数据库管理功能 和 网络中其他软件系统的<em>通信</em></li>
+<li>数据库管理系统之间的<em>数据转换</em></li>
+<li>异构数据库之间的<em>互访和互操作</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据库系统-DataBase-System"><a href="#数据库系统-DataBase-System" class="headerlink" title="数据库系统(DataBase System)"></a>数据库系统(DataBase System)</h3><ul>
+<li>由 <em>数据库 + 数据库管理系统（及其应用开发工具）+应用程序+数据库管理员</em> 构成</li>
+</ul>
+<img src="数据库系统结构.png" style="zoom:40%;" />
+
+<h2 id="数据库管理技术的产生和发展"><a href="#数据库管理技术的产生和发展" class="headerlink" title="数据库管理技术的产生和发展"></a>数据库管理技术的产生和发展</h2><h3 id="数据库管理系统的发展过程"><a href="#数据库管理系统的发展过程" class="headerlink" title="数据库管理系统的发展过程"></a>数据库管理系统的发展过程</h3><ul>
+<li>人工管理阶段</li>
+<li>文件管理阶段</li>
+<li>数据库管理阶段</li>
+</ul>
+<h2 id="数据库系统的特点"><a href="#数据库系统的特点" class="headerlink" title="数据库系统的特点"></a>数据库系统的特点</h2><h3 id="数据结构化"><a href="#数据结构化" class="headerlink" title="数据结构化"></a>数据结构化</h3><ul>
+<li>不针对某一应用，面向全组织</li>
+<li>整体结构化，数据间有联系</li>
+<li>数据记录可以变长</li>
+<li>数据的最小存取单位是<em>数据项</em></li>
+</ul>
+<h3 id="数据共享性高、冗余性低且易扩充"><a href="#数据共享性高、冗余性低且易扩充" class="headerlink" title="数据共享性高、冗余性低且易扩充"></a>数据共享性高、冗余性低且易扩充</h3><ul>
+<li>数据面向整个系统，被共享使用</li>
+<li>优点<ul>
+<li>减少数据冗余，节约存储空间</li>
+<li>避免数据之间的不相容性&amp;不一致性</li>
+<li>使系统容易扩充</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据独立性高"><a href="#数据独立性高" class="headerlink" title="数据独立性高"></a>数据独立性高</h3><ul>
+<li><p>物理独立性</p>
+<p>指<em>用户的 应用程序</em> 与 <em>数据库中数据的物理存储</em> 是相互 独立的</p>
+</li>
+<li><p>逻辑独立性</p>
+<p>指 <em>用户的应用程序</em> 与 <em>数据库的逻辑结构</em> 是相互独立的</p>
+</li>
+<li><p>数据独立性由数据库管理系统的 <em>二级映像</em>  功能来保证</p>
+</li>
+</ul>
+<h3 id="数据由数据库管理系统统一管理控制"><a href="#数据由数据库管理系统统一管理控制" class="headerlink" title="数据由数据库管理系统统一管理控制"></a>数据由数据库管理系统统一管理控制</h3><p>数据库管理系统要提供数据控制功能</p>
+<ul>
+<li>security 安全性保护</li>
+<li>integrity 完整性检查</li>
+<li>concurrency 并发控制</li>
+<li>recovery 数据库恢复</li>
+</ul>
+<h2 id="数据库概念小结"><a href="#数据库概念小结" class="headerlink" title="数据库概念小结"></a>数据库概念小结</h2><ul>
+<li><p><strong>数据库</strong> 是  <em>长期存储</em>  在计算机内<em>有组织的</em>  <em>大量的</em>  <em>共享的</em>  数据集合</p>
+</li>
+<li><p>可以为多种用户所<strong>共享</strong>，具有  <em>较小冗余度</em>  和  <em>较高数据独立性</em></p>
+</li>
+<li><p>数据库管理系统 在 数据库 <em>建立、运用和维护</em>  时对数据库进行统一控制：</p>
+<p>保证数据的 <em>完整性</em>、<em>安全性</em>，</p>
+<p>并在多用户同时使用数据库时进行<em>并发控制</em>，</p>
+<p>在发生故障后对数据库进行<em>恢复</em>。</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>数据库原理</category>
+        <category>绪论</category>
+      </categories>
+      <tags>
+        <tag>数据库</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>进程概述</title>
     <url>/2022/04/12/%E8%BF%9B%E7%A8%8B%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
@@ -1331,6 +1396,29 @@
       </categories>
       <tags>
         <tag>操作系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>正确吵架</title>
+    <url>/2022/04/10/%E6%AD%A3%E7%A1%AE%E5%90%B5%E6%9E%B6/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="007619e2454b128b868ec7a215d3569c417e7e08738ad0e6fd8137b256137a44">125d5861506b304b03688d1b4cb724cc2efcf53d80f0914c03525b008e414d7c680919db81a95232f64c0d1d950f83b47c7627d91b112542de85efc725778622c2a87fc87c8c7c739c141dcc1b748e47e21cca03c303d52fcb11d09b684208d2abb3806b930df77982a622e8fa34ffde4438b3c3997040ff8f2fb88dcbecb984de07d00f24ebd9a6ffebc76ed9724828568ac9ede09f3be2fca98aadcdcbbb6be887f4eb0bf6acc704b9d05ff26ce8cc0a16f4bdd2bf7ae6c78e102f7a761f7d34b808750478d60bfbde9f230ac4fb95d2d003febef731d4b16346526fa519c6f4c140f0b86453ea6e97526f7478301ae91ea5f6a7c527c2154ed3c112fc335fb4cf505c3557a319d807c6a42506f23b384db8b5c9507ba2f1e5a5b6c2b9a0e0591ea58078ef65cae83a0a6f391716012ead4d7ca911320f94598d308410bf95c32f3111cfa544579d5724e43bbda9e1b9642b79a7b885d22b162d5bcec2b90472ceb9024905cbe2facdeee62cf9537901a6ea312d71b191828dbea5b80e0123a6b00b1f4dbbfe791b5149c8aa79f889c743f74dcb918aaefa4c5f08ce4515150316c918316a37e4e6be241daa2e64312dc08300d018b87fecfd6f5abe7b60dabf00adb782175192643dbb32567d168041e07fd41e8013a3f32ba8ceb9c29397c38999d9d39dd13186e589a4573b03fda517c2b149e98f79c2fccc09ad9dc7ff8155033fa0495797913cf16485bd39a3a463cddca68eca7ca9f96e746ad533a1f2662c15045ceeb1ea82b5a765e4de29e102d120eb7344026b35080e9c7fc598822f92ee005f7cdac2ad3d5dce3b086e3feb701081f02452502c97244af29e66bf4c5e8e13de97bfaf50845650059dbfee3cf381ceb7057ccd1fb87edb27ee5f6eccd3fa003c5acc54bc441578a600ec1b36306dd10aef7bea54cf3344fc5b488bcca8bafbae5b3af80325e16fd269fdd531dd54a9f7671a80b2a361df97c0cdc119f19a0f133c9bafff6f3277df1b7bcc9e0fbc39788ad85a50896aa95eef2b2f0f1f6f5292defa19d166e26bb3d3d7fecf77079ce3b4e723f32bc60d3936e8b0e44ab78e7f10e8060a173c77a5f4088e27401bf4ea98502e296ffacda035062d19bfe424e11b2df688d59998bdbb7b149e970bbc9306541cc86f8339a0d423555d4c49da8220a8c2c07f9acf3e45119b49e6a2e5ef303b9ced44f3b0ca0a845cd1a481ed4ca2e4312cc334a4c0b59569cee91a8c0c0878cd9bcbb5a30a88d456dc449806d5f7a56370f8844fb3c6dfaaf73afed4eb1b67b45807ee8daa20e1de10a5483537a5e690d02ca60b814799caafc4b5cc87e8d8b91432c978c4dc7f1ea70223350071cda3725a5a43abf978ccc5ee3c2081d7bca8a2971486cc33f2a95c0018fa45d53b22e4081ddd41ab04be157712291c48c99e9f864b532df3d58ca84d9c0d3af0aa113971b479ec86042c24bfaba117ccb77b843b932e3ee6a1c0b672c0ff0df8098514245807e7c612782f00f7031f3a5ceaded3f66925d05bbaeaeeaf0b5c43257165402bcd3edbe29feb7268f81f72780f50520e662d944a80b1f91f3d7b4619714da135a195ad08e88a2b0a8b8d8e8d99ac70f8f650fa7417e75c7d1b9c90c072778bd151762ee66b76af6213e90bcd5b11ece535527174a50072e0bf7d54f446ce0d2c4b3a48ba34ba179a1fb76987ebd947f2c398b35c57d7a2b21333ddf7591f38a98cd79a5a73d0f64c0f3b537abf5422c257bab1d64f5b969cb13222ad752657325de527e2d714c44abcd8fc7bfe4e1e3b3f1c9fd5f837221fa62f13f84505380fbfd33ce6aa4a00198c7993ce7511bcb2fd4078590dc0e600f73b637806ad46c970209059e47331d25a7094d15c370fac4d1802a6154feaac8ac9c246bc8fc8548afa28736e062597e26a9980529411fd96790fb445b3277cf5d71a450a63ed289d168a5d59d484df6ac555324d5e272db1617797bb4ad094de1fe2ccedbd818192dd3b721337548a0675a4b18b11a025620e7e456a0b2e55becbaf04858730ea5e0a5805d14de07867bd0aa521b769a0a9d1b3b326f25b5315e9b046f8b3d187748918dd910c075aae6e553e7b873675ca69d57f8e928944802491b8218372590d080960c8873274159033258ea958cb47ffdff7af076c6f99e8d77bd036f05e3819bdc5a9b2e952dcac2c9f9b6304ebbb4eef00c130cad94a71fd72ce246cf0e98426e417718d46352425faea3c5c2af5602033974581846800e701f761efdd6434f2034e7dbc4f22e77fa6880b0e50793fa8eda8ebc1b29000502cd94142d891341d380abf50c0624b8c140d9a2feecf2ba7a076873d92b1616d2c40397c2e090801acbc5e299b554f5b1ab73270f7a89d0d488d179a3c117fcbd3e4b60360662677b47bdcc2545087f00875aaecac5233e76b22f4b1ea179f8a21dd11535c10eff89debe7b5b6b8ee24aeefc5ac7638515a1725ca804e3395429704a001f5bc004f810135a18f9c338c013721db3c1d18b88362fefa060b442e0dedba19e4ad27b6b87b3d677af8508b5370974c142266c950421797907f0a6342b40fde2164034c2aaac0e796290a26d60603cedf7da155b6ce728356c33276725ea092d3f855774f78c068020e254df78744d6926a72fe76c361dd37743883c6b0a0024ccdc504ff1ded81aecfb5067b4883d260cebada5d6792e8182c0fbdd5719d9a0e596dee31991afdc37d8025c424382000398f97bb003c08d2bc83a2863582e2b3358f163bfc14128f21c1ec4249923026e46953f391d781aeeb31e954f121f63fae5bbe1750a4634443d81f619a4de55989a51ed10feb3e97b69d15242f8605bca1427c91dc1f299a876efb9a6ad288cedcf49d60355167a749615d878b1525030ff19f78f8ec3a1a18c91e67cf60426d75f0574ecb2ff6365d228b77446695f185b314f00077a4629a7e20a355307fa33278e2e2022b8137d532e7879e92278f65440e73af236e959567315853ec69258ce9d593f40f505b91075fe4d968408857f7dd7d4586da8543705e71e7b297683afc732eff8d02f97520afc7fd2574c85aff71d96fa02582f069ff33953e5400caef9f56ed18e10c451dfcde20f32b4b521f4bec5ce3f81da2d91be93bc504d1a9d59b0bd3af14d8d7232de446ba1a582c324b70b9ab02192d57b5200678abf16a0f99a917d74c8d3bb5600dfd46c902e147883854c8fb4c01f23e58a073f6a592acd06544a49687d271eacee4e361d41f3a1e57a8908db08bc81327e5285123190757804ca004546147eab05da2bc1481a9be12e80e1eaeabb9de890512e141c4adcda1ba67cd74133e9cfe57358d8e110ef81ae20c7c366273f693fe4d4b43db83255e80d0319222305cba750a34086d4166a3eb71ba7be40a01f59ea1ee8ce78b7798590c835529f32f6bfd3cee6211c81df914112acd140cff6b18006ba4b08151fb15985c1970144a18c9c8caf498a6aff2393e8fa7461152dd02b544d5f248b81f9088acfda984a03e90d2e0b0351e8448d7573e57e530b131b84b9ba5f9be109ea18b8c386d8d7b6a4659508c43e5e1629ce31e2e4132c447a3e25fb9c29c1d3a757af7d196c376084439f76559a88ddc73df273060d0eb8ab22f2ef56126b2d3d1f28b651d5203c92b794b6737f141c102e152b7993d855104d945b60f857a98e5b0d315815b1b0675e8e92e115650222c287365b66d3e36b7689d39ef78534f9a45d867a33fe855fcae6416188886cd5986a596e193a95ffd4817ee02383f58124c64f28ac63a52f4bf7d2657e0de6926b65d4712fa5285653f0d24b834273fb10ead6ca2ecfc44aef6d5d209ac00e38b263d175f166b779fcf5311d07e3ba0bddbd26f81e89a5593950b8f5a6a186516bc7f454bc59ae580fb47b742783a1936371a48c844c1954a2b33de432346ee9df02093d09bfc0ce644463f3446a569a985aba4aa8da64bae4c2a30776aca301db3d2704ffc7b9df90cd99bd0a974ef169c41b636a2667c588625eae8fa1309bbd5f92ba12c8e7aa375f3a226d7e3d5e01a86477edac9b848dcd9213525fd42d44339742844946a06ec0d7e60810b350e6ae0614dc060f0de9e1a1f8d73cf92e7c298236faf017658e9bbf082b773b493876fae48af616f1ff4011696d7a993db455c2b5dfbf516a5a6c56a48b2d1534fdac56b4f6abf398646f9764fc6adefc8abfabaf88d5d11dfaad81efc81333dcf396df3b84c053a37a67e7d60f745da3f6918512301e615d677986a0b4e8be5d7ee32a91491a0b0355534cb8e36fd3d5bfe8a4509f338da159c8228fc6af7308f2738e890a3ec82452d34e9648f9a612284341e577e9c27d6b7f5d330e3facfeac3814edd2e8c0868fcddc1aa27645156abf17dc1cd9d61f92c4ed483ae172976e04f50b1911a046f2c4736d767dbb73aad16a6be3dcfadc301d1e7aa4eac66f83cad4498f60262fff88ad29c82b42d8236935c08e83aad84628b1ee65882b36c95cb2a4cf5a2e3894383bd8131a012e8d0b26da475c91d0e8d80191e3e0e63aef00cddaa9b6adb98ef5182e2e6e580e19dd8d5d6f5a78b94c4fc75ce1d98f6281397563e0bd065ffbbadd48a337f1a25f40b7689344701c385133fa2008b6690020647cb3e6d3563cdebebaeec6a8f789483ed015c23c8866d3bdfe6ae90c81dc6ac25d12ee9f8f4558b95a5e3fbb6979e3db304520d0e6d08f842bfd4d81775214fa5f7ecad001a2e020851281d77f43760f9c6a88490d15e071eb6a43f84fe5061d8689f90268db23f0f663a4dac6b4d18e795a640658a1dfe82b47f9515c561eb29b7536f3b2debac9005cebfc5c7ef38d7b90b5b106388ad0940793c7b368a8549efe2a638698e316a8769cf129a020e21ae9eb80bb9e666330c4e86122fd0baaea76ed736dc94959dcab50c80bf1b82529830dd8bbe71d606931b7c75fc03c0e89335d42a2005f8156806689f119b050c78ed05c5f4d2c173f5ffbdc811a4d43e69422e46c9b00e7c9f289f6cc94b07abc31e15402ea81e53e1d7b87d7dafab7a3eaa1f53bffc6b35a0f397cacfeea0d01e7d4001137f13da3011a73417a40fb6b6d7c2570b467f12a731cfd7f5085d10a7c9824e4c46135fc13a0063a3c9e14659e74731a641abd82b23c553b31d700bf07e6e05853cda0845e25318ff0c922257d4c6eeaa9c9574e328317e7894636a9ebf58e40c9f2682727fba119809d1f9846915f22ec170d43ce9a089ef7cdfc16686e607b86a9dd289640d99f7b12ccb34f8119a3186e2265c920861946df43494f4884bc799ba73d01290490fa184477c8baf40a68389eba85776d25c3ee9358ed4ad9ba4cd4e2f994d7ed933b5813a0d7f93e8eba21c47a317d3116188d01588bbf9dd6cc72c011729395aa979d40931c7056f8ad48f438bf0332bb9acc9897439c0edbb51cab21f740c353a60900b78fe105dd556c2ee81ed1c6201f6be1540f2176c4ea7e210ddab854043074d6eabdf253358849bc9402a552b1b7363d85915c69e217d370e6793daf980794cdd41ae2e101c1ac739e9f43d5528535086d5210a843ed36da9a5ba5c525179f9408f6df2f8023b5edcc62299d4a981817835cf69cd860d847de930cbcc4bcfa2cf10e4ca73e9b629ead7c575f607d310d9ba99c3b485a1d2c54b005dc28121389520b2690810386d37121dd9804687e35338c197a4ecaa0e307ff7928384fe29ad508110d0544897d2dac4c391d7e2ff33e8ea4aacc13e06fc46a08fa7cde4e42093221970f246d45881a07c0ed5e5f7ed3d99cf394ab43363d95e514c6f0fc6b003ac90fbfc483c3bb1d7ddb04e0f09d865aa2ccf1c3383293dc7a222241e6e2a66e44e092c7763eae293559157205c71fb4ddb01821ddf15f3ce8c3270e5627540d7d661ffb65d8b5803262ceb52959921ec7ab3c201cad3550fe68e867eb1c6e73bf429d72d4801001c5962d5e7fbd4b3e610073cb714bccaddb06adf099f002fe221726290748673ec5138e4f59a9a93c2b5f52f626d0cf6981546d0ea37abfde649821069ffcb5bfef62b616f30651a44901afc2ec76c2367fa737bd8e3493ef3987627132979623244deef3802aabad8c2da73a36bea6a805608cfb3fafac525ee8581f31dfd2c76e848f053a12b8113a4fe66403b24513333cefc299d4c36f8778735825326e7d58be074e639c32a99544330f9b195b1937d01e7f7735d86b3f170ea5c7a77708791ef062c64e47293634d2e0f7117140871314769b94a441f649a17610d01b21c6f30639e391d02e1980106e390bb3dfe837a69cdb0a954166d5a0e8492c801941f9cc49f4ed76845e36764a8d4ca665ed791d9a567b8a064834d43901e5f58236834349af4b9ce1e6b8540ba822859c86c42c546f552a21d4433d66a6704503419abb61bb036b7daeba6f4a86cf7c7b0bc329aa2c217a690e15a25e1c1f7d4713a429883c527bc5fcf8d3de63754d636f4406b037ee55ab56f537e8936ab02324382e592adbbf1850382f7ea2e4ddb9bc3fa30067c944996fb00c7766419089cf89d586bc711617c44011b968958e35f1b3274a1c57e0cdb631882bc40610a850c75e86bec80a0577c15ddd230e00a85ce2be799f38574ee84b58b84447f42fa51185bd163921c442a403cbf9492fdfff1d3ff7eb99a6f23b96affc4c6ef7ef662e919517c3e9199633e8a8946fb5b830e696407efd6d43043d2979433a0c5d58a40f7220ef5bbe0d95cf029f9014b03068e5a4bc1f193c98799fe76fe6f3e85d5951046f84989263471c29bc6c316aa1d0e6be37b7b9babff86b93b6901a86d1f31752a6e48ea3c41b41b93596fa311aad43048f000cd0890d85ac5fe646519aaa3f26bc2576f85474a86d1f530c5615d941e46dd598e5e941257141bb8102867f9a1c001ff377231d2b6855aedf42c28fd07dee9e8835bc6f82a055b16ebf7b93e8fcca8c64846b6469819a82d32befc177a07a373f87db570b1b439b3af3a9ffe0dbb97461d3375b7e48b588fffad8a3f47ccf168a1ad9feabd912fd5f2164c06efe3d9cd475835875b3cf7671aac771321610849c789b650c15bbea1517b9c31c507f01e7e50179a4686ac7bff4c393b3ad8390d33cba4bd4469c09de26db8de30ff6aecaf416606324d2fdd532225e24cfc9aae3dc141747c93a7255b08ada3853d1bd84b8f6906d69e5dbcfe37503fe8a78943e49a6e455b4eb0803a149ac61369888d10db310fcebcb9d2f9f929ac040a0e3a3dcf6d0fc9afcee6023e0f358718df02aad24423cafafaf45ffa7e0382498d9e822507b48cbbda3253e32b3a62c97c08613794dfe82634b356adcb9a0b56e61e6ce153354c2ec9fa4c25579e6a13c1dd6f0f0ae34f783af756501c88cc324cc7b88d87879842b3853a774532e62be3e5fd34b3a91b857806463c5dce29e90a597590029470aae21bd4a629b0f26d7c9b37cc10a5f96050c9ba918b7664e32720632fe336aeb0c1f1869378c3978b7ec1535dae769fde7e4d60f1d30a7097865f26d8e2c0ca1e255800d1a6f683b4c738f06c5a8809bc68fc70866d0ca4feb7987ac1f035d6e6787e391a79aa7286dbffec072eba4d05c07ddc54fff7fa6afae9e65fb237475db5cea11976f6bef851ed1155ae697b1b7d212dc79c4de87cfa2c3934ea60815dddde3dc72e1f70f1d1045aa3e25966b8806ac1a67e25e9c2b23afcaf3994d001dd5a765d858794e3270ac65dee0eae6c4e041017bbb073184f759a36bd823792760d8b453547c791a9dbebb98b2a48c3175ba22ac01074e0079bfe037df98447363a7d2d99233e83849671673a5f85243da427b9091c600811b3a6667ff2e1345a90f334f54a7461d5db4d3a8569c1c4f9b0f58183728361ceec93ec741a178a18e32d9885e762d83830674359722154c874d95a9d3b4ccdde5717af3514d637ebf39191d16adca98e9b095c02cc9e0ff2550aa02cac4675212116b398dfb60d4642f0bb4b07a89c08f724e5adb400bb95e98adfcff12e8c2476ce861cb7a22b27200a4146dea2728e9819a5d2614d331fcbd7b4f242625adaac6204a4713fd9d56a3f359a9451626477ca6f7ec428688b3b03d9147d</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>写给STico</category>
+        <category>2022</category>
+      </categories>
+      <tags>
+        <tag>personal</tag>
       </tags>
   </entry>
 </search>
