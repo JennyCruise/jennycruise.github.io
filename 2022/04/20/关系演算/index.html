@@ -84,11 +84,13 @@
 <meta property="og:site_name" content="Finding Paradise">
 <meta property="og:description" content="按谓词变元不同进行分类：  元组关系演算：  以元组变量作为谓词变元的基本对象  元组关系演算语言ALPHA  域关系演算：  以域变量作为谓词变元的基本对象  域关系演算语言QBE">
 <meta property="og:locale">
+<meta property="og:image" content="http://example.com/2022/04/20/%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97/image-20220504204756747.png">
 <meta property="article:published_time" content="2022-04-20T02:05:13.000Z">
-<meta property="article:modified_time" content="2022-05-03T14:58:58.491Z">
+<meta property="article:modified_time" content="2022-05-04T13:45:19.769Z">
 <meta property="article:author" content="Jenny Cruise">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/04/20/%E5%85%B3%E7%B3%BB%E6%BC%94%E7%AE%97/image-20220504204756747.png">
 
 
 
@@ -354,8 +356,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2022-05-03T22:58:58+08:00">
-                2022-05-03
+              <time title="更新于" itemprop="dateModified" datetime="2022-05-04T21:45:19+08:00">
+                2022-05-04
               </time>
             
           </span>
@@ -475,10 +477,79 @@
 <p>eg</p>
 <p>[例2.21] 查询选修2号课程的学生名字<br><code>RANGE SC X  GET W (Student.Sname):  ョX(X.Sno=Student.Sno∧X.Cno=&#39;2&#39;)</code></p>
 <p>[例2.22] 查询选修了这样课程的学生学号，其直接先行课是6号课程。<br><code>RANGE Course CX GET W (SC.Sno): ョCX (CX.Cno=SC.Cno∧CX.Cpno=&#39;6&#39;)</code></p>
+<p>[例2.23]查询至少选修一门其先行课为6号课程的学生名字</p>
+<p><code>RANGE Course CX                 SC SCX GET W (Student.Sname): ョSCX (SCX.Sno=Student.Sno∧  ョCX (CX.Cno=SCX.Cno∧CX.Pcno=&#39;6&#39;))</code><br><em>前束范式形式：</em><br><code>GET W (Student.Sname):  ョSCXョCX (SCX.Sno=Student.Sno∧ CX.Cno=SCX.Cno∧CX.Pcno=&#39;6&#39;)</code></p>
+</blockquote>
+<h4 id="7-带有多个关系的表达式的检索"><a href="#7-带有多个关系的表达式的检索" class="headerlink" title="(7)带有多个关系的表达式的检索"></a>(7)带有多个关系的表达式的检索</h4><blockquote>
+<p>eg.</p>
+<p>[例2.24] 查询成绩为90分以上的学生名字与课程名字<br><code>RANGE SC SCX  GET W(Student.Sname，Course.Cname):  ョSCX (SCX.Grade≥90   ∧SCX.Sno=Student.Sno ∧ Course.Cno=SCX.Cno)</code></p>
+<p>[例2.25] 查询不选1号课程的学生名字<br><code>RANGE SC SCX  GET W (Student.Sname):  ∀SCX ( SCX.Sno≠Student.Sno ∨ SCX.Cno≠&#39;1&#39; )</code><br><em>用存在量词表示：</em><br><code>RANGE SC SCX  GET W (Student.Sname): ┐∃SCX ( SCX.Sno=Student.Sno ∧ SCX.Cno=&#39;1&#39; )</code></p>
+</blockquote>
+<h4 id="9-用两种量词的检索"><a href="#9-用两种量词的检索" class="headerlink" title="(9)用两种量词的检索"></a>(9)用两种量词的检索</h4><blockquote>
+<p>eg.</p>
+<p>查询选修了全部课程的学生姓名<br><code>RANGE Course CX         SC SCX GET W (Student.Sname):  ∀CX ∃SCX ( SCX.Sno=Student.Sno ∧ SCX.Cno=CX.Cno )</code></p>
+</blockquote>
+<p>(10)用蕴含的检索</p>
+<blockquote>
+<p>eg.</p>
+<p>[例2.27] 查询最少选修了201215122学生所选课程的学生学号<br><code>RANGE Couse CX  SC SCX  SC SCY  GET W (Student.Sno): ∀ CX ( ∃SCX (SCX.Sno=‘201215122&#39;∧SCX.Cno=CX.Cno)  → ∃SCY ( SCY.Sno = Student.Sno ∧ SCY.Cno = CX.Cno))</code></p>
+</blockquote>
+<p>(11)聚集函数</p>
+<img src="image-20220504204756747.png" alt="image-20220504204756747" style="zoom:50%;" />
+
+<blockquote>
+<p>eg.</p>
+<p>[例2.28] 查询学生所在系的数目<br><code>GET W ( COUNT(Student.Sdept) ) </code><br><em>COUNT函数在计数时会自动排除重复值。</em></p>
+<p>[例2.29] 查询信息系学生的平均年龄<br><code>GET W (AVG(Student.Sage)): </code><br><code>Student.Sdept=&#39;IS&#39;</code></p>
 </blockquote>
 <h3 id="更新语句"><a href="#更新语句" class="headerlink" title="更新语句"></a>更新语句</h3><blockquote>
 <p>PUT, HOLD, UPDATE, DELETE, DROP</p>
 </blockquote>
+<h4 id="修改-HOLD–修改–UPDATE"><a href="#修改-HOLD–修改–UPDATE" class="headerlink" title="修改 ( HOLD–修改–UPDATE )"></a>修改 ( HOLD–修改–UPDATE )</h4><blockquote>
+<p>①用HOLD语句将要修改的元组从数据库中读到工作空间中<br>       HOLD 工作空间名（表达式1）[：操作条件 ]<br>       HOLD 语句是带上并发控制的GET语句</p>
+<p>②用宿主语言修改工作空间中元组的属性 </p>
+<p>③用UPDATE语句将修改后的元组送回数据库中<br>       UPDATE 工作空间名</p>
+</blockquote>
+<p>eg.</p>
+<p>[例2.30] 把201215127学生从计算机科学系转到信息系</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">HOLD</span> W (Student.Sno， Student.Sdept): Student.Sno<span class="operator">=</span><span class="string">&#x27;201215127&#x27;</span></span><br><span class="line"><span class="comment">-- 从Student关系中读出201215127学生的数据</span></span><br><span class="line">MOVE <span class="string">&#x27;IS&#x27;</span> <span class="keyword">TO</span> W.Sdept </span><br><span class="line"><span class="comment">-- 用宿主语言进行修改</span></span><br><span class="line"><span class="keyword">UPDATE</span> W </span><br><span class="line"><span class="comment">-- 把修改后的元组送回Student关系）</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="插入-建立新元组–PUT"><a href="#插入-建立新元组–PUT" class="headerlink" title="插入 ( 建立新元组–PUT )"></a>插入 ( 建立新元组–PUT )</h4><blockquote>
+<p>①用宿主语言在工作空间中建立新元组 </p>
+<p>②用PUT语句把该元组存入指定关系中<br>        PUT 工作空间名（关系名）</p>
+<p><em>PUT语句只对一个关系操作，表达式为单个关系名</em></p>
+</blockquote>
+<p>eg.</p>
+<p>[例2.31] 学校新开设了一门2学分的课程“计算机组织与结构”，其课程号为8，直接先行课为6号课程。插入该课程元组</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MOVE <span class="string">&#x27;8&#x27;</span> <span class="keyword">TO</span> W.Cno </span><br><span class="line">MOVE <span class="string">&#x27;计算机组织与结构&#x27;</span> <span class="keyword">TO</span> W.Cname </span><br><span class="line">MOVE <span class="string">&#x27;6&#x27;</span> <span class="keyword">TO</span> W.Cpno </span><br><span class="line">MOVE <span class="string">&#x27;2&#x27;</span> <span class="keyword">TO</span> W.Ccredit </span><br><span class="line">PUT W (Course)</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="删除-HOLD–DELETE"><a href="#删除-HOLD–DELETE" class="headerlink" title="删除 ( HOLD–DELETE )"></a>删除 ( HOLD–DELETE )</h4><blockquote>
+<p>①用HOLD语句把要删除的元组从数据库中读到工作空间中 </p>
+<p>②用DELETE语句删除该元组<br>        DELETE 工作空间名</p>
+</blockquote>
+<p>eg.</p>
+<p>[例2.32] 201215230学生因故退学，删除该学生元组</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">HOLD</span> W (Student): Student.Sno<span class="operator">=</span>‘<span class="number">201215230</span><span class="string">&#x27; </span></span><br><span class="line"><span class="string">DELETE W</span></span><br></pre></td></tr></table></figure>
+
+<p>[例2.33] 将学号201215121改为201215122</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">HOLD</span> W (Student): Student.Sno<span class="operator">=</span>‘<span class="number">201215121</span><span class="string">&#x27;</span></span><br><span class="line"><span class="string">DELETE W</span></span><br><span class="line"><span class="string">MOVE ‘201215122&#x27;</span> <span class="keyword">TO</span> W.Sno </span><br><span class="line">MOVE <span class="string">&#x27;李勇&#x27;</span> <span class="keyword">TO</span> W.Sname </span><br><span class="line">MOVE <span class="string">&#x27;男&#x27;</span> <span class="keyword">TO</span> W.Ssex </span><br><span class="line">MOVE <span class="string">&#x27;20&#x27;</span> <span class="keyword">TO</span> W.Sage </span><br><span class="line">MOVE <span class="string">&#x27;CS&#x27;</span> <span class="keyword">TO</span> W.Sdept </span><br><span class="line">PUT W (Student)</span><br></pre></td></tr></table></figure>
+
+<p>[例2.34] 删除全部学生</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">HOLD</span> W (Student) </span><br><span class="line"><span class="keyword">DELETE</span> W</span><br><span class="line"><span class="comment">-- 为保证参照完整性，删除Student中元组时相应地要删除SC中的元组 </span></span><br><span class="line"><span class="keyword">HOLD</span> W (SC) <span class="keyword">DELETE</span> W</span><br></pre></td></tr></table></figure>
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="QBE语言"><a href="#QBE语言" class="headerlink" title="QBE语言"></a>QBE语言</h2><ul>
+<li>以元组变量的分量即域变量作为谓词变元的基本对象</li>
+<li>QBE：Query By Example<ul>
+<li>基于屏幕表格的查询语言</li>
+<li>查询要求：以填写表格的方式构造查询</li>
+<li>用示例元素(域变量)来表示查询结果可能的情况</li>
+<li>查询结果：以表格形式显示</li>
+</ul>
+</li>
+</ul>
+<p>具体操作不进行赘述</p>
 
       
     </div>
@@ -677,7 +748,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ALPHA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">ALPHA语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A3%80%E7%B4%A2%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.1.</span> <span class="nav-text">检索语句</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E7%AE%80%E5%8D%95%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.1.</span> <span class="nav-text">(1) 简单检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E9%99%90%E5%AE%9A%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.2.</span> <span class="nav-text">(2) 限定的检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%B8%A6%E6%8E%92%E5%BA%8F%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.3.</span> <span class="nav-text">(3) 带排序的检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E5%B8%A6%E5%AE%9A%E9%A2%9D%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.4.</span> <span class="nav-text">(4) 带定额的检索</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.2.</span> <span class="nav-text">更新语句</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ALPHA%E8%AF%AD%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">ALPHA语言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A3%80%E7%B4%A2%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.1.</span> <span class="nav-text">检索语句</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E7%AE%80%E5%8D%95%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.1.</span> <span class="nav-text">(1) 简单检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E9%99%90%E5%AE%9A%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.2.</span> <span class="nav-text">(2) 限定的检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%B8%A6%E6%8E%92%E5%BA%8F%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.3.</span> <span class="nav-text">(3) 带排序的检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-%E5%B8%A6%E5%AE%9A%E9%A2%9D%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.4.</span> <span class="nav-text">(4) 带定额的检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-%E5%B8%A6%E6%9C%89%E5%A4%9A%E4%B8%AA%E5%85%B3%E7%B3%BB%E7%9A%84%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.5.</span> <span class="nav-text">(7)带有多个关系的表达式的检索</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-%E7%94%A8%E4%B8%A4%E7%A7%8D%E9%87%8F%E8%AF%8D%E7%9A%84%E6%A3%80%E7%B4%A2"><span class="nav-number">1.1.6.</span> <span class="nav-text">(9)用两种量词的检索</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E8%AF%AD%E5%8F%A5"><span class="nav-number">1.2.</span> <span class="nav-text">更新语句</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-HOLD%E2%80%93%E4%BF%AE%E6%94%B9%E2%80%93UPDATE"><span class="nav-number">1.2.1.</span> <span class="nav-text">修改 ( HOLD–修改–UPDATE )</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%92%E5%85%A5-%E5%BB%BA%E7%AB%8B%E6%96%B0%E5%85%83%E7%BB%84%E2%80%93PUT"><span class="nav-number">1.2.2.</span> <span class="nav-text">插入 ( 建立新元组–PUT )</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A0%E9%99%A4-HOLD%E2%80%93DELETE"><span class="nav-number">1.2.3.</span> <span class="nav-text">删除 ( HOLD–DELETE )</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#QBE%E8%AF%AD%E8%A8%80"><span class="nav-number">3.</span> <span class="nav-text">QBE语言</span></a></li></ol></div>
             
 
           </div>
