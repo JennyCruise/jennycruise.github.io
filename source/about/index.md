@@ -11,3 +11,13 @@ date: 2022-04-01 19:47:16
 只为因循二字
 耽搁一生
 {% endcq %}
+___
+
+<img src="https://cdn.jsdelivr.net/gh/JennyCruise/mycdn@master/images/bf.jpg" style="zoom: 50%;" />
+
+
+叮哒！友情链接 \~ 
+
+[STico]( https://zhaostico.gitee.io/ "STico's Study Blog" )
+
+<img src="https://cdn.jsdelivr.net/gh/JennyCruise/mycdn@master/images/shy.jpg" style="zoom:80%;" />

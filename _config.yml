@@ -143,7 +143,7 @@ search:
 
 # 懒加载
 lazyload:
-  enable: true
+  enable: false
   onlypost: false
   loadingImg: /images/lazyload.gif
 
