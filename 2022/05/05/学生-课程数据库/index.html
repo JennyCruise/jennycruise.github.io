@@ -77,13 +77,15 @@
 
 
 
+<meta name="description" content="学生-课程 数据库举例后面例题以该数据库为例">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学生-课程数据库">
 <meta property="og:url" content="http://example.com/2022/05/05/%E5%AD%A6%E7%94%9F-%E8%AF%BE%E7%A8%8B%E6%95%B0%E6%8D%AE%E5%BA%93/index.html">
 <meta property="og:site_name" content="Finding Paradise">
+<meta property="og:description" content="学生-课程 数据库举例后面例题以该数据库为例">
 <meta property="og:locale">
 <meta property="article:published_time" content="2022-05-05T13:21:32.000Z">
-<meta property="article:modified_time" content="2022-05-05T13:22:43.864Z">
+<meta property="article:modified_time" content="2022-05-11T09:03:40.448Z">
 <meta property="article:author" content="Jenny Cruise">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary">
@@ -352,8 +354,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2022-05-05T21:22:43+08:00">
-                2022-05-05
+              <time title="更新于" itemprop="dateModified" datetime="2022-05-11T17:03:40+08:00">
+                2022-05-11
               </time>
             
           </span>
@@ -382,8 +384,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A0%87%E5%87%86%E8%AF%AD%E8%A8%80SQL/" itemprop="url" rel="index">
-                    <span itemprop="name">关系数据库标准语言SQL</span>
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86/CH3-%E5%85%B3%E7%B3%BB%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A0%87%E5%87%86%E8%AF%AD%E8%A8%80SQL/" itemprop="url" rel="index">
+                    <span itemprop="name">CH3.关系数据库标准语言SQL</span>
                   </a>
                 </span>
 
@@ -419,7 +421,142 @@
       
 
       
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>学生-课程 数据库举例<br>后面例题以该数据库为例</p>
+<span id="more"></span>
+
+<h2 id="学生-课程模式-S-T"><a href="#学生-课程模式-S-T" class="headerlink" title="学生-课程模式 S-T"></a>学生-课程模式 S-T</h2><p>学生表： Student(Sno,Sname,Ssex,Sage,Sdept)</p>
+<p>课程表：Course(Cno,Cname,Cpno,Ccredit)</p>
+<p>学生选课表：SC(Sno,Cno,Grade)</p>
+<hr>
+<h2 id="Student-表"><a href="#Student-表" class="headerlink" title="Student 表"></a>Student 表</h2><table>
+<thead>
+<tr>
+<th align="center">学号Sno</th>
+<th align="center">姓名Sname</th>
+<th align="center">性别Ssex</th>
+<th align="center">年龄Sage</th>
+<th align="center">所在系Sdept</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">201215121</td>
+<td align="center">李勇</td>
+<td align="center">男</td>
+<td align="center">20</td>
+<td align="center">CS</td>
+</tr>
+<tr>
+<td align="center">201215122</td>
+<td align="center">刘晨</td>
+<td align="center">女</td>
+<td align="center">19</td>
+<td align="center">CS</td>
+</tr>
+<tr>
+<td align="center">201215123</td>
+<td align="center">王敏</td>
+<td align="center">女</td>
+<td align="center">18</td>
+<td align="center">MA</td>
+</tr>
+<tr>
+<td align="center">201215125</td>
+<td align="center">张立</td>
+<td align="center">男</td>
+<td align="center">19</td>
+<td align="center">IS</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="Course-表"><a href="#Course-表" class="headerlink" title="Course 表"></a>Course 表</h2><table>
+<thead>
+<tr>
+<th align="center">课程号Cno</th>
+<th align="center">课程名Cname</th>
+<th align="center">先行课Cpno</th>
+<th align="center">学分Ccredit</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">数据库</td>
+<td align="center">5</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">数学</td>
+<td align="center"></td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">信息系统</td>
+<td align="center">1</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">操作系统</td>
+<td align="center">6</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">数据结构</td>
+<td align="center">7</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">数据处理</td>
+<td align="center"></td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">7</td>
+<td align="center">PASCAL语言</td>
+<td align="center">6</td>
+<td align="center">4</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="SC-表"><a href="#SC-表" class="headerlink" title="SC 表"></a>SC 表</h2><table>
+<thead>
+<tr>
+<th align="center">学号Sno</th>
+<th align="center">课程号Cno</th>
+<th align="center">成绩Grade</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">201215121</td>
+<td align="center">1</td>
+<td align="center">92</td>
+</tr>
+<tr>
+<td align="center">201215121</td>
+<td align="center">2</td>
+<td align="center">85</td>
+</tr>
+<tr>
+<td align="center">201215121</td>
+<td align="center">3</td>
+<td align="center">88</td>
+</tr>
+<tr>
+<td align="center">201215122</td>
+<td align="center">2</td>
+<td align="center">90</td>
+</tr>
+<tr>
+<td align="center">201215122</td>
+<td align="center">3</td>
+<td align="center">80</td>
+</tr>
+</tbody></table>
+<hr>
+
       
     </div>
     
@@ -458,6 +595,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/05/11/%E6%95%B0%E6%8D%AE%E5%AE%9A%E4%B9%89/" rel="prev" title="数据定义">
+                数据定义 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -514,8 +655,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -546,7 +696,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -594,6 +744,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E7%94%9F-%E8%AF%BE%E7%A8%8B%E6%A8%A1%E5%BC%8F-S-T"><span class="nav-number">1.</span> <span class="nav-text">学生-课程模式 S-T</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Student-%E8%A1%A8"><span class="nav-number">2.</span> <span class="nav-text">Student 表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Course-%E8%A1%A8"><span class="nav-number">3.</span> <span class="nav-text">Course 表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SC-%E8%A1%A8"><span class="nav-number">4.</span> <span class="nav-text">SC 表</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
