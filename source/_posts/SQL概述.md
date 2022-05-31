@@ -3,9 +3,9 @@ title: SQL概述
 date: 2022-05-04 21:27:17
 tags:
 - 数据库
-categories
+categories:
 - 数据库原理
-- 关系数据库标准语言SQL
+- CH3.关系数据库标准语言SQL
 ---
 SQL（Structured Query Language） 结构化查询语言，是关系数据库的标准语言 
 
