@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff9e40;
+  background: #e39eff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3167,7 +3167,7 @@ pre .javascript .function {
   background-color: #5d7484;
 }
 body {
-  background: url("https://cdn.jsdelivr.net/gh/JennyCruise/mycdn/next-bg.jpg");
+  background: url("/images/next-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
